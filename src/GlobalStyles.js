@@ -96,6 +96,11 @@ h5 {
     font-weight: 600;
 }
 
+h4 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
 h6 {
     font-size: 13px;
     font-weight: 400;
@@ -118,7 +123,110 @@ h6 {
 .meter {
     transition: stroke-dashoffset 1000ms ease-in-out; 
 
-  }
+ }
+
+#app {
+	width: auto;
+    height: auto;
+    overflow: visible;
+	padding: 15px;
+    background: #191923;
+	position: relative;
+}
+
+#app:after {
+    content: '';
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 15px;
+    background: #191923;
+    z-index: 9999;
+}
+
+.mobile-Topbar {
+	position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 70px;
+    background: #20202a;
+    -webkit-box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+    box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+    padding: 0 30px;
+    display: none;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+.art-preloader {
+    margin: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto!important;
+    height: auto!important;
+    background: #20202a;
+    z-index: 999999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.art-preloader .art-preloader-content {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.art-preloader .art-preloader-content .art-preloader-load {
+    margin-top: 5px;
+    width: 200px;
+}
+
+.art-preloader .art-preloader-content .art-preloader-load .progressbar-text {
+    position: relative;
+    font-size: 14px;
+    font-weight: 400 !important;
+    color: #cacace !important;
+    height: 300px;
+    line-height: 350px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%,-50%);
+    color: #555;
+}
+
+@media (max-width: 1032px) {
+	.mobile-Topbar {
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+	}
+	.art-preloader {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+}
+
 
 
 @keyframes pulse{

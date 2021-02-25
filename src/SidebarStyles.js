@@ -91,7 +91,7 @@ export const Avatar = styled.div`
     margin-bottom: 15px;
 `;
 
-export const AvatarCurtain = styled.a`
+export const AvatarCurtain = styled.span`
     position: relative;
     width: 100%;
     height: 100%;
