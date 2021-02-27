@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 
 const Preloader = ({ loaded }) => {
     const [isloaded, setIsLoaded] = useState(false);
-    const [progress, setProgress] = useState(0);
-    const [stop, setStop] = useState(true);
 
     useEffect(() => {
         loaded &&
@@ -11,10 +9,6 @@ const Preloader = ({ loaded }) => {
                 setIsLoaded(true);
                 document.body.classList.add("no-loader");
             }, 1000);
-        // setInterval(() => {
-        //     stop &&
-        //         setProgress((prev) => (prev < 101 ? prev + 1 : setStop(false)));
-        // }, 100);
         loaded &&
             document.querySelectorAll("path.meter1").forEach((path) => {
                 let length = path.getTotalLength();
@@ -32,18 +26,11 @@ const Preloader = ({ loaded }) => {
     return (
         <>
             {!isloaded && (
-                <div class="art-preloader">
-                    <div class="art-preloader-content">
+                <div className="preloader">
+                    <div className="preloader-content">
                         <h4>Sami Malik</h4>
-                        <div
-                            id="preloader"
-                            class="art-preloader-load"
-                            //style="position: relative;"
-                        >
-                            <div
-                                class="art-preloader-load-first"
-                                //style="display: none;"
-                            >
+                        <div id="preloader" className="preloader-load">
+                            <div className="preloader-load-first">
                                 {" "}
                                 <svg
                                     viewBox="0 0 100 1.7"
@@ -53,21 +40,21 @@ const Preloader = ({ loaded }) => {
                                     <path
                                         d="M 0,0.85 L 100,0.85"
                                         stroke="#ffc107"
-                                        stroke-width="1.7"
-                                        fill-opacity="0"
+                                        strokeWidth="1.7"
+                                        fillOpacity="0"
                                     ></path>
                                     <path
                                         d="M 0,0.85 L 100,0.85"
                                         stroke="#555"
-                                        stroke-dasharray="100, 100"
+                                        strokeDasharray="100, 100"
                                         strokeDashoffset={200}
-                                        stroke-width="1.7"
-                                        fill-opacity="0"
+                                        strokeWidth="1.7"
+                                        fillOpacity="0"
                                         className="meter1"
                                     ></path>
                                 </svg>
-                                <div class="progressbar-text proNum">
-                                    {progress} %
+                                <div className="progressbar-text proNum">
+                                    0 %
                                 </div>
                             </div>
                         </div>

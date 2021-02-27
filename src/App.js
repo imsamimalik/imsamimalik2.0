@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Sidebar from "./Sidebar";
+import MenuBar from "./MenuBar";
+import Pages from "./Pages";
 
 function App() {
     const [loaded, setLoaded] = useState(false);
     window.onload = () => {
-        if (document.readyState == "complete") {
+        if (document.readyState === "complete") {
             document.body.classList.add("loaded");
             setLoaded(true);
         }
@@ -13,7 +15,13 @@ function App() {
     return (
         <>
             <div className="mobile-Topbar"></div>
-            <Sidebar loaded={loaded} />
+            <div className="app-wrapper">
+                <div className="app-container">
+                    <Sidebar loaded={loaded} />
+                    <MenuBar />
+                    <Pages />
+                </div>
+            </div>
         </>
     );
 }

@@ -60,16 +60,83 @@ body {
     font-smooth: subpixel-antialiased;
 }
 
+* {
+    font-family: "Poppins" ,sans-serif;
+}
+
 img {
     vertical-align: middle;
     border-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn.btn-md {
+    height: 45px;
+    font-size: 12px;
+    padding: 0 35px;
+}
+
+input:focus,textarea:focus {
+    outline: none;
+}
+
+span.form-control-wrap:focus-within + label {
+	background-color:var(--yellow);
+	color: #20202a;
+}
+span.form-control-wrap textarea:focus {
+	border-color:var(--yellow);
+}
+
+.btn {
+	    text-transform: uppercase;
+    -webkit-box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
+    box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
+    color: #20202a;
+    background: #ffc107;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    border: none;
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+
+
+.menubar-btn:hover {
+	
+span, span::before,span::after {
+        background: #fafafc !important;
+}
 }
 
 .mb-10 {
 	margin-bottom: 10px;
 }
 
-body, a, .art-table, .art-link, .art-preloader .art-preloader-content .art-preloader-load .progressbar-text, .art-info-bar .art-header .art-avatar .art-lamp-light .art-available-lamp:after, .art-info-bar .art-lang-skills .art-lang-skills-item .art-cirkle-progress .progressbar-text, .art-info-bar .art-hard-skills .art-hard-skills-item .art-line-progress .progressbar-text, .art-info-bar .art-knowledge-list li, .art-info-bar .art-ls-social a, .art-menu-bar nav .main-menu .menu-item a, .art-menu-bar nav .main-menu .menu-item.current-menu-item .sub-menu .menu-item a, .art-menu-bar nav .main-menu .menu-item.current-menu-parent .sub-menu .menu-item a, .art-contact-form label, .art-pagination span.dots, .footer, .art-filter a, .wp-block-categories-list li, .wp-block-archives-list li, .widget.widget_nav_menu ul li, .widget.widget_pages ul li, .widget_categories ul li, .comment-info, .art-blog-card .art-project-category {
+.switch-wrapper {
+  position: relative;
+}
+
+.switch-wrapper > div {
+  position: absolute;
+}
+a.selected {
+	font-weight:600;
+	color: #fafafc;
+}
+
+body, a, .table, .link, .preloader .preloader-content .preloader-load .progressbar-text, .info-bar .header .avatar .lamp-light .available-lamp:after, .info-bar .lang-skills .lang-skills-item .cirkle-progress .progressbar-text, .info-bar .hard-skills .hard-skills-item .line-progress .progressbar-text, .info-bar .knowledge-list li, .info-bar .ls-social a, .menu-bar nav .main-menu .menu-item a, .menu-bar nav .main-menu .menu-item.current-menu-item .sub-menu .menu-item a, .menu-bar nav .main-menu .menu-item.current-menu-parent .sub-menu .menu-item a, .contact-form label, .pagination span.dots, .footer, .filter a, .wp-block-categories-list li, .wp-block-archives-list li, .widget.widget_nav_menu ul li, .widget.widget_pages ul li, .widget_categories ul li, .comment-info, .blog-card .project-category {
 	    color: #8c8c8e;
 }
 
@@ -87,8 +154,14 @@ body, a, .art-table, .art-link, .art-preloader .art-preloader-content .art-prelo
     display: none;
 }
 
-h1, h2, h3, h4, h5, h6, .art-banner .art-banner-overlay .art-banner-title h1, .content-sidebar .widget-title {
+h1, h2, h3, h4, h5, h6, .banner .banner-overlay .banner-title h1, .content-sidebar .widget-title {
     color: #fff;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+    font-family: "Poppins",sans-serif;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 h5 {
@@ -164,7 +237,7 @@ h6 {
 }
 
 
-.art-preloader {
+.preloader {
     margin: 15px;
     position: fixed;
     top: 0;
@@ -186,17 +259,17 @@ h6 {
     justify-content: center;
 }
 
-.art-preloader .art-preloader-content {
+.preloader .preloader-content {
     margin-bottom: 15px;
     text-align: center;
 }
 
-.art-preloader .art-preloader-content .art-preloader-load {
+.preloader .preloader-content .preloader-load {
     margin-top: 5px;
     width: 200px;
 }
 
-.art-preloader .art-preloader-content .art-preloader-load .progressbar-text {
+.preloader .preloader-content .preloader-load .progressbar-text {
     position: relative;
     font-size: 14px;
     font-weight: 400 !important;
@@ -212,19 +285,194 @@ h6 {
     color: #555;
 }
 
-@media (max-width: 1032px) {
-	.mobile-Topbar {
+#app .app-wrapper {
 
+	max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #1e1e28;
+    background-size: cover;
+    width: 100%;
+	height: auto;
+    overflow: visible;
+    overflow-x: hidden;
+    position: relative;
+    -webkit-box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+    box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%)
+
+}
+
+#app .app-wrapper .app-container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+#app .app-wrapper .app-container:before {
+    content: '';
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 15px;
+    height: 100%;
+    z-index: 9999;
+    background: #191923;
+}
+
+a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration: none;
+}
+
+.menubar-btn.active {
+
+position: absolute;
+   		left: 0;
+}
+
+.menubar.active .current-page {
+    opacity: 0;
+}
+
+
+        .menubar-btn.active span {
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+
+            :before {
+                -webkit-transform: translate(0px, 5px) rotate(-90deg);
+                transform: translate(0px, 5px) rotate(-90deg);
+            }
+
+            :after {
+                -webkit-transform: translate(0px, -5px) rotate(-90deg);
+                transform: translate(0px, -5px) rotate(-90deg);
+            }
+        }
+
+.menubar a {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.app-content {
+    padding-left: 290px;
+	height: auto;
+	position: relative;
+    overflow: hidden;
+    width: 100vw;
+    padding-right: 80px;
+    -webkit-transition: .55s ease-in-out;
+    transition: .55s ease-in-out;
+}
+
+.app-content .curtain {
+	background: rgba(30,30,40,.88);
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+    -webkit-transition: .55s ease-in-out;
+    transition: .55s ease-in-out;
+}
+
+
+.app-content .curtain.active {
+
+	pointer-events: all;
+    opacity: .7;
+
+}
+
+.app-content .top-bg {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-position: center;
+    height: 400px;
+    background-size: cover;
+	background-image:url(./images/bg.jpg);
+}
+
+.top-bg .bg-overlay{
+
+	position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(180deg,rgba(30,30,40,.93) 0%,rgba(30,30,40,.96) 70%,rgba(30,30,40,.99) 80%,#1e1e28 100%);
+
+}
+
+.footer {
+    width: 100%;
+    padding: 20px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: linear-gradient(159deg ,#2d2d3a 0%,#2b2b35 100%);
+    -webkit-box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
+    box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
+    font-size: 12px;
+    color: #cacace;
+    -webkit-transition: .55s ease-in-out;
+    transition: .55s ease-in-out;
+    z-index: 9;
+}
+
+@media (max-width: 1032px) {
+	#app {
+	    padding: 0;
+	}
+	.mobile-Topbar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 
 	}
-	.art-preloader {
+	.preloader {
     margin: 0;
     width: 100vw;
     height: 100vh;
-}
+	}
+	.app-wrapper {
+
+    height: auto;
+
+	}
+	
+	#app:after {
+		display: none;
+	}
+
+	#app .app-wrapper .app-container {
+    width: 100%;
+	}
+	#app .app-wrapper .app-container:before {
+    display: none;
+    
+	}
+	.app-content {
+	padding-left: 0;
+	position: relative;
+    padding-right: 0;
+    padding-top: 70px;
+	}
 }
 
 

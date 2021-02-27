@@ -41,7 +41,7 @@ import { linkedin } from "react-icons-kit/fa/linkedin";
 import { github } from "react-icons-kit/fa/github";
 import { instagram } from "react-icons-kit/fa/instagram";
 import { twitter } from "react-icons-kit/fa/twitter";
-import { facebook } from "react-icons-kit/fa/facebook";
+import { stackOverflow } from "react-icons-kit/fa/stackOverflow";
 import Lightbox from "react-awesome-lightbox";
 import "react-awesome-lightbox/build/style.css";
 
@@ -330,12 +330,12 @@ const Sidebar = ({ loaded }) => {
                             <Icon icon={twitter} />
                         </a>
                         <a
-                            href="https://facebook.com/imsamimalik"
+                            href="https://stackoverflow.com/users/10177946/"
                             target="__blank"
                             rel="noreferrer"
-                            aria-label="Facebook"
+                            aria-label="StackOverflow"
                         >
-                            <Icon icon={facebook} />
+                            <Icon icon={stackOverflow} />
                         </a>
                     </Socials>
                 </InfobarFrame>

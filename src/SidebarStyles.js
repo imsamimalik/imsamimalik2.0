@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Icon } from "react-icons-kit";
 
 export const Infobar = styled.div`
-    position: fixed;
+    position: fixed !important;
     background: #20202a;
     width: 290px;
     min-width: 290px;
@@ -16,7 +16,6 @@ export const Infobar = styled.div`
     padding: 0 15px;
 
     @media (max-width: 1032px) {
-        top: 0;
         height: 100vh !important;
         position: absolute;
         left: -290px;
