@@ -23,11 +23,16 @@ const MenuBar = () => {
     useEffect(() => {
         if (active) {
             document.querySelector(".curtain").classList.add("active");
+            document.querySelector(".app-content").classList.add("active");
         } else {
             document.querySelector(".curtain").classList.remove("active");
+            document.querySelector(".app-content").classList.remove("active");
         }
     }, [active]);
 
+    const handleBtnClick = () => {
+        setActive((prev) => !prev);
+    };
     useEffect(() => {
         if (location.pathname.split("/")[1]) {
             setCurrent(location.pathname.split("/")[1]);
@@ -35,10 +40,13 @@ const MenuBar = () => {
             setCurrent("Home");
         }
     }, [location]);
-
-    const handleBtnClick = () => {
-        setActive((prev) => !prev);
-    };
+    useEffect(() => {
+        document.addEventListener("click", (e) => {
+            if (e.target.matches(".curtain")) {
+                setActive((prev) => !prev);
+            }
+        });
+    }, [active]);
 
     return (
         <MenubarContainer active={active} className="menubar-container">

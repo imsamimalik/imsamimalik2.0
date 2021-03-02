@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Preloader from "./Preloader";
+import CountUp from "react-countup";
 import {
     Infobar,
     InfobarFrame,
@@ -152,7 +153,14 @@ const Sidebar = ({ loaded }) => {
                                     data-value="100"
                                 >
                                     <SVGProgressCircle offset={0} />
-                                    <ProgressbarText>100</ProgressbarText>
+                                    <ProgressbarText>
+                                        <CountUp
+                                            redraw={true}
+                                            delay={1.75}
+                                            duration={0.85}
+                                            end={100}
+                                        />
+                                    </ProgressbarText>
                                 </CircleProgress>
                                 <h6>Urdu</h6>
                             </LangSkillsItem>
@@ -163,7 +171,14 @@ const Sidebar = ({ loaded }) => {
                                     data-value="90"
                                 >
                                     <SVGProgressCircle offset={10} />
-                                    <ProgressbarText>90</ProgressbarText>
+                                    <ProgressbarText>
+                                        <CountUp
+                                            redraw={true}
+                                            delay={1.75}
+                                            duration={0.85}
+                                            end={90}
+                                        />
+                                    </ProgressbarText>
                                 </CircleProgress>
                                 <h6>Hindi</h6>
                             </LangSkillsItem>
@@ -174,7 +189,14 @@ const Sidebar = ({ loaded }) => {
                                     data-value="75"
                                 >
                                     <SVGProgressCircle offset={25} />
-                                    <ProgressbarText>75</ProgressbarText>
+                                    <ProgressbarText>
+                                        <CountUp
+                                            redraw={true}
+                                            delay={1.75}
+                                            duration={0.85}
+                                            end={75}
+                                        />
+                                    </ProgressbarText>
                                 </CircleProgress>
                                 <h6>English</h6>
                             </LangSkillsItem>
@@ -195,7 +217,13 @@ const Sidebar = ({ loaded }) => {
                                     >
                                         <SVGProgressHR offset={15} />
                                         <SkillsProgressText>
-                                            85 %
+                                            <CountUp
+                                                redraw={true}
+                                                delay={1.75}
+                                                duration={0.85}
+                                                end={85}
+                                            />
+                                            %
                                         </SkillsProgressText>
                                     </div>
                                 </LineProgress>
@@ -214,7 +242,13 @@ const Sidebar = ({ loaded }) => {
                                     >
                                         <SVGProgressHR offset={5} />
                                         <SkillsProgressText>
-                                            95 %
+                                            <CountUp
+                                                redraw={true}
+                                                delay={1.75}
+                                                duration={0.85}
+                                                end={95}
+                                            />
+                                            %
                                         </SkillsProgressText>
                                     </div>
                                 </LineProgress>
@@ -233,7 +267,13 @@ const Sidebar = ({ loaded }) => {
                                     >
                                         <SVGProgressHR offset={25} />
                                         <SkillsProgressText>
-                                            75 %
+                                            <CountUp
+                                                redraw={true}
+                                                delay={1.75}
+                                                duration={0.85}
+                                                end={75}
+                                            />
+                                            %
                                         </SkillsProgressText>
                                     </div>
                                 </LineProgress>
@@ -252,7 +292,13 @@ const Sidebar = ({ loaded }) => {
                                     >
                                         <SVGProgressHR offset={35} />
                                         <SkillsProgressText>
-                                            65 %
+                                            <CountUp
+                                                redraw={true}
+                                                delay={1.75}
+                                                duration={0.85}
+                                                end={65}
+                                            />
+                                            %
                                         </SkillsProgressText>
                                     </div>
                                 </LineProgress>
@@ -271,7 +317,13 @@ const Sidebar = ({ loaded }) => {
                                     >
                                         <SVGProgressHR offset={15} />
                                         <SkillsProgressText>
-                                            85 %
+                                            <CountUp
+                                                redraw={true}
+                                                delay={1.75}
+                                                duration={0.85}
+                                                end={85}
+                                            />
+                                            %
                                         </SkillsProgressText>
                                     </div>
                                 </LineProgress>
@@ -279,7 +331,7 @@ const Sidebar = ({ loaded }) => {
                         </div>
                         <LsDivider />
                         <KnowledgeList className="p-15-0">
-                            <li>ReactJS, VueJs</li>
+                            <li>ReactJS, VueJs, SvelteJs</li>
                             <li>Materialize, Bootstrap</li>
                             <li>PERN, Firebase, AWS, Heroku</li>
                             <li>CI / CD</li>

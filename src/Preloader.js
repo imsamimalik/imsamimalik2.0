@@ -1,26 +1,28 @@
 import React, { useState, useEffect } from "react";
+import CountUp from "react-countup";
 
 const Preloader = ({ loaded }) => {
     const [isloaded, setIsLoaded] = useState(false);
+
+    const anim = () => {
+        document.querySelectorAll("path.meter1").forEach((path) => {
+            let length = path.getTotalLength();
+            let value = parseInt(path.parentNode.getAttribute("data-value"));
+            let to = length * (value / 100);
+            path.getBoundingClientRect();
+            path.style.strokeDashoffset = Math.max(0, to);
+            // document.querySelector(".proNum").innerHTML =
+            //     Math.max(0, to) + "%";
+        });
+    };
 
     useEffect(() => {
         loaded &&
             setTimeout(() => {
                 setIsLoaded(true);
                 document.body.classList.add("no-loader");
-            }, 1000);
-        loaded &&
-            document.querySelectorAll("path.meter1").forEach((path) => {
-                let length = path.getTotalLength();
-                let value = parseInt(
-                    path.parentNode.getAttribute("data-value")
-                );
-                let to = length * (value / 100);
-                path.getBoundingClientRect();
-                path.style.strokeDashoffset = Math.max(0, to);
-                document.querySelector(".proNum").innerHTML =
-                    Math.max(0, to) + "%";
-            });
+            }, 1500);
+        loaded && setTimeout(anim, 500);
     }, [loaded]);
 
     return (
@@ -54,7 +56,13 @@ const Preloader = ({ loaded }) => {
                                     ></path>
                                 </svg>
                                 <div className="progressbar-text proNum">
-                                    0 %
+                                    <CountUp
+                                        redraw
+                                        duration={1.5}
+                                        end={100}
+                                        delay={1}
+                                        suffix="%"
+                                    />
                                 </div>
                             </div>
                         </div>

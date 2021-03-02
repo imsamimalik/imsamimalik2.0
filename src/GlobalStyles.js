@@ -64,6 +64,20 @@ body {
     font-family: "Poppins" ,sans-serif;
 }
 
+.p-30-0 {
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+
+@media (max-width: 1400px) {
+
+	.p-lg-30-0 {
+		padding-top: 30px;
+		padding-bottom: 0;
+	}
+}
+
+
 img {
     vertical-align: middle;
     border-style: none;
@@ -120,8 +134,39 @@ span, span::before,span::after {
 }
 }
 
+.swiper-container {
+	overflow:visible !important;
+	padding-bottom: 20px;
+}
+
+
 .mb-10 {
 	margin-bottom: 10px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-25 {
+    margin-bottom: 25px;
+}
+.lg-text {
+    font-size: 16px;
+}
+.code {
+    color: #fafafc; 
+	i {
+    font-style: normal;
+    color: #ffc107;
+	}
+	* {
+		font-family: "Courier Prime",monospace;
+	}
+
+}
+.react-typewriter-text-wrap {
+    display: inline-block;
 }
 
 .switch-wrapper {
@@ -133,11 +178,15 @@ span, span::before,span::after {
 }
 a.selected {
 	font-weight:600;
-	color: #fafafc;
+	    color: #fafafc;
 }
 
 body, a, .table, .link, .preloader .preloader-content .preloader-load .progressbar-text, .info-bar .header .avatar .lamp-light .available-lamp:after, .info-bar .lang-skills .lang-skills-item .cirkle-progress .progressbar-text, .info-bar .hard-skills .hard-skills-item .line-progress .progressbar-text, .info-bar .knowledge-list li, .info-bar .ls-social a, .menu-bar nav .main-menu .menu-item a, .menu-bar nav .main-menu .menu-item.current-menu-item .sub-menu .menu-item a, .menu-bar nav .main-menu .menu-item.current-menu-parent .sub-menu .menu-item a, .contact-form label, .pagination span.dots, .footer, .filter a, .wp-block-categories-list li, .wp-block-archives-list li, .widget.widget_nav_menu ul li, .widget.widget_pages ul li, .widget_categories ul li, .comment-info, .blog-card .project-category {
 	    color: #8c8c8e;
+}
+
+.link.active {
+	color:#fafafc !important;
 }
 
 .p-15-15 {
@@ -195,8 +244,18 @@ h6 {
 }
 .meter {
     transition: stroke-dashoffset 1000ms ease-in-out; 
+	transition-delay:800ms;
 
  }
+ .meter1 {
+    transition: stroke-dashoffset 1000ms ease-in-out; 
+
+ }
+
+ .hide {
+display: none;
+ }
+
 
 #app {
 	width: auto;
@@ -370,10 +429,18 @@ position: absolute;
     transition: .55s ease-in-out;
 }
 
+@media(min-width:990px) {
+	.app-content.active {
+    -webkit-transform: translateX(-150px);
+    transform: translateX(-150px);
+
+}
+}
+
 .app-content .curtain {
 	background: rgba(30,30,40,.88);
     position: absolute;
-    z-index: 9;
+    z-index: 999;
     left: 0;
     width: 100%;
     height: 100%;
@@ -472,6 +539,14 @@ position: absolute;
 	position: relative;
     padding-right: 0;
     padding-top: 70px;
+	}
+	.footer {
+		flex-direction: column;
+	}
+	.code {
+		display: flex;
+    	flex-direction: column;
+		height: 100px;
 	}
 }
 
