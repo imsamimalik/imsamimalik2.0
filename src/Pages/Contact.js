@@ -67,7 +67,7 @@ const Contact = () => {
                                                 samimalik123
                                             </li>
                                             <li>
-                                                <strong>Guru:</strong>{" "}
+                                                <strong>LinkedIn:</strong>{" "}
                                                 imsamimalik
                                             </li>
                                         </ul>
@@ -81,7 +81,7 @@ const Contact = () => {
                     <Title className="title">Get in touch</Title>
                     <div className="row">
                         <div className="col-lg-12">
-                            <Form></Form>
+                            <Form />
                         </div>
                     </div>
                 </BoxConainer>

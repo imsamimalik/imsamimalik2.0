@@ -10,8 +10,21 @@
             name="Sami Malik"
             content="Portfolio: Web app built using ReactJs"
         />
-        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-
+        <meta name="title" content="imsamimalik" />
+        <meta
+            name="description"
+            content="Portfolio website built using ReactJS"
+        />
+        <meta
+            name="keywords"
+            content="samimalik,sami,malik,imsamimalik,portfolio"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="author" content="Sami Malik" />
+        <link rel="apple-touch-icon" href="./icons/icon-128x128.png" />
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
         <link rel="stylesheet" href="./bootstrap-grid.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -32,6 +45,15 @@
         </noscript>
         <div id="app"></div>
 
-        <script></script>
+        <script>
+            if ("serviceWorker" in navigator) {
+                window.addEventListener("load", () => {
+                    navigator.serviceWorker
+                        .register("./serviceworker.js")
+                        .then((reg) => console.log("Success: ", reg.scope))
+                        .catch((err) => console.log("Failure: ", err));
+                });
+            }
+        </script>
     </body>
 </html>

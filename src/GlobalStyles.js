@@ -256,6 +256,10 @@ h6 {
 display: none;
  }
 
+ .animated {
+	transition: all 500ms ease-in-out;
+ }
+
 
 #app {
 	width: auto;

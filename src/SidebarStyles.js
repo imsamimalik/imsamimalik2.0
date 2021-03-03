@@ -49,7 +49,7 @@ export const InfobarHeader = styled.div`
     }
 `;
 
-export const InfobarBtn = styled.a`
+export const InfobarBtn = styled.span`
     margin-left: auto;
     pointer-events: all;
     font-size: 14px;

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "emailjs-com": "^2.6.4",
     "firebase": "^8.2.9",
     "react": "^17.0.1",
     "react-awesome-lightbox": "^1.7.3",
