@@ -1,10 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, FormField, ResponseOutput, SubmitFrame } from "./FormStyles";
 import { Icon } from "react-icons-kit";
 import { user } from "react-icons-kit/fa/user";
 import { at } from "react-icons-kit/fa/at";
 import { envelope } from "react-icons-kit/fa/envelope";
+import emailjs from "emailjs-com";
+import { init } from "emailjs-com";
+init("user_wxSGCTapbDZGX7QVFzibc");
+
 const Form = () => {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const [show, setShow] = useState(false);
+
+    const sendFeedback = (serviceId, templateId, variables) => {
+        emailjs
+            .send(
+                serviceId,
+                templateId,
+                variables,
+                "user_wxSGCTapbDZGX7QVFzibc"
+            )
+            .then((res) => {
+                console.log("Email successfully sent!");
+            })
+            .catch((err) =>
+                console.error(
+                    "Oh well, you failed. Here some thoughts on the error that occured:",
+                    err
+                )
+            );
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const templateId = "template_81jmlgw";
+        const serviceId = "service_unpwxr7";
+
+        sendFeedback(serviceId, templateId, {
+            message: message,
+            from_name: name,
+            reply_to: email,
+        });
+        setShow(true);
+        setName("");
+        setEmail("");
+        setMessage("");
+        setTimeout(() => setShow(false), 2000);
+    };
+
     return (
         <Card>
             <div
@@ -14,7 +59,7 @@ const Form = () => {
                 lang="en-US"
                 dir="ltr"
             >
-                <form method="post" className="form init" data-status="init">
+                <form className="form" onSubmit={handleSubmit}>
                     <div className="contact-form">
                         <FormField className="form-field">
                             <span className="form-control-wrap your-name">
@@ -22,11 +67,13 @@ const Form = () => {
                                     type="text"
                                     name="your-name"
                                     size="40"
+                                    value={name}
                                     className="form-control text validates-as-required input"
                                     aria-required="true"
                                     aria-invalid="false"
                                     placeholder="Name"
                                     required
+                                    onChange={(e) => setName(e.target.value)}
                                 />
                             </span>
                             <label>
@@ -39,11 +86,13 @@ const Form = () => {
                                     type="email"
                                     name="your-email"
                                     size="40"
+                                    value={email}
                                     className="form-control text email validates-as-required validates-as-email input"
                                     aria-required="true"
                                     aria-invalid="false"
                                     placeholder="Email"
                                     required
+                                    onChange={(e) => setEmail(e.target.value)}
                                 />
                             </span>
                             <label>
@@ -56,11 +105,13 @@ const Form = () => {
                                     name="your-message"
                                     cols="40"
                                     rows="10"
+                                    value={message}
                                     className="form-control textarea validates-as-required input"
                                     aria-required="true"
                                     aria-invalid="false"
                                     placeholder="Message"
                                     required
+                                    onChange={(e) => setMessage(e.target.value)}
                                 ></textarea>
                             </span>
                             <label>
@@ -73,10 +124,14 @@ const Form = () => {
                             </button>
                         </SubmitFrame>
                     </div>
-                    <ResponseOutput
-                        className="response-output"
-                        aria-hidden="true"
-                    ></ResponseOutput>
+                    {show && (
+                        <ResponseOutput
+                            className="response-output"
+                            aria-hidden="true"
+                        >
+                            Email sent successsfully!
+                        </ResponseOutput>
+                    )}
                 </form>
             </div>
         </Card>

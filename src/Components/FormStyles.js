@@ -68,10 +68,9 @@ export const SubmitFrame = styled.div`
         overflow: hidden;
         position: relative;
         z-index: 999;
+        cursor: pointer;
         span {
-            -ms-flex-item-align: center;
             align-self: center;
-            -webkit-transition: 0.2s ease-in-out;
             transition: 0.2s ease-in-out;
         }
     }
@@ -79,7 +78,7 @@ export const SubmitFrame = styled.div`
 
 export const ResponseOutput = styled.div`
     border: none !important;
-    color: red;
+    color: green;
     display: block !important;
     margin: 2em 0.5em 1em;
     padding: 0.2em 1em;
