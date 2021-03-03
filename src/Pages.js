@@ -3,6 +3,7 @@ import Contact from "./Pages/Contact";
 import History from "./Pages/History";
 import Portfolio from "./Pages/Portfolio";
 import Home from "./Pages/Home";
+import Login from "./Pages/Login";
 import { Route, Switch } from "react-router-dom";
 
 const Pages = () => {
@@ -12,6 +13,7 @@ const Pages = () => {
             <div className="top-bg">
                 <div className="bg-overlay"></div>
             </div>
+
             <Switch>
                 <Route path="/contact" exact>
                     <Contact />
@@ -21,6 +23,9 @@ const Pages = () => {
                 </Route>
                 <Route path="/portfolio" exact>
                     <Portfolio />
+                </Route>
+                <Route path="/login" exact>
+                    <Login />
                 </Route>
                 <Route path="/" exact>
                     <Home />

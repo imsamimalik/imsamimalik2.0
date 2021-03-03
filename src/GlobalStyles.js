@@ -386,6 +386,8 @@ a:not([href]):not([tabindex]) {
     text-decoration: none;
 }
 
+
+
 .menubar-btn.active {
 
 position: absolute;
@@ -424,6 +426,7 @@ position: absolute;
 	position: relative;
     overflow: hidden;
     width: 100vw;
+	min-height: 100vh;
     padding-right: 80px;
     -webkit-transition: .55s ease-in-out;
     transition: .55s ease-in-out;

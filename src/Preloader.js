@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import CountUp from "react-countup";
+import { useCountUp } from "react-countup";
 
 const Preloader = ({ loaded }) => {
     const [isloaded, setIsLoaded] = useState(false);
+    const { countUp } = useCountUp({ end: 100, suffix: "%", delay: 0.5 });
 
     const anim = () => {
         document.querySelectorAll("path.meter1").forEach((path) => {
@@ -11,8 +12,7 @@ const Preloader = ({ loaded }) => {
             let to = length * (value / 100);
             path.getBoundingClientRect();
             path.style.strokeDashoffset = Math.max(0, to);
-            // document.querySelector(".proNum").innerHTML =
-            //     Math.max(0, to) + "%";
+            //document.querySelector(".proNum").innerHTML = Math.max(0, to) + "%";
         });
     };
 
@@ -56,13 +56,14 @@ const Preloader = ({ loaded }) => {
                                     ></path>
                                 </svg>
                                 <div className="progressbar-text proNum">
-                                    <CountUp
+                                    {loaded && countUp}
+                                    {/* <CountUp
                                         redraw
                                         duration={1.5}
                                         end={100}
                                         delay={1}
                                         suffix="%"
-                                    />
+                                    /> */}
                                 </div>
                             </div>
                         </div>
