@@ -43,7 +43,7 @@ const MenuBar = () => {
     useEffect(() => {
         document.addEventListener("click", (e) => {
             if (e.target.matches(".curtain")) {
-                setActive((prev) => !prev);
+                setActive(false);
             }
         });
     }, [active]);
@@ -119,6 +119,19 @@ const MenuBar = () => {
                                         to="/contact"
                                     >
                                         Contact
+                                    </NavLink>
+                                </NavLi>
+                                <NavLi
+                                    delay={0.25}
+                                    active={active}
+                                    onClick={() => setActive((prev) => !prev)}
+                                >
+                                    <NavLink
+                                        exact
+                                        activeClassName="selected"
+                                        to="/login"
+                                    >
+                                        Login
                                     </NavLink>
                                 </NavLi>
                             </NavUl>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
     Banner,
@@ -11,14 +11,33 @@ import {
     ServiceBox,
     SectionTitle,
 } from "./HomeStyles";
+import {
+    Header,
+    Avatar,
+    AvatarCurtain,
+    AvatarCurtainImg,
+    AvatarCurtainExpand,
+    LampLight,
+    AvailableLamp,
+    Name,
+    NameA,
+    SmText,
+} from "../SidebarStyles";
+import Lightbox from "react-awesome-lightbox";
+import "react-awesome-lightbox/build/style.css";
 import TypeWriterEffect from "react-typewriter-effect";
 import CountUp from "react-countup";
 import { chevronRight } from "react-icons-kit/fa/chevronRight";
 import { Icon } from "react-icons-kit";
 import Slider from "../Components/Slider";
 import Footer from "../Components/Footer";
+import { expand } from "react-icons-kit/fa/expand";
 
 const Home = () => {
+    const [lightBox, setLightBox] = useState(false);
+
+    const handleLightBox = () => setLightBox((prev) => !prev);
+
     return (
         <>
             <div
@@ -31,6 +50,45 @@ const Home = () => {
             >
                 <div className="row p-30-0 p-lg-30-0 p-md-15-0">
                     <div className="col-lg-12">
+                        <Header className="mobile">
+                            <Avatar>
+                                <AvatarCurtain>
+                                    {lightBox && (
+                                        <Lightbox
+                                            clickOutsideToClose={true}
+                                            allowRotate={false}
+                                            allowReset={false}
+                                            title="Sami Malik"
+                                            image="https://pbs.twimg.com/profile_images/1319999810884292608/Yr9JnFXw_400x400.jpg"
+                                            onClose={handleLightBox}
+                                        />
+                                    )}
+                                    <AvatarCurtainImg
+                                        src="https://pbs.twimg.com/profile_images/1319999810884292608/Yr9JnFXw_400x400.jpg"
+                                        alt="avatar"
+                                    />
+                                    <AvatarCurtainExpand
+                                        icon={expand}
+                                        onClick={handleLightBox}
+                                    />
+                                </AvatarCurtain>
+                                <LampLight>
+                                    <AvailableLamp />
+                                </LampLight>
+                            </Avatar>
+                            <Name className="mb-10">
+                                <NameA
+                                    rel="noreferrer"
+                                    href="https://github.com/imsamimalik"
+                                >
+                                    Sami Malik
+                                </NameA>
+                            </Name>
+                            <SmText>
+                                Full Stack Web Developer <br />
+                                Freelancer
+                            </SmText>
+                        </Header>
                         <Banner className="banner">
                             <BannerBack className="banner-back" />
                             <BannerOverlay className="banner-overlay">

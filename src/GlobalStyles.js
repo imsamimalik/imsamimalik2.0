@@ -79,8 +79,16 @@ body {
 
 
 img {
-    vertical-align: middle;
     border-style: none;
+}
+
+.mobile {
+	position:relative;
+	margin-bottom:20px;
+
+	@media(min-width:990px) {
+		display:none;
+	}
 }
 
 a {
