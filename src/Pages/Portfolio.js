@@ -3,6 +3,7 @@ import { SectionTitle } from "./HomeStyles";
 import { Grid, Item, Link, RightFrame } from "./PortfolioStyles";
 import { db } from "../firebase";
 import Footer from "../Components/Footer";
+import { Helmet } from "react-helmet";
 
 const Portfolio = () => {
     const [web, setWeb] = useState([]);
@@ -57,6 +58,9 @@ const Portfolio = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Portfolio - Sami Malik</title>
+            </Helmet>
             <div
                 className="container-fluid"
                 style={{

@@ -2,11 +2,9 @@ import styled from "styled-components";
 
 export const Card = styled.div`
     background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
-    -webkit-box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
     box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
     padding: 30px;
     margin-bottom: 30px;
-    -webkit-transition: 0.55s ease-in-out;
     transition: 0.55s ease-in-out;
 `;
 
@@ -26,10 +24,8 @@ export const FormField = styled.div`
             color: #fafafc;
             padding-left: 65px;
             padding-right: 15px;
-            -webkit-box-shadow: inset 0 1px 4px 0 rgb(15 15 20 / 10%);
             box-shadow: inset 0 1px 4px 0 rgb(15 15 20 / 10%);
             margin-bottom: 0;
-            -webkit-transition: 0.4s ease-in-out;
             transition: 0.4s ease-in-out;
         }
         textarea {
@@ -54,7 +50,6 @@ export const FormField = styled.div`
         line-height: 50px;
         letter-spacing: 1px;
         font-weight: 500;
-        -webkit-transition: 0.4s ease-in-out;
         transition: 0.4s ease-in-out;
         cursor: text;
     }

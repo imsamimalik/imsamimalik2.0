@@ -23,7 +23,6 @@ export const Timeline = styled.div`
         height: 23px;
         opacity: 0;
         border-radius: 50%;
-        -webkit-transition: 0.4s ease-in-out;
         transition: 0.4s ease-in-out;
     }
     .timeline-mark {
@@ -35,7 +34,6 @@ export const Timeline = styled.div`
         border-radius: 50%;
         border: solid 3px var(--yellow);
         background: #1e1e28;
-        -webkit-box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
         box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
     }
 
@@ -45,18 +43,12 @@ export const Timeline = styled.div`
         background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
         padding: 30px;
         margin-bottom: 30px;
-        -webkit-box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
         box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
 
         .card-header {
             width: 100%;
-            display: -webkit-box;
-            display: -ms-flexbox;
             display: flex;
-            -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
             justify-content: space-between;
-            -ms-flex-wrap: wrap;
             flex-wrap: wrap;
             .el-suptitle {
                 margin-top: 5px;
@@ -69,7 +61,6 @@ export const Timeline = styled.div`
                 background: #20202a;
                 padding: 5px 15px;
                 border-radius: 15px;
-                -webkit-box-shadow: inset 0 3px 8px 0 rgb(15 15 20 / 20%);
                 box-shadow: inset 0 3px 8px 0 rgb(15 15 20 / 20%);
                 font-size: 12px;
             }
@@ -95,6 +86,13 @@ export const Intro = styled.div`
         padding: 0 25px;
         font-size: 16px;
         line-height: 1.6;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @media (max-width: 990px) {
+            flex-direction: column;
+        }
+
         li {
             line-height: 1.6;
             a:hover {

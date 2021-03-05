@@ -11,6 +11,7 @@ import {
     ServiceBox,
     SectionTitle,
 } from "./HomeStyles";
+import { Helmet } from "react-helmet";
 import {
     Header,
     Avatar,
@@ -40,6 +41,10 @@ const Home = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Sami Malik - Full Stack Web Developer</title>
+            </Helmet>
+
             <div
                 className="container-fluid"
                 style={{

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
@@ -23,7 +22,6 @@ export const Title = styled.h4`
 
 export const Box = styled.div`
     background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
-    -webkit-box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
     box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
     padding: 25px;
     margin-bottom: 30px;
@@ -38,11 +36,8 @@ export const Table = styled.div`
         margin: 0;
         li {
             list-style-type: none;
-            display: -webkit-box;
-            display: -ms-flexbox;
+
             display: flex;
-            -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
             justify-content: space-between;
             margin-bottom: 5px;
             strong {

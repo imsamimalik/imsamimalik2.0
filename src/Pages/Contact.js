@@ -2,10 +2,14 @@ import React from "react";
 import Footer from "../Components/Footer";
 import Form from "../Components/Form";
 import { Box, BoxConainer, Container, Title, Table } from "./ContactStyles";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
     return (
         <>
+            <Helmet>
+                <title>Contact - Sami Malik</title>
+            </Helmet>
             <Container className="containerr">
                 <BoxConainer className="container-fluid">
                     <Title className="title">Contact Information</Title>

@@ -2,12 +2,10 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Banner = styled.div`
-    -webkit-transition: 0.55s ease-in-out;
     transition: 0.55s ease-in-out;
     background-size: cover;
     background-position: center;
     position: relative;
-    -webkit-box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
     box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
     z-index: 99;
     margin-bottom: 30px;
@@ -22,7 +20,6 @@ export const BannerBack = styled.div`
     width: 90%;
     height: 30px;
     margin-left: 5%;
-    -webkit-box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
     box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -35,8 +32,6 @@ export const BannerBack = styled.div`
 
 export const BannerOverlay = styled.div`
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding: 60px;
     width: 100%;
@@ -54,7 +49,6 @@ export const BannerOverlay = styled.div`
 
 export const BannerTitle = styled.div`
     width: 100%;
-    -ms-flex-item-align: center;
     align-self: center;
     h1 {
         color: #fff;
@@ -80,11 +74,7 @@ export const BannerPhoto = styled.img`
 `;
 
 export const CounterFrame = styled.div`
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 30px;
     position: relative;
@@ -105,22 +95,14 @@ export const CounterFrame = styled.div`
 `;
 
 export const SectionTitle = styled.div`
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     .title-frame {
-        -ms-flex-item-align: center;
         align-self: center;
         position: relative;
         margin-bottom: 30px;
     }
     @media (max-width: 500px) {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
         flex-direction: column;
     }
     @media (max-width: 768px) {
@@ -136,7 +118,6 @@ export const ServiceBox = styled.div`
     position: relative;
     z-index: 1;
     overflow: hidden;
-    -webkit-box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
     box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
     background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
     .service-ib-content {
@@ -156,19 +137,14 @@ export const OrderNow = styled(Link)`
     margin-right: 15px;
     margin-bottom: 10px;
     color: #cacace;
-    -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
     i {
         font-weight: 900;
-        -webkit-transform: scale(0.8) translateY(-1px);
         transform: scale(0.8) translateY(-1px);
-        -webkit-transition: 0.4s ease-in-out;
         transition: 0.4s ease-in-out;
     }
     :hover i {
-        -webkit-transform: scale(0.8) translateX(5px) translateY(-1px);
         transform: scale(0.8) translateX(5px) translateY(-1px);
-        -webkit-transition: 0.4s ease-in-out;
         transition: 0.4s ease-in-out;
     }
 `;

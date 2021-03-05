@@ -9,9 +9,7 @@ export const Infobar = styled.div`
     height: calc(100vh - 30px);
     position: relative;
     z-index: 999;
-    -webkit-box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
     box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
-    -webkit-transition: 0.55s ease-in-out;
     transition: 0.55s ease-in-out;
     padding: 0 15px;
 
@@ -32,11 +30,7 @@ export const InfobarFrame = styled.div`
 export const InfobarHeader = styled.div`
     width: 100%;
     height: 70px;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
     justify-content: flex-start;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     position: absolute;
     left: 0;
@@ -64,7 +58,6 @@ export const InfobarBtn = styled.span`
     @media (max-width: 1032px) {
         transform: ${(props) =>
             props.open ? "translateX(0px)" : "translateX(70px)"};
-        -webkit-transition: 0.4s ease-in-out;
         transition: 0.4s ease-in-out;
     }
 `;
@@ -83,7 +76,6 @@ export const Header = styled.div`
         rgba(35, 35, 45, 0.98) 100%
     );
     text-align: center;
-    -webkit-box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
     box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
 `;
 
@@ -101,14 +93,9 @@ export const AvatarCurtain = styled.span`
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     outline: inherit;
-    -webkit-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
     z-index: 0;
     user-select: none;
@@ -121,7 +108,6 @@ export const AvatarCurtainImg = styled.img`
     position: absolute;
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
     object-fit: cover;
     border-radius: 50%;
     z-index: 0;
@@ -136,7 +122,6 @@ export const AvatarCurtainExpand = styled(Icon)`
     width: 30px;
     height: 30px;
     text-align: center;
-    -ms-flex-item-align: center;
     align-self: center;
     font-weight: 700;
     font-size: 13px;
@@ -145,7 +130,6 @@ export const AvatarCurtainExpand = styled(Icon)`
     border-radius: 50%;
     opacity: 0;
     z-index: 1;
-    -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
     cursor: pointer;
 `;
@@ -162,7 +146,6 @@ export const LampLight = styled.div`
         height: 23px;
         width: 23px;
         border-radius: 50%;
-        -webkit-animation: puls 1s infinite;
         animation: pulse 1s infinite;
     }
 `;
@@ -177,11 +160,9 @@ export const AvailableLamp = styled.div`
     background: var(--yellow);
     border-radius: 50%;
     z-index: 0;
-    -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
 
     :hover {
-        -webkit-transform: scale(1);
         transform: scale(1);
         background: #4caf50;
         cursor: pointer;
@@ -197,16 +178,13 @@ export const AvailableLamp = styled.div`
         opacity: 0;
         background: #191923;
         pointer-events: none;
-        -webkit-transform: translateX(20px) rotate(45deg);
         transform: translateX(20px) rotate(45deg);
-        -webkit-transition: 0.4s ease-in-out;
         transition: 0.4s ease-in-out;
         z-index: 99;
     }
 
     :hover:before {
         opacity: 1;
-        -webkit-transform: translateX(0) rotate(45deg);
         transform: translateX(0) rotate(45deg);
     }
 
@@ -221,34 +199,28 @@ export const AvailableLamp = styled.div`
         font-size: 10px;
         font-weight: 200;
         color: #cacace;
-        -webkit-box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
         box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
         background: #191923;
         opacity: 0;
         pointer-events: none;
-        -webkit-transform: translateX(20px);
         transform: translateX(20px);
-        -webkit-transition: 0.4s ease-in-out;
         transition: 0.4s ease-in-out;
         text-align: left;
     }
 
     :hover:after {
         opacity: 1;
-        -webkit-transform: translateX(0);
         transform: translateX(0);
     }
 `;
 
 export const Name = styled.h5`
     color: #fafafc;
-    -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
 `;
 
 export const NameA = styled.a`
     color: #fafafc;
-    -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
     text-decoration: none;
 
@@ -264,9 +236,7 @@ export const SmText = styled.div`
 export const Scrollbar2 = styled.div`
     padding: 240px 0 50px;
     overflow: auto;
-    -webkit-overflow-scrolling: touch;
     transform: translate3d(0, 0, 0);
-    -webkit-transform: translate3d(0, 0, 0);
     width: 100%;
     height: calc(100vh - 30px);
 
@@ -303,13 +273,8 @@ export const LsDivider = styled.div`
 `;
 
 export const LangSkills = styled.div`
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
 `;
 
@@ -362,11 +327,7 @@ export const HardSkillsItem = styled.div`
 `;
 
 export const SkillHeading = styled.div`
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
 `;
 
@@ -404,27 +365,14 @@ export const KnowledgeList = styled.ul`
 `;
 
 export const LinksFrame = styled.div`
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
 `;
 
 export const Socials = styled.div`
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0 35px;
     height: 50px;
@@ -435,7 +383,6 @@ export const Socials = styled.div`
     );
     position: absolute;
     bottom: 0;
-    -webkit-box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
     box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
     left: 0;
     width: 100%;
@@ -444,7 +391,6 @@ export const Socials = styled.div`
         color: var(--yellow);
     }
     a {
-        -webkit-transition: 0.2s ease-in-out;
         transition: 0.2s ease-in-out;
     }
 `;

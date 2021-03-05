@@ -12,6 +12,7 @@ import {
 import { storage, db, auth, provider } from "../firebase";
 import { Icon } from "react-icons-kit";
 import { powerOff } from "react-icons-kit/fa/powerOff";
+import { Helmet } from "react-helmet";
 
 function Login() {
     const [name, setName] = useState("");
@@ -111,107 +112,118 @@ function Login() {
         setToggleDialogue(false);
     };
     return (
-        <CreateDiv>
-            {JSON.parse(localStorage.getItem("imsamimalikSecurityId")) ===
-                process.env.REACT_APP_UID ||
-            user === process.env.REACT_APP_EMAIL ? (
-                <>
-                    <AdminPopup onClick={signOut}>
-                        <Icon icon={powerOff}></Icon>
-                    </AdminPopup>
-                    <FormContainer>
-                        <Form className="form" onSubmit={handleUpload}>
-                            <input
-                                onChange={(e) => setId(e.target.value)}
-                                value={id}
-                                type="number"
-                                min="0"
-                                max="1000"
-                                placeholder="Enter id"
-                                required
-                            />
-                            <input
-                                onChange={(e) => setName(e.target.value)}
-                                value={name}
-                                type="text"
-                                placeholder="Enter title"
-                                required
-                            />
-                            <input
-                                onChange={(e) => setFramework(e.target.value)}
-                                value={framework}
-                                type="text"
-                                placeholder="Enter framework"
-                                required
-                            />
-                            <input
-                                onChange={(e) => setLink(e.target.value)}
-                                value={link}
-                                type="text"
-                                placeholder="Enter link"
-                                required
-                            />
-                            <label className="file">
+        <>
+            <Helmet>
+                <title>Login - Sami Malik</title>
+            </Helmet>
+            <CreateDiv>
+                {JSON.parse(localStorage.getItem("imsamimalikSecurityId")) ===
+                    process.env.REACT_APP_UID ||
+                user === process.env.REACT_APP_EMAIL ? (
+                    <>
+                        <AdminPopup onClick={signOut}>
+                            <Icon icon={powerOff}></Icon>
+                        </AdminPopup>
+                        <FormContainer>
+                            <Form className="form" onSubmit={handleUpload}>
                                 <input
-                                    onChange={handleChange}
-                                    type="file"
+                                    onChange={(e) => setId(e.target.value)}
+                                    value={id}
+                                    type="number"
+                                    min="0"
+                                    max="1000"
+                                    placeholder="Enter id"
                                     required
                                 />
-                                <span className="file-custom">{filename}</span>
-                            </label>
-                            <textarea
-                                onChange={(e) => setDescription(e.target.value)}
-                                value={description}
-                                type="text"
-                                placeholder="Enter description"
-                                required
-                            ></textarea>
-                            <progress
-                                className="progress"
-                                value={progress}
-                                max="100"
-                            />
+                                <input
+                                    onChange={(e) => setName(e.target.value)}
+                                    value={name}
+                                    type="text"
+                                    placeholder="Enter title"
+                                    required
+                                />
+                                <input
+                                    onChange={(e) =>
+                                        setFramework(e.target.value)
+                                    }
+                                    value={framework}
+                                    type="text"
+                                    placeholder="Enter framework"
+                                    required
+                                />
+                                <input
+                                    onChange={(e) => setLink(e.target.value)}
+                                    value={link}
+                                    type="text"
+                                    placeholder="Enter link"
+                                    required
+                                />
+                                <label className="file">
+                                    <input
+                                        onChange={handleChange}
+                                        type="file"
+                                        required
+                                    />
+                                    <span className="file-custom">
+                                        {filename}
+                                    </span>
+                                </label>
+                                <textarea
+                                    onChange={(e) =>
+                                        setDescription(e.target.value)
+                                    }
+                                    value={description}
+                                    type="text"
+                                    placeholder="Enter description"
+                                    required
+                                ></textarea>
+                                <progress
+                                    className="progress"
+                                    value={progress}
+                                    max="100"
+                                />
 
-                            {successToggle && <Alert>Item added</Alert>}
-                            <button
-                                disabled={
-                                    !name ||
-                                    !framework ||
-                                    !id ||
-                                    !link ||
-                                    !image
-                                }
-                            >
-                                Submit
-                            </button>
-                        </Form>
-                    </FormContainer>
-                </>
-            ) : (
-                <GoogleBtn onClick={signIn}>
-                    <div className="google-icon-wrapper">
-                        <img
-                            className="google-icon"
-                            src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
-                            alt="google logo"
-                        />
-                    </div>
-                    <p className="btn-text">
-                        <b>Sign in with Google</b>
-                    </p>
-                </GoogleBtn>
-            )}
-            {user !== email && wrongUser && toggleDialogue ? (
-                <h1
-                    className="invalidUser"
-                    style={{ marginTop: "60px", zIndex: "999999999" }}
-                >
-                    You're not authorized to access this page.
-                </h1>
-            ) : (
-                ""
-            )}
-        </CreateDiv>
+                                {successToggle && <Alert>Item added</Alert>}
+                                <button
+                                    disabled={
+                                        !name ||
+                                        !framework ||
+                                        !id ||
+                                        !link ||
+                                        !image
+                                    }
+                                >
+                                    Submit
+                                </button>
+                            </Form>
+                        </FormContainer>
+                    </>
+                ) : (
+                    <GoogleBtn onClick={signIn}>
+                        <div className="google-icon-wrapper">
+                            <img
+                                className="google-icon"
+                                src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+                                alt="google logo"
+                            />
+                        </div>
+                        <p className="btn-text">
+                            <b>Sign in with Google</b>
+                        </p>
+                    </GoogleBtn>
+                )}
+                {user !== email && wrongUser && toggleDialogue ? (
+                    <h1
+                        className="invalidUser"
+                        style={{ marginTop: "60px", zIndex: "999999999" }}
+                    >
+                        You're not authorized to access this page.
+                    </h1>
+                ) : (
+                    ""
+                )}
+            </CreateDiv>
+        </>
     );
 }
 

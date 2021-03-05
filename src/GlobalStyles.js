@@ -100,22 +100,15 @@ span.form-control-wrap textarea:focus {
 
 .btn {
 	    text-transform: uppercase;
-    -webkit-box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
     box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
     color: #20202a;
     background: #ffc107;
     letter-spacing: 1.5px;
     font-weight: 600;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -ms-flex-line-pack: center;
     align-content: center;
     border: none;
-    -webkit-transition: .4s ease-in-out;
     transition: .4s ease-in-out;
 }
 
@@ -280,15 +273,10 @@ display: none;
     width: 100%;
     height: 70px;
     background: #20202a;
-    -webkit-box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
     box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
     padding: 0 30px;
     display: none;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -304,14 +292,8 @@ display: none;
     height: auto!important;
     background: #20202a;
     z-index: 999999;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -353,17 +335,13 @@ display: none;
     overflow: visible;
     overflow-x: hidden;
     position: relative;
-    -webkit-box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
     box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%)
 
 }
 
 #app .app-wrapper .app-container {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
 }
 
@@ -397,16 +375,13 @@ position: absolute;
 
 
         .menubar-btn.active span {
-            -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
 
             :before {
-                -webkit-transform: translate(0px, 5px) rotate(-90deg);
                 transform: translate(0px, 5px) rotate(-90deg);
             }
 
             :after {
-                -webkit-transform: translate(0px, -5px) rotate(-90deg);
                 transform: translate(0px, -5px) rotate(-90deg);
             }
         }
@@ -425,13 +400,11 @@ position: absolute;
     width: 100vw;
 	min-height: 100vh;
     padding-right: 80px;
-    -webkit-transition: .55s ease-in-out;
     transition: .55s ease-in-out;
 }
 
 @media(min-width:990px) {
 	.app-content.active {
-    -webkit-transform: translateX(-150px);
     transform: translateX(-150px);
 
 }
@@ -446,7 +419,6 @@ position: absolute;
     height: 100%;
     pointer-events: none;
     opacity: 0;
-    -webkit-transition: .55s ease-in-out;
     transition: .55s ease-in-out;
 }
 
@@ -481,23 +453,14 @@ position: absolute;
 .footer {
     width: 100%;
     padding: 20px 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     background: linear-gradient(159deg ,#2d2d3a 0%,#2b2b35 100%);
-    -webkit-box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
     box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
     font-size: 12px;
     color: #cacace;
-    -webkit-transition: .55s ease-in-out;
     transition: .55s ease-in-out;
     z-index: 9;
 }
@@ -507,8 +470,6 @@ position: absolute;
 	    padding: 0;
 	}
 	.mobile-Topbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 
 	}
@@ -554,12 +515,10 @@ position: absolute;
 
 @keyframes pulse{
 	0%{
-		-webkit-transform:scale(.6);
 		transform:scale(.6);
 		opacity:1;
 	}
 	100%{
-		-webkit-transform:scale(1);
 		transform:scale(1);
 		opacity:0
 	}

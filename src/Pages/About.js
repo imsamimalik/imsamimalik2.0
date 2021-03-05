@@ -2,9 +2,14 @@ import React from "react";
 import { SectionTitle } from "./HomeStyles";
 import { Timeline, Intro } from "./AboutStyles";
 import Footer from "../Components/Footer";
+import { Helmet } from "react-helmet";
+
 const About = () => {
     return (
         <>
+            <Helmet>
+                <title>About - Sami Malik</title>
+            </Helmet>
             <div
                 className="container-fluid"
                 style={{
