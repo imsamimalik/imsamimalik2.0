@@ -79,3 +79,27 @@ export const Timeline = styled.div`
         }
     }
 `;
+export const Intro = styled.div`
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+        padding: 0 25px;
+        .highlight {
+            color: var(--yellow);
+        }
+    }
+    ul.socials {
+        list-style: none;
+        margin-left: 10px;
+        margin-top: 15px;
+        padding: 0 25px;
+        font-size: 16px;
+        line-height: 1.6;
+        li {
+            line-height: 1.6;
+            a:hover {
+                color: var(--yellow);
+            }
+        }
+    }
+`;

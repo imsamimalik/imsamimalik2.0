@@ -161,7 +161,7 @@ function Login() {
                             </label>
                             <textarea
                                 onChange={(e) => setDescription(e.target.value)}
-                                value={framework}
+                                value={description}
                                 type="text"
                                 placeholder="Enter description"
                                 required

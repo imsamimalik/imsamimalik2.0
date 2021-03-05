@@ -43,7 +43,7 @@ const Portfolio = () => {
 
     useEffect(() => {
         const unsubscribe = db
-            .collection("web")
+            .collection("all")
             .orderBy("id", "asc")
             .onSnapshot((snapshot) => {
                 setWeb(snapshot.docs.map((doc) => doc.data()));
@@ -95,13 +95,6 @@ const Portfolio = () => {
                                         href="#"
                                         className="link"
                                     >
-                                        Wix
-                                    </Link>
-                                    <Link
-                                        onClick={handleClick}
-                                        href="#"
-                                        className="link"
-                                    >
                                         React
                                     </Link>
                                     <Link
@@ -110,7 +103,7 @@ const Portfolio = () => {
                                         data-filter=".category-drawings"
                                         className="link"
                                     >
-                                        Logos
+                                        Misc.
                                     </Link>
                                 </div>
                             </RightFrame>
@@ -137,7 +130,7 @@ const Portfolio = () => {
                                 <div className="item-description">
                                     <h5 className="mb-15">{item.title}</h5>
                                     <div className="mb-15">
-                                        Hotel management system webssite
+                                        {item.description}
                                     </div>
                                 </div>
                             </Item>

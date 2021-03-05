@@ -1,6 +1,6 @@
 import React from "react";
 import Contact from "./Pages/Contact";
-import History from "./Pages/History";
+import About from "./Pages/About";
 import Portfolio from "./Pages/Portfolio";
 import Home from "./Pages/Home";
 import Login from "./Pages/Login";
@@ -32,8 +32,8 @@ const Pages = () => {
                         <Route path="/contact" exact>
                             <Contact />
                         </Route>
-                        <Route path="/history" exact>
-                            <History />
+                        <Route path="/about" exact>
+                            <About />
                         </Route>
                         <Route path="/portfolio" exact>
                             <Portfolio />

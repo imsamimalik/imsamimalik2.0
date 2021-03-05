@@ -103,9 +103,9 @@ const MenuBar = () => {
                                     <NavLink
                                         exact
                                         activeClassName="selected"
-                                        to="/history"
+                                        to="/about"
                                     >
-                                        History
+                                        About
                                     </NavLink>
                                 </NavLi>
                                 <NavLi

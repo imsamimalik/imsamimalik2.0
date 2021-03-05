@@ -116,7 +116,6 @@ export const SectionTitle = styled.div`
         align-self: center;
         position: relative;
         margin-bottom: 30px;
-        max-width: 78%;
     }
     @media (max-width: 500px) {
         -webkit-box-orient: vertical;

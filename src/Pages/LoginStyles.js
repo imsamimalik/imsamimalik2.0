@@ -51,6 +51,7 @@ export const Form = styled.form`
         border: 1px solid #ccc;
         border-radius: 4px;
         margin-top: 5rem !important;
+        cursor: pointer;
         &:hover {
             background-color: #007cb6;
         }
@@ -230,6 +231,7 @@ export const GoogleBtn = styled.div`
     border-radius: 2px;
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
     transform: scale(2);
+    cursor: pointer;
     @media (max-width: 990px) {
         transform: scale(1.5);
     }

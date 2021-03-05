@@ -54,6 +54,12 @@ export const InfobarBtn = styled.span`
     pointer-events: all;
     font-size: 14px;
     padding: 30px;
+    i {
+        cursor: pointer;
+        :hover {
+            color: #fff;
+        }
+    }
 
     @media (max-width: 1032px) {
         transform: ${(props) =>
@@ -434,6 +440,9 @@ export const Socials = styled.div`
     left: 0;
     width: 100%;
     z-index: 999;
+    i:hover {
+        color: var(--yellow);
+    }
     a {
         -webkit-transition: 0.2s ease-in-out;
         transition: 0.2s ease-in-out;

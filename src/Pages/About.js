@@ -1,9 +1,142 @@
 import React from "react";
 import { SectionTitle } from "./HomeStyles";
-import { Timeline } from "./HistoryStyles";
-const History = () => {
+import { Timeline, Intro } from "./AboutStyles";
+import Footer from "../Components/Footer";
+const About = () => {
     return (
         <>
+            <div
+                className="container-fluid"
+                style={{
+                    overflow: "hidden",
+                    padding: "30px",
+                    position: "relative",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "start",
+                }}
+            >
+                <div className="row">
+                    <div className="col-lg-12">
+                        <SectionTitle className="section-title">
+                            <div className="title-frame">
+                                <h4 className="title-h">
+                                    <span> About me </span>
+                                </h4>
+                            </div>
+                        </SectionTitle>
+
+                        <Intro className="about">
+                            <p>
+                                Hey Folks, I am Akhtar Nadeem(better known as{" "}
+                                <span className="highlight">Sami Malik </span>{" "}
+                                ). A simple guy with a productive mindset, its
+                                my aim to help those around me. I have been in
+                                the web development industry and am surviving in
+                                this competitive era since 2013. Developing
+                                Robust and pitch perfect solutions for my
+                                clients is what I call an achievement. I
+                                expertise in modern frameworkds like ReactJS,
+                                SvelteJS, and ViewJS and MERN STACK. In addition
+                                to it, I have been developing captivating
+                                websites on wordpress too. I work with a single
+                                thing in my mind, "
+                                <span className="highlight">
+                                    The aim is to make a Customer, not a sale!
+                                </span>
+                                ". I currently work as a Freelancer on Fiverr
+                                and am doing my BSCS degree from FAST NUCES,
+                                Lahore.
+                            </p>
+                            <ul className="socials">
+                                <li>
+                                    <a
+                                        rel="noreferrer"
+                                        target="__blank"
+                                        aria-label="fiverr"
+                                        href="https://www.fiverr.com/akhtarnadeem"
+                                    >
+                                        fiverr
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        rel="noreferrer"
+                                        target="__blank"
+                                        aria-label="facebook"
+                                        href="https://www.facebook.com/imsamimalik"
+                                    >
+                                        facebook
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a
+                                        rel="noreferrer"
+                                        target="__blank"
+                                        aria-label="instagram"
+                                        href="https://www.instagram.com/imsamimalik"
+                                    >
+                                        instagram
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        rel="noreferrer"
+                                        target="__blank"
+                                        aria-label="github"
+                                        href="https://www.github.com/imsamimalik"
+                                    >
+                                        github
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        rel="noreferrer"
+                                        target="__blank"
+                                        aria-label="twitter"
+                                        href="https://www.twiter.com/imsamimalik"
+                                    >
+                                        twitter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        rel="noreferrer"
+                                        aria-label="codepen"
+                                        href="https://codepen.io/imsamimalik"
+                                    >
+                                        codepen
+                                    </a>
+                                </li>
+                            </ul>
+                        </Intro>
+                    </div>
+                </div>
+            </div>
+            <div
+                className="container-fluid"
+                style={{
+                    overflow: "hidden",
+                    padding: "30px",
+                    position: "relative",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "start",
+                }}
+            >
+                <div className="row">
+                    <div className="col-lg-12">
+                        <SectionTitle className="section-title">
+                            <div className="title-frame">
+                                <h4 className="title-h">
+                                    <span> Career </span>
+                                </h4>
+                            </div>
+                        </SectionTitle>
+                    </div>
+                </div>
+            </div>
             <div
                 className="container-fluid"
                 style={{
@@ -17,13 +150,6 @@ const History = () => {
             >
                 <div className="row">
                     <div className="col-lg-12">
-                        <SectionTitle className="section-title">
-                            <div className="title-frame">
-                                <h4 className="title-h">
-                                    <span> Career </span>
-                                </h4>
-                            </div>
-                        </SectionTitle>
                         <Timeline className="timeline gallery">
                             <div className="timeline-item">
                                 <div className="timeline-mark-light" />
@@ -35,12 +161,12 @@ const History = () => {
                                                 <span>Fiverr</span>
                                             </h5>
                                             <div className="el-suptitle mb-15">
-                                                <span> Freelancer </span>
+                                                <span>Freelancer</span>
                                             </div>
                                         </div>
                                         <div className="right-side">
                                             <span className="date">
-                                                <span>May 2020 - </span>
+                                                <span>May 2020 -</span>
                                             </span>
                                         </div>
                                     </div>
@@ -61,7 +187,7 @@ const History = () => {
                                                 <span>Internet</span>
                                             </h5>
                                             <div className="el-suptitle mb-15">
-                                                <span> Student </span>
+                                                <span>Student</span>
                                             </div>
                                         </div>
                                         <div className="right-side">
@@ -90,7 +216,7 @@ const History = () => {
                                                 <span>Internet</span>
                                             </h5>
                                             <div className="el-suptitle mb-15">
-                                                <span> Student </span>
+                                                <span>Student</span>
                                             </div>
                                         </div>
                                         <div className="right-side">
@@ -116,7 +242,7 @@ const History = () => {
                                                 <span>Internet</span>
                                             </h5>
                                             <div className="el-suptitle mb-15">
-                                                <span> Student </span>
+                                                <span>Student</span>
                                             </div>
                                         </div>
                                         <div className="right-side">
@@ -142,7 +268,7 @@ const History = () => {
                                                 <span>Internet</span>
                                             </h5>
                                             <div className="el-suptitle mb-15">
-                                                <span> Student </span>
+                                                <span>Student</span>
                                             </div>
                                         </div>
                                         <div className="right-side">
@@ -171,7 +297,7 @@ const History = () => {
                                                 <span>Internet</span>
                                             </h5>
                                             <div className="el-suptitle mb-15">
-                                                <span> Student </span>
+                                                <span>Student</span>
                                             </div>
                                         </div>
                                         <div className="right-side">
@@ -191,8 +317,9 @@ const History = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     );
 };
 
-export default History;
+export default About;
