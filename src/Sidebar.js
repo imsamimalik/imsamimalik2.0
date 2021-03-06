@@ -339,8 +339,8 @@ const Sidebar = ({ loaded }) => {
                         <LsDivider />
                         <LinksFrame className="p-15-15">
                             <a
-                                href="https://drive.google.com/"
-                                className="-link"
+                                href="https://drive.google.com/file/d/1egA24GYLZ9rEPuDAaPWh6NctVyreEoN9/"
+                                className="link"
                                 target="__blank"
                                 rel="noreferrer"
                             >

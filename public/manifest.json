@@ -1,6 +1,44 @@
 {
     "short_name": "imsamimalik",
     "name": "imsamimalik: Web app built using ReactJs",
+    "shortcuts": [
+        {
+            "name": "Home",
+            "short_name": "Home",
+            "description": "Home page",
+            "url": "/",
+            "icons": [{ "src": "/icons/icon-192x192.png", "sizes": "192x192" }]
+        },
+        {
+            "name": "Portfolio",
+            "short_name": "Portfolio",
+            "description": "Portfolio page",
+            "url": "/portfolio",
+            "icons": [{ "src": "/icons/icon-192x192.png", "sizes": "192x192" }]
+        },
+        {
+            "name": "About",
+            "short_name": "About",
+            "description": "About page",
+            "url": "/about",
+            "icons": [{ "src": "/icons/icon-192x192.png", "sizes": "192x192" }]
+        },
+        {
+            "name": "Contact",
+            "short_name": "Contact",
+            "description": "Contact page",
+            "url": "/contact",
+            "icons": [{ "src": "/icons/icon-192x192.png", "sizes": "192x192" }]
+        },
+        {
+            "name": "Login",
+            "short_name": "Login",
+            "description": "Login page",
+            "url": "/login",
+            "icons": [{ "src": "/icons/icon-192x192.png", "sizes": "192x192" }]
+        }
+    ],
+
     "icons": [
         {
             "src": "icons/icon-72x72.png",
