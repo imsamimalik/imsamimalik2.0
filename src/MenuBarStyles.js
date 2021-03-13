@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const MenubarContainer = styled.div`
     position: absolute;
     right: 0;
+    z-index: 99999;
     width: ${(props) => (props.active ? "150px" : "80px")};
     transition: 0.55s ease-in-out;
     height: calc(100vh - 30px);
