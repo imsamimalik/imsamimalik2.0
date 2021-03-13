@@ -154,12 +154,14 @@ const Sidebar = ({ loaded }) => {
                                 >
                                     <SVGProgressCircle offset={0} />
                                     <ProgressbarText>
-                                        <CountUp
-                                            redraw={true}
-                                            delay={1.75}
-                                            duration={0.85}
-                                            end={100}
-                                        />
+                                        {loaded && (
+                                            <CountUp
+                                                redraw={true}
+                                                delay={1.75}
+                                                duration={0.85}
+                                                end={100}
+                                            />
+                                        )}
                                     </ProgressbarText>
                                 </CircleProgress>
                                 <h6>Urdu</h6>
@@ -172,12 +174,14 @@ const Sidebar = ({ loaded }) => {
                                 >
                                     <SVGProgressCircle offset={10} />
                                     <ProgressbarText>
-                                        <CountUp
-                                            redraw={true}
-                                            delay={1.75}
-                                            duration={0.85}
-                                            end={90}
-                                        />
+                                        {loaded && (
+                                            <CountUp
+                                                redraw={true}
+                                                delay={1.75}
+                                                duration={0.85}
+                                                end={90}
+                                            />
+                                        )}
                                     </ProgressbarText>
                                 </CircleProgress>
                                 <h6>Hindi</h6>
@@ -190,12 +194,14 @@ const Sidebar = ({ loaded }) => {
                                 >
                                     <SVGProgressCircle offset={25} />
                                     <ProgressbarText>
-                                        <CountUp
-                                            redraw={true}
-                                            delay={1.75}
-                                            duration={0.85}
-                                            end={75}
-                                        />
+                                        {loaded && (
+                                            <CountUp
+                                                redraw={true}
+                                                delay={1.75}
+                                                duration={0.85}
+                                                end={75}
+                                            />
+                                        )}
                                     </ProgressbarText>
                                 </CircleProgress>
                                 <h6>English</h6>
@@ -217,12 +223,14 @@ const Sidebar = ({ loaded }) => {
                                     >
                                         <SVGProgressHR offset={15} />
                                         <SkillsProgressText>
-                                            <CountUp
-                                                redraw={true}
-                                                delay={1.75}
-                                                duration={0.85}
-                                                end={85}
-                                            />
+                                            {loaded && (
+                                                <CountUp
+                                                    redraw={true}
+                                                    delay={1.75}
+                                                    duration={0.85}
+                                                    end={85}
+                                                />
+                                            )}
                                             %
                                         </SkillsProgressText>
                                     </div>
@@ -242,12 +250,14 @@ const Sidebar = ({ loaded }) => {
                                     >
                                         <SVGProgressHR offset={5} />
                                         <SkillsProgressText>
-                                            <CountUp
-                                                redraw={true}
-                                                delay={1.75}
-                                                duration={0.85}
-                                                end={95}
-                                            />
+                                            {loaded && (
+                                                <CountUp
+                                                    redraw={true}
+                                                    delay={1.75}
+                                                    duration={0.85}
+                                                    end={95}
+                                                />
+                                            )}
                                             %
                                         </SkillsProgressText>
                                     </div>
@@ -267,12 +277,14 @@ const Sidebar = ({ loaded }) => {
                                     >
                                         <SVGProgressHR offset={25} />
                                         <SkillsProgressText>
-                                            <CountUp
-                                                redraw={true}
-                                                delay={1.75}
-                                                duration={0.85}
-                                                end={75}
-                                            />
+                                            {loaded && (
+                                                <CountUp
+                                                    redraw={true}
+                                                    delay={1.75}
+                                                    duration={0.85}
+                                                    end={75}
+                                                />
+                                            )}
                                             %
                                         </SkillsProgressText>
                                     </div>
@@ -292,12 +304,14 @@ const Sidebar = ({ loaded }) => {
                                     >
                                         <SVGProgressHR offset={35} />
                                         <SkillsProgressText>
-                                            <CountUp
-                                                redraw={true}
-                                                delay={1.75}
-                                                duration={0.85}
-                                                end={65}
-                                            />
+                                            {loaded && (
+                                                <CountUp
+                                                    redraw={true}
+                                                    delay={1.75}
+                                                    duration={0.85}
+                                                    end={65}
+                                                />
+                                            )}
                                             %
                                         </SkillsProgressText>
                                     </div>
@@ -317,12 +331,14 @@ const Sidebar = ({ loaded }) => {
                                     >
                                         <SVGProgressHR offset={15} />
                                         <SkillsProgressText>
-                                            <CountUp
-                                                redraw={true}
-                                                delay={1.75}
-                                                duration={0.85}
-                                                end={85}
-                                            />
+                                            {loaded && (
+                                                <CountUp
+                                                    redraw={true}
+                                                    delay={1.75}
+                                                    duration={0.85}
+                                                    end={85}
+                                                />
+                                            )}
                                             %
                                         </SkillsProgressText>
                                     </div>

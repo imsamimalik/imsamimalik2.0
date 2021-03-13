@@ -55,7 +55,7 @@ export const Item = styled.div`
         filter: brightness(100%) blur(0px) !important;
     }
     @media (max-width: 990px) {
-        height: 350px !important;
+        height: 325px !important;
 
         .item-description {
             transform: translateY(0) !important;
