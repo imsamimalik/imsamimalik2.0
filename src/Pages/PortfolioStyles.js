@@ -52,7 +52,7 @@ export const Item = styled.div`
 
     :hover img {
         transform: scale(1.1);
-        filter: brightness(100%) blur(0px);
+        filter: brightness(100%) blur(0px) !important;
     }
     @media (max-width: 990px) {
         height: 350px !important;
@@ -65,8 +65,9 @@ export const Item = styled.div`
         }
         img {
             transform: scale(1);
-            filter: brightness(100%) blur(0px);
-            padding-bottom: 100px;
+            filter: brightness(100%) blur(0px) !important;
+            padding-bottom: 75px;
+            object-fit: contain !important;
         }
     }
     .item-description {
