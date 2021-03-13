@@ -1,6 +1,6 @@
 {
     "short_name": "imsamimalik",
-    "name": "imsamimalik: Web app built using ReactJs",
+    "name": "imsamimalik: Portfolio Web app",
     "shortcuts": [
         {
             "name": "Home",
@@ -89,7 +89,7 @@
             "purpose": "any maskable"
         }
     ],
-    "start_url": ".",
+    "start_url": "/",
     "display": "standalone",
     "theme_color": "#fff",
     "background_color": "#000"
