@@ -42,6 +42,7 @@ export const Item = styled.div`
     padding: 20px;
     width: 450px;
     height: 250px;
+    cursor: pointer;
     :hover {
         box-shadow: 0 15px 35px rgb(255 255 255 / 6%);
     }
@@ -51,8 +52,11 @@ export const Item = styled.div`
 
     :hover img {
         transform: scale(1.1);
+        filter: brightness(100%) blur(0px);
     }
     @media (max-width: 990px) {
+        height: 350px !important;
+
         .item-description {
             transform: translateY(0) !important;
             h5 {
@@ -61,6 +65,8 @@ export const Item = styled.div`
         }
         img {
             transform: scale(1);
+            filter: brightness(100%) blur(0px);
+            padding-bottom: 100px;
         }
     }
     .item-description {
