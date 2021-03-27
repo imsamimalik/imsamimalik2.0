@@ -42,7 +42,7 @@ const Slider = () => {
                                 <div className="testimonial-body">
                                     <img
                                         className="testimonial-face"
-                                        src="https://bslthemes.com/arter-wp/wp-content/uploads/2020/09/testimonial-1-140x140.jpg"
+                                        src="./images/testimonial.jpg"
                                         alt="Paul Trueman"
                                     />
                                     <h5>

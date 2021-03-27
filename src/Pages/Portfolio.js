@@ -59,7 +59,7 @@ const Portfolio = () => {
     return (
         <>
             <Helmet>
-                <title>Portfolio - Sami Malik</title>
+                <title>Portfolio - imsamimalik</title>
             </Helmet>
             <div
                 className="container-fluid"

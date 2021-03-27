@@ -114,7 +114,7 @@ function Login() {
     return (
         <>
             <Helmet>
-                <title>Login - Sami Malik</title>
+                <title>Login - imsamimalik</title>
             </Helmet>
             <CreateDiv>
                 {JSON.parse(localStorage.getItem("imsamimalikSecurityId")) ===

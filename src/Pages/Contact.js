@@ -8,7 +8,7 @@ const Contact = () => {
     return (
         <>
             <Helmet>
-                <title>Contact - Sami Malik</title>
+                <title>Contact - imsamimalik</title>
             </Helmet>
             <Container className="containerr">
                 <BoxConainer className="container-fluid">

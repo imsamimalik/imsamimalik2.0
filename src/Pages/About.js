@@ -8,7 +8,7 @@ const About = () => {
     return (
         <>
             <Helmet>
-                <title>About - Sami Malik</title>
+                <title>About - imsamimalik</title>
             </Helmet>
             <div
                 className="container-fluid"
