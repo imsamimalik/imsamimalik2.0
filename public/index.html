@@ -43,13 +43,26 @@
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
         <link rel="stylesheet" href="./bootstrap-grid.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
+        <!-- <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
-        />
+        /> -->
         <link
+            rel="preload"
+            as="style"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            onload="this.rel='stylesheet'"
+        />
+
+        <!-- <link
             href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap"
             rel="stylesheet"
+        /> -->
+        <link
+            rel="preload"
+            as="style"
+            href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap"
+            onload="this.rel='stylesheet'"
         />
 
         <title>Sami Malik</title>

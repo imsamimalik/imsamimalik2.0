@@ -97,12 +97,12 @@ const Sidebar = ({ loaded }) => {
                                         allowRotate={false}
                                         allowReset={false}
                                         title="Sami Malik"
-                                        image="https://pbs.twimg.com/profile_images/1319999810884292608/Yr9JnFXw_400x400.jpg"
+                                        image="./images/avatar.jpg"
                                         onClose={handleLightBox}
                                     />
                                 )}
                                 <AvatarCurtainImg
-                                    src="https://pbs.twimg.com/profile_images/1319999810884292608/Yr9JnFXw_400x400.jpg"
+                                    src="./images/avatar.jpg"
                                     alt="avatar"
                                 />
                                 <AvatarCurtainExpand
