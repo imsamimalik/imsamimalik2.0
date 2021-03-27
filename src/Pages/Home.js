@@ -10,6 +10,9 @@ import {
     OrderNow,
     ServiceBox,
     SectionTitle,
+    H6,
+    H5,
+    H4,
 } from "./HomeStyles";
 import { Helmet } from "react-helmet";
 import {
@@ -198,9 +201,9 @@ const Home = () => {
                                     suffix="+"
                                 ></CountUp>
                             </div>
-                            <h6>
+                            <H6>
                                 <span> Years Experience </span>
-                            </h6>
+                            </H6>
                         </CounterFrame>
                     </div>
                     <div className="col-md-3 col-6">
@@ -214,9 +217,9 @@ const Home = () => {
                                     suffix="+"
                                 ></CountUp>
                             </div>
-                            <h6>
+                            <H6>
                                 <span> Completed Projects </span>
-                            </h6>
+                            </H6>
                         </CounterFrame>
                     </div>
                     <div className="col-md-3 col-6">
@@ -230,9 +233,9 @@ const Home = () => {
                                     suffix="+"
                                 ></CountUp>
                             </div>
-                            <h6>
+                            <H6>
                                 <span> Happy Customers </span>
-                            </h6>
+                            </H6>
                         </CounterFrame>
                     </div>
                     <div className="col-md-3 col-6">
@@ -245,9 +248,9 @@ const Home = () => {
                                     end={1}
                                 ></CountUp>
                             </div>
-                            <h6>
+                            <H6>
                                 <span> Level Seller </span>
-                            </h6>
+                            </H6>
                         </CounterFrame>
                     </div>
                 </div>
@@ -264,18 +267,18 @@ const Home = () => {
                     <div className="col-lg-12">
                         <SectionTitle className="section-title">
                             <div className="title-frame">
-                                <h4 className="title-h">
+                                <H4 className="title-h">
                                     <span> My Services </span>
-                                </h4>
+                                </H4>
                             </div>
                         </SectionTitle>
                     </div>
                     <div className="col-lg-4 col-md-6">
                         <ServiceBox className="service-icon-box">
                             <div className="service-ib-content">
-                                <h5 className="mb-15">
+                                <H5 className="mb-15">
                                     <span> WordPress Websites </span>
-                                </h5>
+                                </H5>
                                 <div className="mb-15">
                                     <div>
                                         <p>
@@ -301,9 +304,9 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6">
                         <ServiceBox className="service-icon-box">
                             <div className="service-ib-content">
-                                <h5 className="mb-15">
+                                <H5 className="mb-15">
                                     <span> Custom Web apps </span>
-                                </h5>
+                                </H5>
                                 <div className="mb-15">
                                     <div>
                                         <p>
@@ -329,9 +332,9 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6">
                         <ServiceBox className="service-icon-box">
                             <div className="service-ib-content">
-                                <h5 className="mb-15">
+                                <H5 className="mb-15">
                                     <span> Mobile Apps </span>
-                                </h5>
+                                </H5>
                                 <div className="mb-15">
                                     <div>
                                         <p>
@@ -357,9 +360,9 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6">
                         <ServiceBox className="service-icon-box">
                             <div className="service-ib-content">
-                                <h5 className="mb-15">
+                                <H5 className="mb-15">
                                     <span> CMS Websites </span>
-                                </h5>
+                                </H5>
                                 <div className="mb-15">
                                     <div>
                                         <p>
@@ -385,9 +388,9 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6">
                         <ServiceBox className="service-icon-box">
                             <div className="service-ib-content">
-                                <h5 className="mb-15">
-                                    <span>Graphics Customization</span>
-                                </h5>
+                                <H5 className="mb-15">
+                                    <span>Graphics Design</span>
+                                </H5>
                                 <div className="mb-15">
                                     <div>
                                         <p>
@@ -412,9 +415,9 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6">
                         <ServiceBox className="service-icon-box">
                             <div className="service-ib-content">
-                                <h5 className="mb-15">
+                                <H5 className="mb-15">
                                     <span>Social media Marketing</span>
-                                </h5>
+                                </H5>
                                 <div className="mb-15">
                                     <div>
                                         <p>

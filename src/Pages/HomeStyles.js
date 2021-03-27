@@ -148,3 +148,20 @@ export const OrderNow = styled(Link)`
         transition: 0.4s ease-in-out;
     }
 `;
+export const H6 = styled.h1`
+    all: reset;
+    font-size: 13px;
+    font-weight: 400;
+`;
+
+export const H4 = styled.h2`
+    all: reset;
+    font-size: 17px;
+    font-weight: 600;
+`;
+
+export const H5 = styled.h3`
+    all: reset;
+    font-size: 14px;
+    font-weight: 600;
+`;
