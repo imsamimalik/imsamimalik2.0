@@ -6,7 +6,7 @@ import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import { Route, Switch, useLocation } from "react-router-dom";
 import { useTransition, animated } from "react-spring";
-import loadable from "@loadable/component";
+//import loadable from "@loadable/component";
 
 // const Contact = loadable(() => import("./Pages/Contact"));
 // const About = loadable(() => import("./Pages/About"));

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import loadable from "@loadable/component";
+///import loadable from "@loadable/component";
 import Sidebar from "./Sidebar";
 import MenuBar from "./MenuBar";
 import Pages from "./Pages";
