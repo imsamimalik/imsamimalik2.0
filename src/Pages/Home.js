@@ -102,10 +102,7 @@ const Home = () => {
                             <BannerOverlay className="banner-overlay">
                                 <BannerTitle className="banner-title">
                                     <h1 className="mb-15">
-                                        <span>
-                                            Discover my Amazing <br />
-                                            Art Space!
-                                        </span>
+                                        <span>Hello World, I'm alive!</span>
                                     </h1>
                                     <div className="lg-text code mb-25">
                                         <span>

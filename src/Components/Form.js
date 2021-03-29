@@ -6,6 +6,10 @@ import { at } from "react-icons-kit/fa/at";
 import { envelope } from "react-icons-kit/fa/envelope";
 import emailjs from "emailjs-com";
 import { init } from "emailjs-com";
+import swal from "sweetalert";
+
+const successful = () => {};
+
 init("user_wxSGCTapbDZGX7QVFzibc");
 
 const Form = () => {
@@ -23,13 +27,12 @@ const Form = () => {
                 "user_wxSGCTapbDZGX7QVFzibc"
             )
             .then((res) => {
-                console.log("Email successfully sent!");
+                swal({ text: "Email successfully sent!", icon: "success" });
             })
             .catch((err) =>
-                console.error(
-                    "Oh well, you failed. Here some thoughts on the error that occured:",
-                    err
-                )
+                swal("Oops!", "Something went wrong!", "error", {
+                    icon: "error",
+                })
             );
     };
 
@@ -124,14 +127,14 @@ const Form = () => {
                             </button>
                         </SubmitFrame>
                     </div>
-                    {show && (
+                    {/* {show && (
                         <ResponseOutput
                             className="response-output"
                             aria-hidden="true"
                         >
                             Email sent successsfully!
                         </ResponseOutput>
-                    )}
+                    )} */}
                 </form>
             </div>
         </Card>

@@ -42,7 +42,7 @@ const Contact = () => {
                                         <ul>
                                             <li>
                                                 <strong>Email:</strong>{" "}
-                                                hello@imsamimalik.com
+                                                hi@imsamimalik.com
                                             </li>
                                             <li>
                                                 <strong>Github:</strong>{" "}

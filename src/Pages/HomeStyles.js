@@ -63,10 +63,10 @@ export const BannerPhoto = styled.img`
     right: 30px;
     bottom: 0;
     @media (max-width: 1600px) {
-        width: 360px;
+        width: 340px;
     }
     @media (max-width: 1400px) {
-        width: 320px;
+        width: 300px;
     }
     @media (max-width: 990px) {
         display: none;
