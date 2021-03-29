@@ -180,7 +180,7 @@ const Home = () => {
                                     </div>
                                 </BannerTitle>
                                 <BannerPhoto
-                                    src="./images/me.png"
+                                    src="./images/me.webp"
                                     className="banner-photo"
                                     alt="Profile Pic"
                                 />
