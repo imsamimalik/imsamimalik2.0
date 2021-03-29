@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { Card, FormField, ResponseOutput, SubmitFrame } from "./FormStyles";
+import {
+    Card,
+    FormField,
+    //ResponseOutput,
+    SubmitFrame,
+} from "./FormStyles";
 import { Icon } from "react-icons-kit";
 import { user } from "react-icons-kit/fa/user";
 import { at } from "react-icons-kit/fa/at";
@@ -8,15 +13,13 @@ import emailjs from "emailjs-com";
 import { init } from "emailjs-com";
 import swal from "sweetalert";
 
-const successful = () => {};
-
 init("user_wxSGCTapbDZGX7QVFzibc");
 
 const Form = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
-    const [show, setShow] = useState(false);
+    //const [show, setShow] = useState(false);
 
     const sendFeedback = (serviceId, templateId, variables) => {
         emailjs
@@ -46,11 +49,11 @@ const Form = () => {
             from_name: name,
             reply_to: email,
         });
-        setShow(true);
+        //setShow(true);
         setName("");
         setEmail("");
         setMessage("");
-        setTimeout(() => setShow(false), 2000);
+        //setTimeout(() => setShow(false), 2000);
     };
 
     return (
