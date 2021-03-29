@@ -1,6 +1,5 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Autoplay } from "swiper";
 import "swiper/swiper-bundle.min.css";
 import { SectionTitle } from "../Pages/HomeStyles";
 import { Testimonial } from "./SliderStyles";
@@ -8,8 +7,6 @@ import { Icon } from "react-icons-kit/";
 import { star } from "react-icons-kit/fa/star";
 
 const Slider = () => {
-    SwiperCore.use([Autoplay]);
-
     return (
         <>
             <div
@@ -34,8 +31,6 @@ const Slider = () => {
                         className="col-lg-12"
                         spaceBetween={25}
                         slidesPerView={1}
-                        autoplay={{ delay: 3000 }}
-                        loop={true}
                         breakpoints={{
                             768: {
                                 slidesPerView: 2,

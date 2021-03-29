@@ -1,8 +1,13 @@
 import React from "react";
+
 import Footer from "../Components/Footer";
-import Form from "../Components/Form";
+//import Form from "../Components/Form";
+
 import { Box, BoxConainer, Container, Title, Table } from "./ContactStyles";
 import { Helmet } from "react-helmet";
+
+import loadable from "@loadable/component";
+const Form = loadable(() => import("../Components/Form"));
 
 const Contact = () => {
     return (

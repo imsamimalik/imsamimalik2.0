@@ -1,48 +1,47 @@
 {
-  "name": "imsamimalik",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@loadable/component": "^5.14.1",
-    "emailjs-com": "^2.6.4",
-    "firebase": "^8.2.9",
-    "react": "^17.0.1",
-    "react-awesome-lightbox": "^1.7.3",
-    "react-countup": "^4.3.3",
-    "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0",
-    "react-icons-kit": "^1.3.1",
-    "react-router-dom": "^5.2.0",
-    "react-router-transition": "^2.1.0",
-    "react-scripts": "4.0.3",
-    "react-spring": "^8.0.27",
-    "react-typewriter-effect": "^1.0.2",
-    "styled-components": "^5.2.1",
-    "sweetalert": "^2.1.2",
-    "swiper": "^6.5.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "name": "imsamimalik",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@loadable/component": "^5.14.1",
+        "emailjs-com": "^2.6.4",
+        "firebase": "^8.2.9",
+        "react": "^17.0.1",
+        "react-awesome-lightbox": "^1.7.3",
+        "react-countup": "^4.3.3",
+        "react-dom": "^17.0.1",
+        "react-helmet": "^6.1.0",
+        "react-icons-kit": "^1.3.1",
+        "react-router-dom": "^5.2.0",
+        "react-router-transition": "^2.1.0",
+        "react-scripts": "4.0.3",
+        "react-spring": "^8.0.27",
+        "react-typewriter-effect": "^1.0.2",
+        "styled-components": "^5.2.1",
+        "sweetalert": "^2.1.2"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
 }
