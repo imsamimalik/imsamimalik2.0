@@ -34,13 +34,10 @@ import TypeWriterEffect from "react-typewriter-effect";
 import CountUp from "react-countup";
 import { chevronRight } from "react-icons-kit/fa/chevronRight";
 import { Icon } from "react-icons-kit";
-//import Slider from "../Components/Slider";
+import Slider from "../Components/Slider";
 
 import Footer from "../Components/Footer";
 import { expand } from "react-icons-kit/fa/expand";
-
-import loadable from "@loadable/component";
-const Slider = loadable(() => import("../Components/Slider"));
 
 const Home = () => {
     const [lightBox, setLightBox] = useState(false);
