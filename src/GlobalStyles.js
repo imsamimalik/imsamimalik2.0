@@ -7,10 +7,6 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 :root {
-	--e-global-color-primary: #6ec1e4;
-    --e-global-color-secondary: #54595f;
-    --e-global-color-text: #7a7a7a;
-    --e-global-color-accent: #61ce70;
 		--blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -147,7 +143,7 @@ span, span::before,span::after {
     color: #ffc107;
 	}
 	* {
-		font-family: "Courier Prime",monospace;
+		font-family: monospace;
 	}
 
 }
@@ -167,7 +163,7 @@ a.selected {
 	    color: #fafafc;
 }
 
-body, a, .table, .link, .preloader .preloader-content .preloader-load .progressbar-text, .info-bar .header .avatar .lamp-light .available-lamp:after, .info-bar .lang-skills .lang-skills-item .cirkle-progress .progressbar-text, .info-bar .hard-skills .hard-skills-item .line-progress .progressbar-text, .info-bar .knowledge-list li, .info-bar .ls-social a, .menu-bar nav .main-menu .menu-item a, .menu-bar nav .main-menu .menu-item.current-menu-item .sub-menu .menu-item a, .menu-bar nav .main-menu .menu-item.current-menu-parent .sub-menu .menu-item a, .contact-form label, .pagination span.dots, .footer, .filter a, .wp-block-categories-list li, .wp-block-archives-list li, .widget.widget_nav_menu ul li, .widget.widget_pages ul li, .widget_categories ul li, .comment-info, .blog-card .project-category {
+body, a, .table, .link, .preloader .preloader-content .preloader-load .progressbar-text, .info-bar .header .avatar .lamp-light .available-lamp:after, .info-bar .lang-skills .lang-skills-item .cirkle-progress .progressbar-text, .info-bar .hard-skills .hard-skills-item .line-progress .progressbar-text, .info-bar .knowledge-list li, .info-bar .ls-social a, .menu-bar nav .main-menu .menu-item a, .menu-bar nav .main-menu .menu-item.current-menu-item .sub-menu .menu-item a, .menu-bar nav .main-menu .menu-item.current-menu-parent .sub-menu .menu-item a, .contact-form label, .pagination span.dots, .footer, .filter a{
 	    color: #8c8c8e;
 }
 
