@@ -1,6 +1,14 @@
 {
     "short_name": "imsamimalik",
-    "name": "it's not just a name.",
+    "name": "imsamimalik - it's not just a name",
+    "description": "Portfolio web app created with ❤",
+
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#fff",
+    "background_color": "#000",
+    "scope": "/",
+
     "shortcuts": [
         {
             "name": "Home",
@@ -89,8 +97,26 @@
             "purpose": "any maskable"
         }
     ],
-    "start_url": "/",
-    "display": "standalone",
-    "theme_color": "#fff",
-    "background_color": "#000"
+    "screenshots": [
+        {
+            "src": "images/home.png",
+            "size": "1356X1403",
+            "type": "img/png"
+        },
+        {
+            "src": "images/portfolio.png",
+            "size": "1346X1618",
+            "type": "img/png"
+        },
+        {
+            "src": "images/contact.png",
+            "size": "1356X909",
+            "type": "img/png"
+        },
+        {
+            "src": "images/login.png",
+            "size": "1356X665",
+            "type": "img/png"
+        }
+    ]
 }

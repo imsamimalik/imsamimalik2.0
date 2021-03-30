@@ -180,6 +180,7 @@ const Home = () => {
                                     </div>
                                 </BannerTitle>
                                 <BannerPhoto
+                                    loading="lazy"
                                     src="./images/me.webp"
                                     className="banner-photo"
                                     alt="Profile Pic"

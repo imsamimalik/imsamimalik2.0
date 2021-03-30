@@ -41,6 +41,7 @@ const Slider = () => {
                             <Testimonial className="testimonial">
                                 <div className="testimonial-body">
                                     <img
+                                        loading="lazy"
                                         className="testimonial-face"
                                         src="./images/testimonial.jpg"
                                         alt="Paul Trueman"
@@ -89,6 +90,7 @@ const Slider = () => {
                             <Testimonial className="testimonial">
                                 <div className="testimonial-body">
                                     <img
+                                        loading="lazy"
                                         className="testimonial-face"
                                         src="./images/paulharrington.jpg"
                                         alt="Paul Harrington"
@@ -139,6 +141,7 @@ const Slider = () => {
                             <Testimonial className="testimonial">
                                 <div className="testimonial-body">
                                     <img
+                                        loading="lazy"
                                         className="testimonial-face"
                                         src="./images/addypolani.jpg"
                                         alt="Paul Trueman"
@@ -188,6 +191,7 @@ const Slider = () => {
                             <Testimonial className="testimonial">
                                 <div className="testimonial-body">
                                     <img
+                                        loading="lazy"
                                         className="testimonial-face"
                                         src="./images/drago_1.jpg"
                                         alt="drago_1"
