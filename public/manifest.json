@@ -99,24 +99,24 @@
     ],
     "screenshots": [
         {
-            "src": "images/home.png",
-            "size": "1356X1403",
-            "type": "img/png"
+            "src": "images/home.webp",
+            "size": "1356X678",
+            "type": "img/webp"
         },
         {
-            "src": "images/portfolio.png",
-            "size": "1346X1618",
-            "type": "img/png"
+            "src": "images/portfolio.webp",
+            "size": "1346X673",
+            "type": "img/webp"
         },
         {
-            "src": "images/contact.png",
-            "size": "1356X909",
-            "type": "img/png"
+            "src": "images/contact.webp",
+            "size": "1356X678",
+            "type": "img/webp"
         },
         {
-            "src": "images/login.png",
+            "src": "images/login.webp",
             "size": "1356X665",
-            "type": "img/png"
+            "type": "img/webp"
         }
     ]
 }

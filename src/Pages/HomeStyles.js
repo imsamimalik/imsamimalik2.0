@@ -55,6 +55,9 @@ export const BannerTitle = styled.div`
     }
     @media (max-width: 1032px) {
         text-align: center;
+        h1 {
+            font-size: 22px;
+        }
     }
 `;
 export const BannerPhoto = styled.img`
