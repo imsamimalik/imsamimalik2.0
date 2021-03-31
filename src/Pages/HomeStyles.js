@@ -59,6 +59,12 @@ export const BannerTitle = styled.div`
             font-size: 22px;
         }
     }
+	 @media (max-width: 500px) {
+        text-align: center;
+        h1 {
+            font-size: 17px;
+        }
+    }
 `;
 export const BannerPhoto = styled.img`
     width: 390px;

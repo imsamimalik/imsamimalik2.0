@@ -47,7 +47,7 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>imsamimalik - it's not just name.</title>
+                <title>imsamimalik - it's not just a name</title>
             </Helmet>
 
             <div

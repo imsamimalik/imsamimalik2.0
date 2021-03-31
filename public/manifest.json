@@ -2,6 +2,7 @@
     "short_name": "imsamimalik",
     "name": "imsamimalik - it's not just a name",
     "description": "Portfolio web app created with ❤",
+    "categories": ["portfolio", "web developer", "react", "firebase"],
 
     "start_url": "/",
     "display": "standalone",
