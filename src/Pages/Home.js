@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import {
@@ -21,15 +21,12 @@ import {
     Avatar,
     AvatarCurtain,
     AvatarCurtainImg,
-    AvatarCurtainExpand,
     LampLight,
     AvailableLamp,
     Name,
     NameA,
     SmText,
 } from "../SidebarStyles";
-import Lightbox from "react-awesome-lightbox";
-import "react-awesome-lightbox/build/style.css";
 import TypeWriterEffect from "react-typewriter-effect";
 import CountUp from "react-countup";
 import { chevronRight } from "react-icons-kit/fa/chevronRight";
@@ -37,13 +34,8 @@ import { Icon } from "react-icons-kit";
 import Slider from "../Components/Slider";
 
 import Footer from "../Components/Footer";
-import { expand } from "react-icons-kit/fa/expand";
 
 const Home = () => {
-    const [lightBox, setLightBox] = useState(false);
-
-    const handleLightBox = () => setLightBox((prev) => !prev);
-
     return (
         <>
             <Helmet>
@@ -63,23 +55,9 @@ const Home = () => {
                         <Header className="mobile">
                             <Avatar>
                                 <AvatarCurtain>
-                                    {lightBox && (
-                                        <Lightbox
-                                            clickOutsideToClose={true}
-                                            allowRotate={false}
-                                            allowReset={false}
-                                            title="Sami Malik"
-                                            image="./images/avatar.jpg"
-                                            onClose={handleLightBox}
-                                        />
-                                    )}
                                     <AvatarCurtainImg
                                         src="./images/avatar.jpg"
                                         alt="avatar"
-                                    />
-                                    <AvatarCurtainExpand
-                                        icon={expand}
-                                        onClick={handleLightBox}
                                     />
                                 </AvatarCurtain>
                                 <LampLight>

@@ -10,7 +10,6 @@ import {
     Avatar,
     AvatarCurtain,
     AvatarCurtainImg,
-    AvatarCurtainExpand,
     LampLight,
     AvailableLamp,
     Name,
@@ -43,12 +42,8 @@ import { github } from "react-icons-kit/fa/github";
 import { instagram } from "react-icons-kit/fa/instagram";
 import { twitter } from "react-icons-kit/fa/twitter";
 import { stackOverflow } from "react-icons-kit/fa/stackOverflow";
-import Lightbox from "react-awesome-lightbox";
-import "react-awesome-lightbox/build/style.css";
-
 const Sidebar = ({ loaded }) => {
     const [active, setActive] = useState(false);
-    const [lightBox, setLightBox] = useState(false);
     const [age, setAge] = useState(18);
 
     const getAge = (dob) => {
@@ -76,7 +71,6 @@ const Sidebar = ({ loaded }) => {
     }, []);
 
     const handleClick = () => setActive((prev) => !prev);
-    const handleLightBox = () => setLightBox((prev) => !prev);
 
     return (
         <>
@@ -91,23 +85,9 @@ const Sidebar = ({ loaded }) => {
                     <Header>
                         <Avatar>
                             <AvatarCurtain>
-                                {lightBox && (
-                                    <Lightbox
-                                        clickOutsideToClose={true}
-                                        allowRotate={false}
-                                        allowReset={false}
-                                        title="Sami Malik"
-                                        image="./images/avatar.jpg"
-                                        onClose={handleLightBox}
-                                    />
-                                )}
                                 <AvatarCurtainImg
                                     src="./images/avatar.jpg"
                                     alt="avatar"
-                                />
-                                <AvatarCurtainExpand
-                                    icon={expand}
-                                    onClick={handleLightBox}
                                 />
                             </AvatarCurtain>
                             <LampLight>
