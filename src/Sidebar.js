@@ -32,7 +32,6 @@ import {
     Socials,
 } from "./SidebarStyles";
 import { ellipsisV } from "react-icons-kit/fa/ellipsisV";
-import { expand } from "react-icons-kit/fa/expand";
 import { Icon } from "react-icons-kit";
 import { download } from "react-icons-kit/fa/download";
 import SVGProgressHR from "./SVGProgressHR";

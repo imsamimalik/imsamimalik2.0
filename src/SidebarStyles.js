@@ -113,27 +113,6 @@ export const AvatarCurtainImg = styled.img`
     z-index: 0;
 `;
 
-export const AvatarCurtainExpand = styled(Icon)`
-    background: linear-gradient(
-        159deg,
-        rgba(45, 45, 58, 0.88) 0%,
-        rgba(43, 43, 53, 0.88) 100%
-    );
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    align-self: center;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 30px;
-    color: #fafafc;
-    border-radius: 50%;
-    opacity: 0;
-    z-index: 1;
-    transition: 0.4s ease-in-out;
-    cursor: pointer;
-`;
-
 export const LampLight = styled.div`
     z-index: 2;
 
