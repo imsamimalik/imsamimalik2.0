@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Icon } from "react-icons-kit";
 
 export const Infobar = styled.div`
     position: fixed !important;
