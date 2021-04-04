@@ -75,6 +75,9 @@ export const Intro = styled.div`
         font-size: 16px;
         line-height: 1.6;
         padding: 0 25px;
+        @media (max-width: 550px) {
+            padding: 0;
+        }
         .highlight {
             color: var(--yellow);
         }

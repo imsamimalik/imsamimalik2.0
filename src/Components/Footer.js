@@ -19,7 +19,7 @@ const Footer = () => {
                             rel="noreferrer"
                             target="_blank"
                         >
-                            hi@imsamimalik.com
+                            imsamimalikk@gmail.com
                         </a>
                     </div>
                 </footer>

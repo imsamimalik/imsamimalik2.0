@@ -20,7 +20,7 @@ const Contact = () => {
                                     <div>
                                         <ul>
                                             <li>
-                                                <strong>Country:</strong> Mars
+                                                <strong>Residence:</strong> Mars
                                             </li>
                                             <li>
                                                 <strong>City:</strong> Jezero
@@ -42,7 +42,7 @@ const Contact = () => {
                                         <ul>
                                             <li>
                                                 <strong>Email:</strong>{" "}
-                                                hi@imsamimalik.com
+                                                imsamimalikk@gmail.com
                                             </li>
                                             <li>
                                                 <strong>Github:</strong>{" "}
