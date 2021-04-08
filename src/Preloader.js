@@ -30,7 +30,7 @@ const Preloader = ({ loaded }) => {
             {!isloaded && (
                 <div className="preloader">
                     <div className="preloader-content">
-                        <h4>imsamimalik</h4>
+                        <h4>Sami Malik</h4>
                         <div id="preloader" className="preloader-load">
                             <div className="preloader-load-first">
                                 {" "}
