@@ -1,11 +1,7 @@
 import React, { useState } from "react";
-///import loadable from "@loadable/component";
 import Sidebar from "./Sidebar";
 import MenuBar from "./MenuBar";
 import Pages from "./Pages";
-// const Sidebar = loadable(() => import("./Sidebar"));
-// const MenuBar = loadable(() => import("./MenuBar"));
-// const Pages = loadable(() => import("./Pages"));
 
 function App() {
     const [loaded, setLoaded] = useState(false);
