@@ -1,4 +1,5 @@
-import React from "react";
+import { useState, useEffect } from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import { SectionTitle } from "../Pages/HomeStyles";
@@ -7,6 +8,21 @@ import { Icon } from "react-icons-kit/";
 import { star } from "react-icons-kit/fa/star";
 
 const Slider = () => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        if (
+            /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                navigator.userAgent
+            )
+        ) {
+            setIsMobile(true);
+        } else {
+            // false for not mobile device
+            setIsMobile(false);
+        }
+    }, [isMobile]);
+
     return (
         <>
             <div

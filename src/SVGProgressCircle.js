@@ -1,4 +1,3 @@
-import React from "react";
 import { SVG } from "./SidebarStyles";
 
 const SVGProgressCircle = ({ offset }) => {

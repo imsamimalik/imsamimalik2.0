@@ -70,11 +70,3 @@ export const SubmitFrame = styled.div`
         }
     }
 `;
-
-export const ResponseOutput = styled.div`
-    border: none !important;
-    color: green;
-    display: block !important;
-    margin: 2em 0.5em 1em;
-    padding: 0.2em 1em;
-`;
