@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 const words = ["web apps", "web interfaces", "ios and android applications"];
 
 export default function Home() {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useCountUp } from "react-countup";
 
 const Preloader = ({ loaded }) => {

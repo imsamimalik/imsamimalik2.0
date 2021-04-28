@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Preloader from "./Preloader";
 import CountUp from "react-countup";
 import {
@@ -69,12 +69,24 @@ const Sidebar = ({ loaded }) => {
         setAge(getAge(new Date(`2002, 06, 03`)));
     }, []);
 
-    const handleClick = () => setActive((prev) => !prev);
+    const handleClick = () => {
+        setActive((prev) => !prev);
+    };
+    useEffect(() => {
+        document.addEventListener("click", (e) => {
+            !e.target.matches(".sidebar") && active
+                ? setActive(false)
+                : setActive(true);
+        });
+    }, [active]);
 
     return (
-        <>
+        <div className="sidebar">
             <Preloader loaded={loaded} />
-            <Infobar open={active} className={`${active ? "active" : ""}`}>
+            <Infobar
+                open={active}
+                className={`sidebarToggle ${active ? "active" : ""}`}
+            >
                 <InfobarFrame>
                     <InfobarHeader>
                         <InfobarBtn open={active}>
@@ -387,7 +399,7 @@ const Sidebar = ({ loaded }) => {
                     </Socials>
                 </InfobarFrame>
             </Infobar>
-        </>
+        </div>
     );
 };
 export default Sidebar;
