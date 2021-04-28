@@ -2,13 +2,13 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import { SectionTitle } from "../Pages/HomeStyles";
-import { Testimonial } from "./SliderStyles";
+import { Testimonial, Slides } from "./SliderStyles";
 import { Icon } from "react-icons-kit/";
 import { star } from "react-icons-kit/fa/star";
 
 const Slider = () => {
     return (
-        <>
+        <Slides>
             <div
                 className="container-fluid"
                 style={{
@@ -243,7 +243,7 @@ const Slider = () => {
                     </Swiper>
                 </div>
             </div>
-        </>
+        </Slides>
     );
 };
 

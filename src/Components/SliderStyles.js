@@ -1,5 +1,19 @@
 import styled from "styled-components";
 
+export const Slides = styled.div`
+    .swiper-wrapper {
+        @media (max-width: 550px) {
+            flex-direction: column;
+        }
+        .swiper-slide {
+            @media (max-width: 550px) {
+                height: auto !important;
+                margin-bottom: 40px;
+            }
+        }
+    }
+`;
+
 export const Testimonial = styled.div`
     transition: 0.55s ease-in-out;
     position: relative;
@@ -50,25 +64,6 @@ export const Testimonial = styled.div`
             li {
                 list-style: none;
             }
-        }
-    }
-`;
-
-export const SliderNavigation = styled.div`
-    padding: 15px 0 0;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    .slider-nav-frame {
-        display: flex;
-        .slider-nav {
-            margin-left: 15px;
-            cursor: pointer;
-            transition: 0.4s ease-in-out;
-        }
-        .slider-nav.swiper-button-disabled {
-            opacity: 0.2;
-            cursor: not-allowed;
         }
     }
 `;
