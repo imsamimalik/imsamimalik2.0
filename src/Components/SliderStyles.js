@@ -53,3 +53,22 @@ export const Testimonial = styled.div`
         }
     }
 `;
+
+export const SliderNavigation = styled.div`
+    padding: 15px 0 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    .slider-nav-frame {
+        display: flex;
+        .slider-nav {
+            margin-left: 15px;
+            cursor: pointer;
+            transition: 0.4s ease-in-out;
+        }
+        .slider-nav.swiper-button-disabled {
+            opacity: 0.2;
+            cursor: not-allowed;
+        }
+    }
+`;

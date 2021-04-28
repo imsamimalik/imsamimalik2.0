@@ -1,3 +1,4 @@
+import React from "react";
 import Footer from "../Components/Footer";
 import Form from "../Components/Form";
 import { Box, BoxConainer, Container, Title, Table } from "./ContactStyles";

@@ -72,20 +72,6 @@ img {
 	}
 }
 
-@media(max-width:550px) {
-
-    .swiper-wrapper {
-        flex-direction:column;
-        height:auto !important;
-
-        .swiper-slide {
-            margin-bottom: 40px;
-        }
-
-    }
-}
-
-
 a {
 	text-decoration: none;
 }

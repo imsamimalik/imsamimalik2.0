@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { Card, FormField, SubmitFrame } from "./FormStyles";
+import {
+    Card,
+    FormField,
+    //ResponseOutput,
+    SubmitFrame,
+} from "./FormStyles";
 import { Icon } from "react-icons-kit";
 import { user } from "react-icons-kit/fa/user";
 import { at } from "react-icons-kit/fa/at";
@@ -14,6 +19,7 @@ const Form = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    //const [show, setShow] = useState(false);
 
     const sendFeedback = (serviceId, templateId, variables) => {
         emailjs

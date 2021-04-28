@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { SectionTitle } from "./HomeStyles";
 import { Grid, Item, Link, RightFrame } from "./PortfolioStyles";
 import { db } from "../firebase";
