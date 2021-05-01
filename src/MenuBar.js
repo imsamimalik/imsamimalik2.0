@@ -22,11 +22,11 @@ const MenuBar = () => {
 
     useEffect(() => {
         if (active) {
-            document.querySelector(".curtain").classList.add("active");
-            document.querySelector(".app-content").classList.add("active");
+            document.querySelector(".curtain").classList.add("mActive");
+            document.querySelector(".app-content").classList.add("mActive");
         } else {
-            document.querySelector(".curtain").classList.remove("active");
-            document.querySelector(".app-content").classList.remove("active");
+            document.querySelector(".curtain").classList.remove("mActive");
+            document.querySelector(".app-content").classList.remove("mActive");
         }
     }, [active]);
 
@@ -52,13 +52,13 @@ const MenuBar = () => {
         <MenubarContainer active={active} className="menubar-container">
             <Menubar
                 active={active}
-                className={`menubar ${active ? "active" : ""}`}
+                className={`menubar ${active ? "mActive" : ""}`}
             >
                 <MenubarFrame className="menubar-frame">
                     <MenubarHeader className="menubar-header">
                         <MenubarBtn
                             active={active}
-                            className={`menubar-btn ${active ? "active" : ""}`}
+                            className={`menubar-btn ${active ? "mActive" : ""}`}
                             onClick={handleBtnClick}
                         >
                             <span></span>

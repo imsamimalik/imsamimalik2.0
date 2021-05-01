@@ -359,18 +359,18 @@ a:not([href]):not([tabindex]) {
 
 
 
-.menubar-btn.active {
+.menubar-btn.mActive {
 
 position: absolute;
    		left: 0;
 }
 
-.menubar.active .current-page {
+.menubar.mActive .current-page {
     opacity: 0;
 }
 
 
-        .menubar-btn.active span {
+        .menubar-btn.mActive span {
             transform: rotate(45deg);
 
             :before {
@@ -400,7 +400,7 @@ position: absolute;
 }
 
 @media(min-width:990px) {
-	.app-content.active {
+	.app-content.mActive {
     transform: translateX(-150px);
 
 }
@@ -419,7 +419,7 @@ position: absolute;
 }
 
 
-.app-content .curtain.active {
+.app-content .curtain.mActive {
 
 	pointer-events: all;
     opacity: .7;

@@ -136,6 +136,9 @@ export const MenubarCurrent = styled.span`
     span {
         color: #8c8c8e;
     }
+    @media (max-width: 550px) {
+        opacity: 0;
+    }
 `;
 
 export const Scrollframe = styled.div`
