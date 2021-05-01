@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 
 import {
     CreateDiv,
@@ -21,13 +21,15 @@ function Login() {
     const [description, setDescription] = useState("");
     const [image, setImage] = useState(null);
     const [progress, setProgress] = useState(0);
-    const [id, setId] = useState(0);
+    const [id, setId] = useState("");
     const [filename, setFilename] = useState("Choose File...");
     const [user, setUser] = useState("");
     const [successToggle, setSuccessToggle] = useState(false);
     const [email] = useState(process.env.REACT_APP_EMAIL);
     const [wrongUser, setWrongUser] = useState(false);
     const [toggleDialogue, setToggleDialogue] = useState(true);
+
+    const [numData, setnumData] = useState([]);
 
     const signIn = () => {
         auth.signInWithPopup(provider)
@@ -57,6 +59,15 @@ function Login() {
             setFilename(e.target.files[0].name);
         }
     };
+
+    useEffect(() => {
+        db.collection("all")
+            .orderBy("id", "desc")
+            .limit(1)
+            .onSnapshot((snapshot) => {
+                setnumData(snapshot.docs.map((doc) => doc?.data()));
+            });
+    }, []);
 
     const handleUpload = (e) => {
         e.preventDefault();
@@ -132,7 +143,9 @@ function Login() {
                                     type="number"
                                     min="0"
                                     max="1000"
-                                    placeholder="Enter id"
+                                    placeholder={`Enter id ${
+                                        numData[0]?.id + 1
+                                    }`}
                                     required
                                 />
                                 <input

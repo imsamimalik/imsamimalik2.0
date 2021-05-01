@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 import {
@@ -92,7 +91,6 @@ const Home = () => {
                                             I build{" "}
                                             <TypeWriterEffect
                                                 textStyle={{
-                                                    fontFamily: "Courier Prime",
                                                     color: "#fff",
                                                     fontWeight: 500,
                                                     fontSize: "1em",
