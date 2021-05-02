@@ -13,7 +13,7 @@
            "slogan":"it's not just a name"
          }
       </script>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <link rel="icon" href="./icons/icon-128x128.png" />
@@ -38,12 +38,11 @@
     <meta name="twitter:image" content="https://i.ibb.co/RPFs7pf/portfolio.png">
     <meta name="twitter:image:alt" content="imsamimalik" />
     <meta name="robots" content="index, follow" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="language" content="English" />
     <meta name="revisit-after" content="7 days" />
     <meta name="author" content="Sami Malik" />
     <link rel="apple-touch-icon" href="./icons/icon-128x128.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link defer rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <!-- <link
          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -59,16 +58,16 @@
         <h1>You need to enable JavaScript to run this app.</h1>
     </noscript>
     <div id="app"></div>
-    <script>
-        if ("serviceWorker" in navigator) {
-            window.addEventListener("load", () => {
-                navigator.serviceWorker
-                    .register("./serviceworker.js")
-                    .then((reg) => console.log("Success: ", reg.scope))
-                    .catch((err) => console.log("Failure: ", err));
-            });
-        }
-    </script>
+        <script>
+            if ("serviceWorker" in navigator) {
+                window.addEventListener("load", () => {
+                    navigator.serviceWorker
+                        .register("./serviceworker.js")
+                        .then((reg) => console.log("Success: ", reg.scope))
+                        .catch((err) => console.log("Failure: ", err));
+                });
+            }
+        </script>
     <link rel="stylesheet" href="./bootstrap-grid.css" />
 </body>
 
