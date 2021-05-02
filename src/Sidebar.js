@@ -72,13 +72,13 @@ const Sidebar = ({ loaded }) => {
     const handleClick = () => {
         setActive((prev) => !prev);
     };
-    useEffect(() => {
-        document.addEventListener("click", (e) => {
-            !e.target.matches(".sidebar") && active
-                ? setActive(false)
-                : setActive(true);
-        });
-    }, [active]);
+    // useEffect(() => {
+    //     document.addEventListener("click", (e) => {
+    //         !e.target.matches(".sidebar") && active
+    //             ? setActive(false)
+    //             : setActive(true);
+    //     });
+    // }, [active]);
 
     return (
         <div className="sidebar">
