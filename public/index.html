@@ -2,21 +2,10 @@
 <html lang="en">
 
 <head>
-    <title>imsamimalik - it's not just a name</title>
-    <script type="application/ld+json">
-         {
-           "@context": "https://schema.org",
-           "@type": "Organization",
-           "url": "https://imsamimalik.com",
-           "logo": "https://i.ibb.co/SVpwGhf/icon.png",
-           "founder":"Sami Malik",
-           "slogan":"it's not just a name"
-         }
-        </script>
     <meta charset="UTF-8" http-equiv="Content-Type" content="text/html" />
     <meta http-equiv="Cache-control" content="public" />
-    <link defer="defer" rel="icon" href="./icons/icon.png" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link defer rel="icon" href="%PUBLIC_URL%/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="owner" content="Muhammad Akhtar Nadeem aka Sami Malik" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -30,36 +19,52 @@
     <meta name="twitter:creator" content="@imsamimalik" />
     <meta property="og:site_name" content="Sami Malik - Portfolio" />
     <meta name="twitter:image:alt" content="Sami Malik" />
+    <script async src="%PUBLIC_URL%/all.min.js"></script>
+
     <meta name="description" content="Sami Malik Portfolio web app created using React" />
-    <link defer="defer" rel="manifest" href="/manifest.json" />
+    <link defer rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="preconnect" href="//www.google-analytics.com" crossorigin="" />
     <link rel="preconnect" href="//firebasestorage.googleapis.com/" crossorigin="" />
+    <link defer rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png" />
+    <link defer rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png" />
+    <link defer rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png" />
+    <link defer rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png" />
+    <link defer rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png" />
+    <link defer rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png" />
+    <link defer rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png" />
+    <link defer rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png" />
+    <link defer rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png" />
+    <link defer rel="icon" type="image/png" sizes="192x192" href="/icons/android-icon-192x192.png" />
+    <link defer rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
+    <link defer rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png" />
+    <link defer rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
     <link rel="prerender" href="https://imsamimalik.web.app/create" />
-    <!-- <link
-         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-         rel="stylesheet"
-         /> -->
-    <link rel="preload" as="style"
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        onload="this.rel='stylesheet'" />
+<link rel="stylesheet" href="./bootstrap-grid.css" />
+    <title>Sami Malik - Portfolio</title>
 </head>
 
 <body>
     <noscript>
         <h1>You need to enable JavaScript to run this app.</h1>
     </noscript>
-    <div id="app"></div>
-        <script>
-            if ("serviceWorker" in navigator) {
-                window.addEventListener("load", () => {
-                    navigator.serviceWorker
-                        .register("./serviceworker.js")
-                        .then((reg) => console.log("Success: ", reg.scope))
-                        .catch((err) => console.log("Failure: ", err));
-                });
-            }
-        </script>
-    <link rel="stylesheet" href="./bootstrap-grid.css" />
+    <div id="loader_container"></div>
+    <div id="root"></div>
+    <script>
+        window.addEventListener("load", (event) => {
+            document.querySelector("#loader").remove();
+            document.querySelector("body").classList.add("has-scrollbar");
+        });
+    </script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker
+                    .register("./serviceworker.js")
+                    .then((reg) => console.log("Success: ", reg.scope))
+                    .catch((err) => console.log("Failure: ", err));
+            });
+        }
+    </script>
 </body>
 
 </html>
