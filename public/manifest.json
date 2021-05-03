@@ -71,57 +71,57 @@
             "short_name": "Home",
             "description": "Home page",
             "url": "/",
-            "icons": [{ "src": "/icons/icon.png", "sizes": "72x72" }]
+            "icons": [{ "src": "/icons/icon.png", "sizes": "96x96" }]
         },
         {
             "name": "Portfolio",
             "short_name": "Portfolio",
             "description": "Portfolio page",
             "url": "/portfolio",
-            "icons": [{ "src": "/icons/icon.png", "sizes": "72x72" }]
+            "icons": [{ "src": "/icons/icon.png", "sizes": "96x96" }]
         },
         {
             "name": "About",
             "short_name": "About",
             "description": "About page",
             "url": "/about",
-            "icons": [{ "src": "/icons/icon.png", "sizes": "72x72" }]
+            "icons": [{ "src": "/icons/icon.png", "sizes": "96x96" }]
         },
         {
             "name": "Contact",
             "short_name": "Contact",
             "description": "Contact page",
             "url": "/contact",
-            "icons": [{ "src": "/icons/icon.png", "sizes": "72x72" }]
+            "icons": [{ "src": "/icons/icon.png", "sizes": "96x96" }]
         },
         {
             "name": "Login",
             "short_name": "Login",
             "description": "Login page",
             "url": "/login",
-            "icons": [{ "src": "/icons/icon.png", "sizes": "72x72" }]
+            "icons": [{ "src": "/icons/icon.png", "sizes": "96x96" }]
         }
     ],
 
     "screenshots": [
         {
             "src": "images/home.webp",
-            "size": "1356X678",
+            "sizes": "1356x678",
             "type": "img/webp"
         },
         {
             "src": "images/portfolio.webp",
-            "size": "1346X673",
+            "sizes": "1346x673",
             "type": "img/webp"
         },
         {
             "src": "images/contact.webp",
-            "size": "1356X678",
+            "sizes": "1356x678",
             "type": "img/webp"
         },
         {
             "src": "images/login.webp",
-            "size": "1356X665",
+            "sizes": "1356x665",
             "type": "img/webp"
         }
     ]

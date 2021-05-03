@@ -61,13 +61,16 @@ function Login() {
     };
 
     useEffect(() => {
-        db.collection("all")
+        const unsub = db.collection("all")
             .orderBy("id", "desc")
             .limit(1)
             .onSnapshot((snapshot) => {
                 setnumData(snapshot.docs.map((doc) => doc?.data()));
             });
+            return ()=> unsub();
     }, []);
+
+    
 
     const handleUpload = (e) => {
         e.preventDefault();
