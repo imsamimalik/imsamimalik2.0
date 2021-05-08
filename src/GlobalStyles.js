@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
 	padding: 0;
 }
 
-:root {
+:root body{
     --gray: #cacace;
     --yellow: #ffc107;
     --text-dark-primary: #fff;
@@ -18,29 +18,49 @@ export const GlobalStyle = createGlobalStyle`
     --dark-black: #1e1e28;
     --black: #000;
     --white:#fff;
+    --stroke: #191923;
     --dark-lamp-green:#4caf50;
+    --bg1: #252532fa;
+    --bg2: #23232dfa;
+    --cardbg1: #2d2d3a;
+    --cardbg2: #2b2b35;
+    --bbg1: #1e1e28ed;
+    --bbg2: #1e1e28f5;
+    --bbg3: #1e1e28fc;
+    --bbg4: #1e1e28;
+
     }
 
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
 
 
-:root {
-    --gray: #cacace;
+:root body{
+
+    --gray: #5c5c6f;
     --yellow: #ffc107;
     --red: #f44336;
-    --text-dark-primary: #fff;
-    --dark-black-background: #20202a;
-    --text-dark: #20202a;
+    --text-dark-primary: #1e1e28;
+    --dark-black-background: #F4F4F6;
+    --text-dark: #f4f4f6;
     --main: var(--red);
-    --dark-white: #fafafc;
+    --dark-white: #1e1e28;
     --dark-global-text:#8c8c8e;
-    --dark-black: #1e1e28;
+    --dark-black: transparent;
     --black: #000;
     --white:#fff;
+    --stroke: #c0c0ca;
     --dark-lamp-green:#4caf50;
-    }
+    --bg1: #fff;
+    --bg2: #fff;
+    --cardbg1: #fff;
+    --cardbg2: #fffffff2;
+    --bbg1: #f0f0f6ed;
+    --bbg2: #f0f0f6f5;
+    --bbg3: #f0f0f6fc;
+    --bbg4: #f0f0f6;
 
+    }
 
 }
 
@@ -200,7 +220,7 @@ body, a, .table, .link, .preloader .preloader-content .preloader-load .progressb
     display: none;
 }
 
-h1, h2, h3, h4, h5, h6, .banner .banner-overlay .banner-title h1, .content-sidebar .widget-title {
+h1, h2, h3, h4, h5, h6, .content-sidebar .widget-title {
     color: var(--text-dark-primary);
 }
 h1, h2, h3, h4, h5, h6 {
@@ -457,7 +477,7 @@ position: absolute;
 	position: relative;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(180deg,rgba(30,30,40,.93) 0%,rgba(30,30,40,.96) 70%,rgba(30,30,40,.99) 80%,var(--dark-black) 100%);
+    background-image: linear-gradient(180deg,var(--bbg1) 0%,var(--bbg2) 70%,var(--bbg3) 80%,var(--bbg4) 100%);
 
 }
 
@@ -468,7 +488,7 @@ position: absolute;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(159deg ,#2d2d3a 0%,#2b2b35 100%);
+    background: linear-gradient(159deg ,var(--cardbg1) 0%,var(--cardbg2) 100%);
     box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
     font-size: 12px;
     color: var(--gray);

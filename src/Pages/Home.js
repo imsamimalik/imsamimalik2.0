@@ -87,7 +87,7 @@ const Home = () => {
                                         <span>
                                             &lt;<i>code</i>&gt;
                                         </span>
-                                        <span>
+                                        <span style={{ color: "#fff" }}>
                                             I build{" "}
                                             <TypeWriterEffect
                                                 textStyle={{

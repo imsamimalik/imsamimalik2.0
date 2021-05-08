@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-    background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
+    background: linear-gradient(159deg, var(--cardbg1) 0%, var(--cardbg2) 100%);
     box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
     padding: 30px;
     margin-bottom: 30px;
@@ -19,7 +19,7 @@ export const FormField = styled.div`
         textarea {
             height: 50px;
             width: 100%;
-            background: linear-gradient(159deg, #252532 0%, #23232d 100%);
+            background: linear-gradient(159deg, var(--bg1) 0%, var(--bg2) 100%);
             border: none;
             color: var(--dark-white);
             padding-left: 65px;
