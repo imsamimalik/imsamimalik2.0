@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Infobar = styled.div`
     position: fixed !important;
-    background: #20202a;
+    background: var(--dark-black-background);
     width: 290px;
     min-width: 290px;
     height: calc(100vh - 30px);
@@ -50,7 +50,7 @@ export const InfobarBtn = styled.span`
     i {
         cursor: pointer;
         :hover {
-            color: #fff;
+            color: var(--white);
         }
     }
 
@@ -120,7 +120,7 @@ export const LampLight = styled.div`
         position: absolute;
         bottom: -1px;
         right: 1px;
-        background: #fafafc;
+        background: var(--dark-white);
         height: 23px;
         width: 23px;
         border-radius: 50%;
@@ -129,20 +129,20 @@ export const LampLight = styled.div`
 `;
 
 export const AvailableLamp = styled.div`
-    background-color: var(--yellow);
+    background-color: var(--main);
     position: absolute;
     bottom: 3px;
     right: 5px;
     height: 15px;
     width: 15px;
-    background: var(--yellow);
+    background: var(--main);
     border-radius: 50%;
     z-index: 0;
     transition: 0.4s ease-in-out;
 
     :hover {
         transform: scale(1);
-        background: #4caf50;
+        background: var(--dark-lamp-green);
         cursor: pointer;
     }
 
@@ -193,17 +193,17 @@ export const AvailableLamp = styled.div`
 `;
 
 export const Name = styled.h5`
-    color: #fafafc;
+    color: var(--dark-white);
     transition: 0.4s ease-in-out;
 `;
 
 export const NameA = styled.a`
-    color: #fafafc;
+    color: var(--dark-white);
     transition: 0.4s ease-in-out;
     text-decoration: none;
 
     :hover {
-        color: var(--yellow);
+        color: var(--main);
     }
 `;
 
@@ -244,7 +244,7 @@ export const TableLi = styled.li`
 `;
 
 export const LsDivider = styled.div`
-    background: #8c8c8e;
+    background: var(--dark-global-text);
     width: 100%;
     height: 1px;
     opacity: 0.3;
@@ -270,7 +270,7 @@ export const CircleProgress = styled.div`
 
 export const ProgressbarText = styled.div`
     font-size: 13px;
-    color: #cacace !important;
+    color: var(--gray) !important;
     position: absolute;
     left: 45%;
     top: 50%;
@@ -295,7 +295,7 @@ export const SVG = styled.svg`
         stroke: #191923;
     }
     path:last-child {
-        stroke: var(--yellow);
+        stroke: var(--main);
     }
 `;
 
@@ -321,7 +321,7 @@ export const SkillsProgressText = styled.div`
     text-align: right;
     top: 50%;
     font-size: 13px;
-    color: #cacace !important;
+    color: var(--gray) !important;
 `;
 
 export const KnowledgeList = styled.ul`
@@ -330,13 +330,13 @@ export const KnowledgeList = styled.ul`
     li {
         list-style-type: none;
         margin-bottom: 5px;
-        color: #8c8c8e;
+        color: var(--dark-global-text);
         :before {
             content: "✓";
             font-weight: 900;
             margin-right: 5px;
             font-size: 9px;
-            color: var(--yellow);
+            color: var(--main);
             margin-right: 10px;
         }
     }
@@ -366,7 +366,7 @@ export const Socials = styled.div`
     width: 100%;
     z-index: 999;
     i:hover {
-        color: var(--yellow);
+        color: var(--main);
     }
     a {
         transition: 0.2s ease-in-out;

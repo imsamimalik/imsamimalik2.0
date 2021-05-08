@@ -21,7 +21,7 @@ export const FormField = styled.div`
             width: 100%;
             background: linear-gradient(159deg, #252532 0%, #23232d 100%);
             border: none;
-            color: #fafafc;
+            color: var(--dark-white);
             padding-left: 65px;
             padding-right: 15px;
             box-shadow: inset 0 1px 4px 0 rgb(15 15 20 / 10%);
@@ -32,16 +32,16 @@ export const FormField = styled.div`
             padding-left: 15px;
             padding-top: 15px;
             height: 150px;
-            border-left: solid 50px #20202a;
+            border-left: solid 50px var(--dark-black-background);
         }
     }
     label {
         text-align: center;
-        color: #8c8c8e;
+        color: var(--dark-global-text);
         position: absolute;
         height: 50px;
         width: 50px;
-        background: #20202a;
+        background: var(--dark-black-background);
         top: 0;
         left: 0;
         padding: 0 15px;

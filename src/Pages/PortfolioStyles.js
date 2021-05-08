@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const RightFrame = styled.div`
     padding-bottom: 30px;
     .link.active {
-        color: #fafafc;
+        color: var(--dark-white);
     }
     @media (max-width: 768px) {
         .filter {
@@ -22,7 +22,7 @@ export const Link = styled.a`
     font-weight: 600;
     margin-right: 15px;
     margin-bottom: 10px;
-    color: #cacace;
+    color: var(--gray);
     transition: 0.4s ease-in-out;
     cursor: pointer;
 `;
@@ -86,7 +86,7 @@ export const Item = styled.div`
         transform: translateY(100%);
         transition: 0.55s ease-in-out;
         h5 {
-            color: var(--yellow);
+            color: var(--main);
         }
     }
     .portfolio-item-frame {

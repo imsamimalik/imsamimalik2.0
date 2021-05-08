@@ -14,7 +14,7 @@ export const MenubarContainer = styled.div`
     }
 `;
 export const Menubar = styled.div`
-    background: #20202a;
+    background: var(--dark-black-background);
     height: calc(100vh - 30px);
     z-index: 999;
     right: -150px;
@@ -79,7 +79,7 @@ export const MenubarBtn = styled.span`
     }
 
     span {
-        background: #8c8c8e;
+        background: var(--dark-global-text);
         position: relative;
         margin: 5px 0 0;
         content: "";
@@ -91,7 +91,7 @@ export const MenubarBtn = styled.span`
         backface-visibility: hidden;
 
         :before {
-            background: #8c8c8e;
+            background: var(--dark-global-text);
             position: absolute;
             top: -5px;
             content: "";
@@ -103,7 +103,7 @@ export const MenubarBtn = styled.span`
             backface-visibility: hidden;
         }
         :after {
-            background: #8c8c8e;
+            background: var(--dark-global-text);
             position: absolute;
             top: 5px;
             content: "";
@@ -120,7 +120,7 @@ export const MenubarBtn = styled.span`
 export const MenubarCurrent = styled.span`
     width: 200px;
     transform: rotate(90deg);
-    color: #fafafc;
+    color: var(--dark-white);
     position: absolute;
     overflow: hidden;
     top: 200px;
@@ -134,7 +134,7 @@ export const MenubarCurrent = styled.span`
     transition: 0.4s ease-in-out;
     transform: rotate(90deg);
     span {
-        color: #8c8c8e;
+        color: var(--dark-global-text);
     }
     @media (max-width: 550px) {
         opacity: 0;
@@ -158,7 +158,7 @@ export const Nav = styled.nav`
 
 export const NavUl = styled.ul`
     pointer-events: auto;
-    color: #8c8c8e;
+    color: var(--dark-global-text);
     min-width: 230px;
     width: 100%;
     padding: 0;

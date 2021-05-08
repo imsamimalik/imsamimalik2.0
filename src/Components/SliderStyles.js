@@ -57,10 +57,10 @@ export const Testimonial = styled.div`
             padding: 5px 15px;
             font-size: 10px;
             margin-top: 5px;
-            background: #20202a;
+            background: var(--dark-black-background);
             border-radius: 30px;
             display: flex;
-            color: var(--yellow);
+            color: var(--main);
             li {
                 list-style: none;
             }

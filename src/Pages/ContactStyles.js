@@ -43,7 +43,7 @@ export const Table = styled.div`
             strong {
                 font-size: 13px;
                 font-weight: 400;
-                color: #fafafc;
+                color: var(--dark-white);
                 line-height: 1.7;
             }
         }

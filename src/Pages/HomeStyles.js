@@ -51,7 +51,7 @@ export const BannerTitle = styled.div`
     width: 100%;
     align-self: center;
     h1 {
-        color: #fff;
+        color: var(--white);
     }
     @media (max-width: 1032px) {
         text-align: center;
@@ -59,7 +59,7 @@ export const BannerTitle = styled.div`
             font-size: 22px;
         }
     }
-	 @media (max-width: 500px) {
+    @media (max-width: 500px) {
         text-align: center;
         h1 {
             font-size: 17px;
@@ -95,7 +95,7 @@ export const CounterFrame = styled.div`
             padding: 0;
         }
         span {
-            color: var(--yellow);
+            color: var(--main);
             font-weight: 600;
             font-family: "Poppins", sans-serif;
             font-size: 22px;
@@ -135,7 +135,7 @@ export const ServiceBox = styled.div`
 `;
 
 export const OrderNow = styled(Link)`
-    color: var(--yellow) !important;
+    color: var(--main) !important;
     padding-right: 10px;
     position: relative;
     text-transform: uppercase;
@@ -145,7 +145,7 @@ export const OrderNow = styled(Link)`
     font-weight: 600;
     margin-right: 15px;
     margin-bottom: 10px;
-    color: #cacace;
+    color: var(--gray);
     transition: 0.4s ease-in-out;
     i {
         font-weight: 900;

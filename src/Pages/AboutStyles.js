@@ -15,7 +15,7 @@ export const Timeline = styled.div`
         position: relative;
     }
     .timeline-mark-light {
-        background: #fafafc;
+        background: var(--dark-white);
         position: absolute;
         top: 4px;
         right: -4px;
@@ -32,8 +32,8 @@ export const Timeline = styled.div`
         width: 15px;
         height: 15px;
         border-radius: 50%;
-        border: solid 3px var(--yellow);
-        background: #1e1e28;
+        border: solid 3px var(--main);
+        background: var(--dark-black);
         box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
     }
 
@@ -52,13 +52,13 @@ export const Timeline = styled.div`
             flex-wrap: wrap;
             .el-suptitle {
                 margin-top: 5px;
-                color: #8c8c8e;
+                color: var(--dark-global-text);
                 font-style: italic;
                 font-size: 12px;
             }
             .date {
                 margin-left: auto;
-                background: #20202a;
+                background: var(--dark-black-background);
                 padding: 5px 15px;
                 border-radius: 15px;
                 box-shadow: inset 0 3px 8px 0 rgb(15 15 20 / 20%);
@@ -79,7 +79,7 @@ export const Intro = styled.div`
             padding: 0;
         }
         .highlight {
-            color: var(--yellow);
+            color: var(--main);
         }
     }
     ul.socials {
@@ -99,7 +99,7 @@ export const Intro = styled.div`
         li {
             line-height: 1.6;
             a:hover {
-                color: var(--yellow);
+                color: var(--main);
             }
         }
     }

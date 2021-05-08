@@ -18,7 +18,7 @@ export const Form = styled.form`
     flex-direction: column;
     height: auto;
     transform: scale(0.95);
-    background-color: #4caf50;
+    background-color: var(--dark-lamp-green);
     padding: 40px 20px;
     border-radius: 5px;
     @media (max-width: 990px) {
