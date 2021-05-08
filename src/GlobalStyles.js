@@ -21,6 +21,30 @@ export const GlobalStyle = createGlobalStyle`
     --dark-lamp-green:#4caf50;
     }
 
+
+@media (prefers-color-scheme: dark) {
+
+
+:root {
+    --gray: #cacace;
+    --yellow: #ffc107;
+    --red: #f44336;
+    --text-dark-primary: #fff;
+    --dark-black-background: #20202a;
+    --text-dark: #20202a;
+    --main: var(--red);
+    --dark-white: #fafafc;
+    --dark-global-text:#8c8c8e;
+    --dark-black: #1e1e28;
+    --black: #000;
+    --white:#fff;
+    --dark-lamp-green:#4caf50;
+    }
+
+
+}
+
+
 body {
     color: var(--grey);
     font-size: 13px;
