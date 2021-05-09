@@ -67,6 +67,6 @@ const Dark = styled.div`
     @media (max-width: 550px) {
         transform: scale(0.7);
         bottom: 50px;
-        right: 10px;
+        right: 5px;
     }
 `;
