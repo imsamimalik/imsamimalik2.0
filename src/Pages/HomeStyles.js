@@ -50,6 +50,11 @@ export const BannerOverlay = styled.div`
 export const BannerTitle = styled.div`
     width: 100%;
     align-self: center;
+
+    .white {
+        color: #fff;
+    }
+
     h1 {
         color: var(--white);
     }

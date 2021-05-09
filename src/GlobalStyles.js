@@ -336,6 +336,7 @@ display: none;
     box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
     padding: 0 30px;
     display: none;
+    z-index: 999;
     justify-content: space-between;
     align-items: center;
 }
