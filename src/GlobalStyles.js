@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
 	padding: 0;
 }
 
-:root body{
+html{
     --gray: #cacace;
     --yellow: #ffc107;
     --text-dark-primary: #fff;
@@ -35,7 +35,7 @@ export const GlobalStyle = createGlobalStyle`
 @media (prefers-color-scheme: light) {
 
 
-:root body{
+html{
 
     --gray: #5c5c6f;
     --yellow: #ffc107;
@@ -63,6 +63,34 @@ export const GlobalStyle = createGlobalStyle`
     }
 
 }
+
+html.dark{
+
+    --gray: #5c5c6f;
+    --yellow: #ffc107;
+    --red: #f44336;
+    --text-dark-primary: #1e1e28;
+    --dark-black-background: #F4F4F6;
+    --text-dark: #f4f4f6;
+    --main: var(--red);
+    --dark-white: #1e1e28;
+    --dark-global-text:#8c8c8e;
+    --dark-black: transparent;
+    --black: #000;
+    --white:#fff;
+    --stroke: #c0c0ca;
+    --dark-lamp-green:#4caf50;
+    --bg1: #fff;
+    --bg2: #fff;
+    --cardbg1: #fff;
+    --cardbg2: #fffffff2;
+    --bbg1: #f0f0f6ed;
+    --bbg2: #f0f0f6f5;
+    --bbg3: #f0f0f6fc;
+    --bbg4: #f0f0f6;
+
+    }
+
 
 
 body {
