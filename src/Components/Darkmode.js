@@ -48,7 +48,7 @@ const Dark = styled.div`
     border-radius: 50%;
     background-color: var(--main);
     position: fixed;
-    bottom: 30px;
+    bottom: 50px;
     right: 30px;
     z-index: 99999;
     display: grid;
