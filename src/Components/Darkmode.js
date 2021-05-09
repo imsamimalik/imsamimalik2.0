@@ -4,18 +4,33 @@ import { moonO } from "react-icons-kit/fa/moonO";
 import styled from "styled-components";
 import { Icon } from "react-icons-kit";
 
-const defaultDark = window.matchMedia("(prefers-color-scheme: light)").matches;
+const detectColorScheme = () => {
+    let theme = "dark";
+    if (localStorage.getItem("theme")) {
+        if (localStorage.getItem("theme") === "light") {
+            theme = "light";
+        }
+    } else if (!window.matchMedia) {
+        return false;
+    } else if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+        theme = "light";
+    }
+
+    theme === "light"
+        ? document.querySelector("html").classList.add("dark")
+        : document.querySelector("html").classList.remove("dark");
+};
 
 const Darkmode = () => {
-    const [dark, setDark] = useState(defaultDark);
+    const [dark, setDark] = useState(false);
     const handleClick = () => {
         setDark((prev) => !prev);
+        localStorage.setItem("theme", dark ? "dark" : "light");
     };
 
     useEffect(() => {
-        dark
-            ? document.querySelector("html").classList.add("dark")
-            : document.querySelector("html").classList.remove("dark");
+        detectColorScheme();
+        setDark(true ? localStorage.getItem("theme") === "light" : false);
     }, [dark]);
 
     return (
@@ -35,7 +50,7 @@ const Dark = styled.div`
     position: fixed;
     bottom: 30px;
     right: 30px;
-    z-index: 99999999999;
+    z-index: 99999;
     display: grid;
     place-items: center;
     cursor: pointer;
@@ -48,5 +63,10 @@ const Dark = styled.div`
     i {
         color: #fff;
         transform: scale(1.6);
+    }
+    @media (max-width: 550px) {
+        transform: scale(0.7);
+        bottom: 10px;
+        right: 10px;
     }
 `;

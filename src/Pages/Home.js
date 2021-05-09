@@ -84,7 +84,7 @@ const Home = () => {
                                         <span>Hello World, I'm alive!</span>
                                     </h1>
                                     <div className="lg-text code mb-25">
-                                        <span>
+                                        <span style={{ color: "#fff" }}>
                                             &lt;<i>code</i>&gt;
                                         </span>
                                         <span style={{ color: "#fff" }}>

@@ -24,7 +24,7 @@ export const Menubar = styled.div`
     right: auto;
     width: ${(props) => (props.active ? "230px" : "80px")};
     box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
-    transition: 0.55s ease-in-out;
+    transition: 0.55s all ease-in-out, background 0ms ease;
     transform: ${(props) =>
         props.active ? "translateX(-80px)" : "translateX(0px)"};
 

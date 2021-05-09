@@ -9,7 +9,7 @@ export const Infobar = styled.div`
     position: relative;
     z-index: 999;
     box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
-    transition: 0.55s ease-in-out;
+    transition: 0.55s all ease-in-out, background-color 0s;
     padding: 0 15px;
 
     @media (max-width: 1032px) {
@@ -357,8 +357,12 @@ export const Socials = styled.div`
     left: 0;
     width: 100%;
     z-index: 999;
+    i {
+        transition: 0.3s ease-in-out;
+    }
     i:hover {
         color: var(--main);
+        transition: 0.3s ease-in-out;
     }
     a {
         transition: 0.2s ease-in-out;
