@@ -9,7 +9,7 @@ export const Infobar = styled.div`
     position: relative;
     z-index: 999;
     box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
-    transition: 0.55s ease-in-out;
+    transition: 0.55s all ease-in-out, background-color 0s;
     padding: 0 15px;
 
     @media (max-width: 1032px) {
@@ -69,11 +69,7 @@ export const Header = styled.div`
     width: 100%;
     padding: 30px;
     height: 235px;
-    background: linear-gradient(
-        159deg,
-        rgba(37, 37, 50, 0.98) 0%,
-        rgba(35, 35, 45, 0.98) 100%
-    );
+    background: linear-gradient(159deg, var(--bg1) 0%, var(--bg1) 100%);
     text-align: center;
     box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
 `;
@@ -292,7 +288,7 @@ export const SVG = styled.svg`
     display: block;
 
     path:first-child {
-        stroke: #191923;
+        stroke: var(--stroke);
     }
     path:last-child {
         stroke: var(--main);
@@ -354,19 +350,19 @@ export const Socials = styled.div`
     justify-content: space-between;
     padding: 0 35px;
     height: 50px;
-    background: linear-gradient(
-        159deg,
-        rgba(37, 37, 50, 0.98) 0%,
-        rgba(35, 35, 45, 0.98) 100%
-    );
+    background: linear-gradient(159deg, var(--bg1) 0%, var(--bg1) 100%);
     position: absolute;
     bottom: 0;
     box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
     left: 0;
     width: 100%;
     z-index: 999;
+    i {
+        transition: 0.3s ease-in-out;
+    }
     i:hover {
         color: var(--main);
+        transition: 0.3s ease-in-out;
     }
     a {
         transition: 0.2s ease-in-out;

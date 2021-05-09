@@ -21,7 +21,7 @@ export const Title = styled.h4`
 `;
 
 export const Box = styled.div`
-    background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
+    background: linear-gradient(159deg, var(--cardbg1) 0%, var(--cardbg2) 100%);
     box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
     padding: 25px;
     margin-bottom: 30px;

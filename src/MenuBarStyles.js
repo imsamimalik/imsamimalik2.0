@@ -24,7 +24,7 @@ export const Menubar = styled.div`
     right: auto;
     width: ${(props) => (props.active ? "230px" : "80px")};
     box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
-    transition: 0.55s ease-in-out;
+    transition: 0.55s all ease-in-out, background 0ms ease;
     transform: ${(props) =>
         props.active ? "translateX(-80px)" : "translateX(0px)"};
 
@@ -56,11 +56,7 @@ export const MenubarHeader = styled.div`
     left: 0;
     z-index: 9;
     box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
-    background: linear-gradient(
-        159deg,
-        rgba(37, 37, 50, 0.98) 0%,
-        rgba(35, 35, 45, 0.98) 100%
-    );
+    background: linear-gradient(159deg, var(--bg1) 0%, var(--bg1) 100%);
 `;
 
 export const MenubarBtn = styled.span`

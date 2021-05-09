@@ -2,6 +2,7 @@ import { useState } from "react";
 import Sidebar from "./Sidebar";
 import MenuBar from "./MenuBar";
 import Pages from "./Pages";
+import Darkmode from "./Components/Darkmode";
 
 function App() {
     const [loaded, setLoaded] = useState(false);
@@ -22,6 +23,7 @@ function App() {
                     <Pages />
                 </div>
             </div>
+            <Darkmode></Darkmode>
         </>
     );
 }

@@ -84,10 +84,10 @@ const Home = () => {
                                         <span>Hello World, I'm alive!</span>
                                     </h1>
                                     <div className="lg-text code mb-25">
-                                        <span>
+                                        <span className="white">
                                             &lt;<i>code</i>&gt;
                                         </span>
-                                        <span>
+                                        <span className="white">
                                             I build{" "}
                                             <TypeWriterEffect
                                                 textStyle={{
@@ -103,38 +103,33 @@ const Home = () => {
                                                     "mobile apps.",
                                                     "desktop apps.",
                                                     "automation tools.",
-                                                    "full stack websites.",
                                                     "CMS websites.",
                                                     "web apps.",
                                                     "mobile apps.",
                                                     "desktop apps.",
                                                     "automation tools.",
-                                                    "full stack websites.",
                                                     "CMS websites.",
                                                     "web apps.",
                                                     "mobile apps.",
                                                     "desktop apps.",
                                                     "automation tools.",
-                                                    "full stack websites.",
                                                     "CMS websites.",
                                                     "web apps.",
                                                     "mobile apps.",
                                                     "desktop apps.",
                                                     "automation tools.",
-                                                    "full stack websites.",
                                                     "CMS websites.",
                                                     "web apps.",
                                                     "mobile apps.",
                                                     "desktop apps.",
                                                     "automation tools.",
-                                                    "full stack websites.",
                                                     "CMS websites.",
                                                 ]}
                                                 multiTextDelay={1000}
                                                 typeSpeed={100}
                                             />
                                         </span>
-                                        <span>
+                                        <span className="white">
                                             &lt;/<i>code</i>&gt;
                                         </span>
                                     </div>

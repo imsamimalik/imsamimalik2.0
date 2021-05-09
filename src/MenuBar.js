@@ -83,19 +83,6 @@ const MenuBar = () => {
                                     </NavLink>
                                 </NavLi>
                                 <NavLi
-                                    delay={0.1}
-                                    active={active}
-                                    onClick={() => setActive((prev) => !prev)}
-                                >
-                                    <NavLink
-                                        exact
-                                        activeClassName="selected"
-                                        to="/portfolio"
-                                    >
-                                        Portfolio
-                                    </NavLink>
-                                </NavLi>
-                                <NavLi
                                     delay={0.15}
                                     active={active}
                                     onClick={() => setActive((prev) => !prev)}
@@ -108,6 +95,20 @@ const MenuBar = () => {
                                         About
                                     </NavLink>
                                 </NavLi>
+                                <NavLi
+                                    delay={0.1}
+                                    active={active}
+                                    onClick={() => setActive((prev) => !prev)}
+                                >
+                                    <NavLink
+                                        exact
+                                        activeClassName="selected"
+                                        to="/portfolio"
+                                    >
+                                        Portfolio
+                                    </NavLink>
+                                </NavLi>
+
                                 <NavLi
                                     delay={0.2}
                                     active={active}

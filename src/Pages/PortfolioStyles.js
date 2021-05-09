@@ -77,11 +77,7 @@ export const Item = styled.div`
         left: 0;
         width: 100%;
         padding: 10px;
-        background: linear-gradient(
-            159deg,
-            rgba(45, 45, 58, 0.98) 0%,
-            rgba(43, 43, 53, 0.98) 100%
-        );
+        background: linear-gradient(159deg, var(--bg1) 0%, var(--bg2) 100%);
         box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
         transform: translateY(100%);
         transition: 0.55s ease-in-out;
