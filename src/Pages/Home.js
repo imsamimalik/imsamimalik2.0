@@ -103,7 +103,6 @@ const Home = () => {
                                                     "mobile apps.",
                                                     "desktop apps.",
                                                     "automation tools.",
-                                                    "full stack websites.",
                                                     "CMS websites.",
                                                     "web apps.",
                                                     "mobile apps.",
