@@ -48,7 +48,7 @@ const Dark = styled.div`
     border-radius: 50%;
     background-color: var(--main);
     position: fixed;
-    bottom: 50px;
+    bottom: 30px;
     right: 30px;
     z-index: 99999;
     display: grid;
@@ -66,7 +66,7 @@ const Dark = styled.div`
     }
     @media (max-width: 550px) {
         transform: scale(0.7);
-        bottom: 10px;
+        bottom: 30px;
         right: 10px;
     }
 `;
