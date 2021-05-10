@@ -83,7 +83,7 @@ const MenuBar = () => {
                                     </NavLink>
                                 </NavLi>
                                 <NavLi
-                                    delay={0.15}
+                                    delay={0.1}
                                     active={active}
                                     onClick={() => setActive((prev) => !prev)}
                                 >
@@ -96,7 +96,7 @@ const MenuBar = () => {
                                     </NavLink>
                                 </NavLi>
                                 <NavLi
-                                    delay={0.1}
+                                    delay={0.15}
                                     active={active}
                                     onClick={() => setActive((prev) => !prev)}
                                 >
