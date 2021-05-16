@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Sidebar from "./Sidebar";
-import MenuBar from "./MenuBar";
 import Pages from "./Pages";
+import Sidebar from "./Components/Sidebar";
+import MenuBar from "./Components/MenuBar";
 import Darkmode from "./Components/Darkmode";
 
 function App() {

@@ -1,7 +1,13 @@
+import { Helmet } from "react-helmet";
 import Footer from "../Components/Footer";
 import Form from "../Components/Form";
-import { Box, BoxConainer, Container, Title, Table } from "./ContactStyles";
-import { Helmet } from "react-helmet";
+import {
+    Box,
+    BoxConainer,
+    Container,
+    Title,
+    Table,
+} from "../Styles/Pages/ContactStyles";
 
 const Contact = () => {
     return (

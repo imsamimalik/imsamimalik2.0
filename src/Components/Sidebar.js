@@ -1,6 +1,16 @@
 import { useState, useEffect } from "react";
-import Preloader from "./Preloader";
 import CountUp from "react-countup";
+import { Icon } from "react-icons-kit";
+import { ellipsisV } from "react-icons-kit/fa/ellipsisV";
+import { download } from "react-icons-kit/fa/download";
+import { linkedin } from "react-icons-kit/fa/linkedin";
+import { github } from "react-icons-kit/fa/github";
+import { instagram } from "react-icons-kit/fa/instagram";
+import { twitter } from "react-icons-kit/fa/twitter";
+import { stackOverflow } from "react-icons-kit/fa/stackOverflow";
+import Preloader from "./Preloader";
+import SVGProgressHR from "./SVGProgressHR";
+import SVGProgressCircle from "./SVGProgressCircle";
 import {
     Infobar,
     InfobarFrame,
@@ -30,17 +40,9 @@ import {
     KnowledgeList,
     LinksFrame,
     Socials,
-} from "./SidebarStyles";
-import { ellipsisV } from "react-icons-kit/fa/ellipsisV";
-import { Icon } from "react-icons-kit";
-import { download } from "react-icons-kit/fa/download";
-import SVGProgressHR from "./SVGProgressHR";
-import SVGProgressCircle from "./SVGProgressCircle";
-import { linkedin } from "react-icons-kit/fa/linkedin";
-import { github } from "react-icons-kit/fa/github";
-import { instagram } from "react-icons-kit/fa/instagram";
-import { twitter } from "react-icons-kit/fa/twitter";
-import { stackOverflow } from "react-icons-kit/fa/stackOverflow";
+} from "../Styles/Components/SidebarStyles";
+import AvatarImgSrc from "../Assets/images/avatar.jpg";
+
 const Sidebar = ({ loaded }) => {
     const [active, setActive] = useState(false);
     const [age, setAge] = useState(18);
@@ -72,14 +74,6 @@ const Sidebar = ({ loaded }) => {
     const handleClick = () => {
         setActive((prev) => !prev);
     };
-    // useEffect(() => {
-    //     document.addEventListener("click", (e) => {
-    //         !e.target.matches(".sidebar") && active
-    //             ? setActive(false)
-    //             : setActive(true);
-    //     });
-    // }, [active]);
-
     return (
         <div className="sidebar">
             <Preloader loaded={loaded} />
@@ -97,7 +91,7 @@ const Sidebar = ({ loaded }) => {
                         <Avatar>
                             <AvatarCurtain>
                                 <AvatarCurtainImg
-                                    src="./images/avatar.jpg"
+                                    src={AvatarImgSrc}
                                     alt="avatar"
                                 />
                             </AvatarCurtain>
@@ -338,10 +332,10 @@ const Sidebar = ({ loaded }) => {
                         </div>
                         <LsDivider />
                         <KnowledgeList className="p-15-0">
-                            <li>ReactJS, VueJs, SvelteJs</li>
-                            <li>Materialize, Bootstrap</li>
-                            <li>PERN, Firebase, AWS, Heroku</li>
-                            <li>CI / CD</li>
+                            <li>React, VueJs, Svelte, NextJS</li>
+                            <li>Materialize, TailwindCSS</li>
+                            <li>Firebase, AWS, Heroku</li>
+                            <li>DevOps</li>
                         </KnowledgeList>
                         <LsDivider />
                         <LinksFrame className="p-15-15">

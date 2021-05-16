@@ -1,5 +1,31 @@
 import { useState, useEffect } from "react";
-const words = ["web apps", "web interfaces", "ios and android applications"];
+const words = [
+    "web apps.",
+    "mobile apps.",
+    "desktop apps.",
+    "automation tools.",
+    "CMS websites.",
+    "web apps.",
+    "mobile apps.",
+    "desktop apps.",
+    "automation tools.",
+    "CMS websites.",
+    "web apps.",
+    "mobile apps.",
+    "desktop apps.",
+    "automation tools.",
+    "CMS websites.",
+    "web apps.",
+    "mobile apps.",
+    "desktop apps.",
+    "automation tools.",
+    "CMS websites.",
+    "web apps.",
+    "mobile apps.",
+    "desktop apps.",
+    "automation tools.",
+    "CMS websites.",
+];
 
 export default function Home() {
     const [index, setIndex] = useState(0);
@@ -28,7 +54,7 @@ export default function Home() {
 
         const timeout = setTimeout(() => {
             setSubIndex((prev) => prev + (reverse ? -1 : 1));
-        }, Math.max(reverse ? 75 : subIndex === words[index].length ? 1000 : 150, parseInt(Math.random() * 350)));
+        }, Math.max(reverse ? 75 : subIndex === words[index].length ? 1000 : 150, parseInt(Math.random() * 150)));
 
         return () => clearTimeout(timeout);
     }, [subIndex, index, reverse]);

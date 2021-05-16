@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import { SectionTitle } from "./HomeStyles";
-import { Grid, Item, Link, RightFrame } from "./PortfolioStyles";
-import { db } from "../firebase";
-import Footer from "../Components/Footer";
 import { Helmet } from "react-helmet";
+import { db } from "../utils/firebase";
+import Footer from "../Components/Footer";
+import { SectionTitle } from "../Styles/Pages/HomeStyles";
+import { Grid, Item, Link, RightFrame } from "../Styles/Pages/PortfolioStyles";
 
 const Portfolio = () => {
     const [web, setWeb] = useState([]);
@@ -14,16 +14,6 @@ const Portfolio = () => {
             a.classList.remove("active");
         });
         e.target.classList.add("active");
-        // document.querySelectorAll(".grid-item").forEach((item) => {
-        //     item.classList.add("hide");
-        //     if (e.target.innerText.toLowerCase() === "all categories") {
-        //         item.classList.remove("hide");
-        //     } else if (
-        //         item.classList.contains(e.target.innerText.toLowerCase())
-        //     ) {
-        //         item.classList.remove("hide");
-        //     }
-        // });
         setShown(
             web.filter(
                 (item) =>

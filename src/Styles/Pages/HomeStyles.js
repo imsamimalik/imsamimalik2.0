@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import bg1 from "../../Assets/images/bg1.jpg";
 
 export const Banner = styled.div`
     transition: 0.55s ease-in-out;
@@ -9,7 +10,7 @@ export const Banner = styled.div`
     box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
     z-index: 99;
     margin-bottom: 30px;
-    background-image: url("./images/bg1.jpg");
+    background-image: url(${bg1});
 `;
 
 export const BannerBack = styled.div`

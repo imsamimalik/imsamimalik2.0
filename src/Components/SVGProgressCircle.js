@@ -1,4 +1,4 @@
-import { SVG } from "./SidebarStyles";
+import { SVG } from "../Styles/Components/SidebarStyles";
 
 const SVGProgressCircle = ({ offset }) => {
     return (

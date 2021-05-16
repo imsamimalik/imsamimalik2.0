@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import { sun } from "react-icons-kit/icomoon/sun";
-import { moonO } from "react-icons-kit/fa/moonO";
 import styled from "styled-components";
 import { Icon } from "react-icons-kit";
+import { sunO } from "react-icons-kit/fa/sunO";
+import { moonO } from "react-icons-kit/fa/moonO";
 
 const detectColorScheme = () => {
     let theme = "dark";
@@ -35,7 +35,7 @@ const Darkmode = () => {
 
     return (
         <Dark onClick={handleClick}>
-            {dark ? <Icon icon={moonO}></Icon> : <Icon icon={sun}></Icon>}
+            {dark ? <Icon icon={moonO}></Icon> : <Icon icon={sunO}></Icon>}
         </Dark>
     );
 };

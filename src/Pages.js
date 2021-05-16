@@ -1,6 +1,5 @@
 import { Route, Switch } from "react-router-dom";
 import loadable from "@loadable/component";
-
 const Contact = loadable(() => import("./Pages/Contact"));
 const About = loadable(() => import("./Pages/About"));
 const Portfolio = loadable(() => import("./Pages/Portfolio"));
@@ -31,8 +30,6 @@ const Pages = () => {
                     <Home />
                 </Route>
             </Switch>
-            {/* </animated.div>
-            ))} */}
         </div>
     );
 };

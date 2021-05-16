@@ -164,6 +164,7 @@ export const NavUl = styled.ul`
 export const NavLi = styled.li`
     width: 100%;
     list-style-type: none;
+    transition: 0.55s ease-in-out;
     opacity: ${(props) => (props.active ? "1" : "0")};
     transform: ${(props) =>
         props.active ? "translateX(0px)" : "translateX(60px)"};

@@ -1,65 +1,11 @@
 import { createGlobalStyle } from "styled-components";
+import bgImg from "../Assets/images/bg.jpg";
 export const GlobalStyle = createGlobalStyle`
 *, :after, :before {
     box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
-
-
-
-/* poppins-300 - latin-ext */
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 300;
-   font-display: swap;
-  src: local(''),
-       url('../fonts/poppins-v15-latin-ext-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/poppins-v15-latin-ext-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* poppins-regular - latin-ext */
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-   font-display: swap;
-  src: local(''),
-       url('../fonts/poppins-v15-latin-ext-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/poppins-v15-latin-ext-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* poppins-500 - latin-ext */
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-   font-display: swap;
-  src: local(''),
-       url('../fonts/poppins-v15-latin-ext-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/poppins-v15-latin-ext-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* poppins-600 - latin-ext */
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-   font-display: swap;
-  src: local(''),
-       url('../fonts/poppins-v15-latin-ext-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/poppins-v15-latin-ext-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* poppins-700 - latin-ext */
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-   font-display: swap;
-  src: local(''),
-       url('../fonts/poppins-v15-latin-ext-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/poppins-v15-latin-ext-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-
 
 html{
     --gray: #cacace;
@@ -554,7 +500,7 @@ position: absolute;
     background-position: center;
     height: 400px;
     background-size: cover;
-	background-image:url(./images/bg.jpg);
+	background-image:url(${bgImg});
 }
 
 .top-bg .bg-overlay{

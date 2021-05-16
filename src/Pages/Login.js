@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
-
+import { Helmet } from "react-helmet";
+import { Icon } from "react-icons-kit";
+import { powerOff } from "react-icons-kit/fa/powerOff";
+import { storage, db, auth, provider } from "../utils/firebase";
 import {
     CreateDiv,
     Form,
@@ -7,14 +10,9 @@ import {
     Alert,
     AdminPopup,
     FormContainer,
-} from "./LoginStyles";
+} from "../Styles/Pages/LoginStyles";
 
-import { storage, db, auth, provider } from "../firebase";
-import { Icon } from "react-icons-kit";
-import { powerOff } from "react-icons-kit/fa/powerOff";
-import { Helmet } from "react-helmet";
-
-function Login() {
+export default function Login() {
     const [name, setName] = useState("");
     const [framework, setFramework] = useState("");
     const [link, setLink] = useState("");
@@ -61,16 +59,15 @@ function Login() {
     };
 
     useEffect(() => {
-        const unsub = db.collection("all")
+        const unsub = db
+            .collection("all")
             .orderBy("id", "desc")
             .limit(1)
             .onSnapshot((snapshot) => {
                 setnumData(snapshot.docs.map((doc) => doc?.data()));
             });
-            return ()=> unsub();
+        return () => unsub();
     }, []);
-
-    
 
     const handleUpload = (e) => {
         e.preventDefault();
@@ -242,5 +239,3 @@ function Login() {
         </>
     );
 }
-
-export default Login;

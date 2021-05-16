@@ -1,9 +1,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
-import { SectionTitle } from "../Pages/HomeStyles";
-import { Testimonial, Slides } from "./SliderStyles";
 import { Icon } from "react-icons-kit/";
 import { star } from "react-icons-kit/fa/star";
+import { SectionTitle } from "../Styles/Pages/HomeStyles";
+import { Testimonial, Slides } from "../Styles/Components/SliderStyles";
+import TestimonialImgSrc from "../Assets/images/testimonial.jpg";
+import PaulharringtonImgSrc from "../Assets/images/paulharrington.jpg";
+import AddyPolaniImgSrc from "../Assets/images/addypolani.jpg";
+import DragoImgSrc from "../Assets/images/drago_1.jpg";
 
 const Slider = () => {
     return (
@@ -42,7 +46,7 @@ const Slider = () => {
                                     <img
                                         loading="lazy"
                                         className="testimonial-face"
-                                        src="./images/testimonial.jpg"
+                                        src={TestimonialImgSrc}
                                         alt="Paul Trueman"
                                     />
                                     <h5>
@@ -91,7 +95,7 @@ const Slider = () => {
                                     <img
                                         loading="lazy"
                                         className="testimonial-face"
-                                        src="./images/paulharrington.jpg"
+                                        src={PaulharringtonImgSrc}
                                         alt="Paul Harrington"
                                     />
                                     <h5>
@@ -142,7 +146,7 @@ const Slider = () => {
                                     <img
                                         loading="lazy"
                                         className="testimonial-face"
-                                        src="./images/addypolani.jpg"
+                                        src={AddyPolaniImgSrc}
                                         alt="Paul Trueman"
                                     />
                                     <h5>
@@ -192,7 +196,7 @@ const Slider = () => {
                                     <img
                                         loading="lazy"
                                         className="testimonial-face"
-                                        src="./images/drago_1.jpg"
+                                        src={DragoImgSrc}
                                         alt="drago_1"
                                     />
                                     <h5>

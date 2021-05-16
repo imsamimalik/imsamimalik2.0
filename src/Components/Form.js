@@ -1,17 +1,12 @@
 import { useState } from "react";
-import {
-    Card,
-    FormField,
-    //ResponseOutput,
-    SubmitFrame,
-} from "./FormStyles";
+import emailjs from "emailjs-com";
+import { init } from "emailjs-com";
+import swal from "sweetalert";
 import { Icon } from "react-icons-kit";
 import { user } from "react-icons-kit/fa/user";
 import { at } from "react-icons-kit/fa/at";
 import { envelope } from "react-icons-kit/fa/envelope";
-import emailjs from "emailjs-com";
-import { init } from "emailjs-com";
-import swal from "sweetalert";
+import { Card, FormField, SubmitFrame } from "../Styles/Components/FormStyles";
 
 init("user_wxSGCTapbDZGX7QVFzibc");
 
@@ -19,7 +14,6 @@ const Form = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
-    //const [show, setShow] = useState(false);
 
     const sendFeedback = (serviceId, templateId, variables) => {
         emailjs

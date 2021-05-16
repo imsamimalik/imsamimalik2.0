@@ -1,5 +1,11 @@
 import { Link } from "react-router-dom";
-
+import { Helmet } from "react-helmet";
+import CountUp from "react-countup";
+import { Icon } from "react-icons-kit";
+import { chevronRight } from "react-icons-kit/fa/chevronRight";
+import Slider from "../Components/Slider";
+import Footer from "../Components/Footer";
+import Typed from "../Components/Typewriter";
 import {
     Banner,
     BannerBack,
@@ -13,8 +19,7 @@ import {
     H6,
     H5,
     H4,
-} from "./HomeStyles";
-import { Helmet } from "react-helmet";
+} from "../Styles/Pages/HomeStyles";
 import {
     Header,
     Avatar,
@@ -25,14 +30,9 @@ import {
     Name,
     NameA,
     SmText,
-} from "../SidebarStyles";
-import TypeWriterEffect from "react-typewriter-effect";
-import CountUp from "react-countup";
-import { chevronRight } from "react-icons-kit/fa/chevronRight";
-import { Icon } from "react-icons-kit";
-import Slider from "../Components/Slider";
-
-import Footer from "../Components/Footer";
+} from "../Styles/Components/SidebarStyles";
+import AvatarImgSrc from "../Assets/images/avatar.jpg";
+import MeImgSrc from "../Assets/images/me.webp";
 
 const Home = () => {
     return (
@@ -55,7 +55,7 @@ const Home = () => {
                             <Avatar>
                                 <AvatarCurtain>
                                     <AvatarCurtainImg
-                                        src="./images/avatar.jpg"
+                                        src={AvatarImgSrc}
                                         alt="avatar"
                                     />
                                 </AvatarCurtain>
@@ -88,46 +88,7 @@ const Home = () => {
                                             &lt;<i>code</i>&gt;
                                         </span>
                                         <span className="white">
-                                            I build{" "}
-                                            <TypeWriterEffect
-                                                textStyle={{
-                                                    color: "#fff",
-                                                    fontWeight: 500,
-                                                    fontSize: "1em",
-                                                    display: "inline-block",
-                                                }}
-                                                startDelay={1000}
-                                                cursorColor="#fafafc"
-                                                multiText={[
-                                                    "web apps.",
-                                                    "mobile apps.",
-                                                    "desktop apps.",
-                                                    "automation tools.",
-                                                    "CMS websites.",
-                                                    "web apps.",
-                                                    "mobile apps.",
-                                                    "desktop apps.",
-                                                    "automation tools.",
-                                                    "CMS websites.",
-                                                    "web apps.",
-                                                    "mobile apps.",
-                                                    "desktop apps.",
-                                                    "automation tools.",
-                                                    "CMS websites.",
-                                                    "web apps.",
-                                                    "mobile apps.",
-                                                    "desktop apps.",
-                                                    "automation tools.",
-                                                    "CMS websites.",
-                                                    "web apps.",
-                                                    "mobile apps.",
-                                                    "desktop apps.",
-                                                    "automation tools.",
-                                                    "CMS websites.",
-                                                ]}
-                                                multiTextDelay={1000}
-                                                typeSpeed={100}
-                                            />
+                                            I build <Typed />
                                         </span>
                                         <span className="white">
                                             &lt;/<i>code</i>&gt;
@@ -152,7 +113,7 @@ const Home = () => {
                                 </BannerTitle>
                                 <BannerPhoto
                                     loading="lazy"
-                                    src="./images/me.webp"
+                                    src={MeImgSrc}
                                     className="banner-photo"
                                     alt="Profile Pic"
                                 />

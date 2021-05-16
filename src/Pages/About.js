@@ -1,7 +1,7 @@
-import { SectionTitle } from "./HomeStyles";
-import { Timeline, Intro } from "./AboutStyles";
-import Footer from "../Components/Footer";
 import { Helmet } from "react-helmet";
+import Footer from "../Components/Footer";
+import { SectionTitle } from "../Styles/Pages/HomeStyles";
+import { Timeline, Intro } from "../Styles/Pages/AboutStyles";
 
 const About = () => {
     return (
