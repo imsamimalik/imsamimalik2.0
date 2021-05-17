@@ -83,14 +83,14 @@ const MenuBar = () => {
                   <Link to="/">Home</Link>
                 </NavLi>
                 <NavLi
-                  delay={0.15}
+                  delay={0.1}
                   active={active}
                   onClick={() => setActive((prev) => !prev)}
                 >
                   <Link to="/about">About</Link>
                 </NavLi>
                 <NavLi
-                  delay={0.1}
+                  delay={0.15}
                   active={active}
                   onClick={() => setActive((prev) => !prev)}
                 >

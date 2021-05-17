@@ -32,20 +32,20 @@ const About = () => {
 
             <Intro className="about">
               <p>
-                Hey Folks, I am Akhtar Nadeem(better known as
-                <span className="highlight">Sami Malik </span> ). A simple guy
+                Hey Folks, I am Akhtar Nadeem ( better known as
+                <span className="highlight"> Sami Malik </span> ). A simple guy
                 with a productive mindset, its my aim to help those around me. I
                 have been in the web development industry and am surviving in
                 this competitive era since 2013. Developing Robust and pitch
                 perfect solutions for my clients is what I call an achievement.
                 I expertise in modern frameworkds like ReactJS, SvelteJS, and
-                ViewJS and MERN STACK. In addition to it, I have been developing
+                VueJS and MERN STACK. In addition to it, I have been developing
                 captivating websites on wordpress too. I work with a single
                 thing in my mind, &quot;
                 <span className="highlight">
                   The aim is to make a Customer, not a sale!
                 </span>
-                &quot;. I currently work as a Freelancer on Fiverr and am doing
+                &quot;. I currently work as a Freelancer on Upwork and am doing
                 my BSCS degree from FAST NUCES, Lahore.
               </p>
               <ul className="socials">
@@ -158,6 +158,32 @@ const About = () => {
                   <div className="card-header">
                     <div className="left-side">
                       <h5>
+                        <span>Upwork</span>
+                      </h5>
+                      <div className="el-suptitle mb-15">
+                        <span>Freelancer</span>
+                      </div>
+                    </div>
+                    <div className="right-side">
+                      <span className="date">
+                        <span>Jan 2021 -</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div className="el-description">
+                    <div>
+                      <p>Full stack web developer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-mark-light" />
+                <div className="timeline-mark" />
+                <div className="timeline-content">
+                  <div className="card-header">
+                    <div className="left-side">
+                      <h5>
                         <span>Fiverr</span>
                       </h5>
                       <div className="el-suptitle mb-15">
@@ -166,7 +192,7 @@ const About = () => {
                     </div>
                     <div className="right-side">
                       <span className="date">
-                        <span>May 2020 -</span>
+                        <span>May 2020 -Jan 2021</span>
                       </span>
                     </div>
                   </div>

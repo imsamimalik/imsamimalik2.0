@@ -325,8 +325,8 @@ const Sidebar = ({ loaded }) => {
             <LsDivider />
             <KnowledgeList className="p-15-0">
               <li>React, VueJs, Svelte, NextJS</li>
-              <li>Materialize, TailwindCSS</li>
               <li>Firebase, AWS, Heroku</li>
+              <li>Materialize, TailwindCSS</li>
               <li>DevOps</li>
             </KnowledgeList>
             <LsDivider />
