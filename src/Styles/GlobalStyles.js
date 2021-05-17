@@ -145,6 +145,8 @@ a {
     height: 45px;
     font-size: 12px;
     padding: 0 35px;
+    line-height: 45px;
+    cursor: pointer;
 }
 
 input:focus,textarea:focus {

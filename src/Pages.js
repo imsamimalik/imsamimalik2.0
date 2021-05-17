@@ -1,4 +1,4 @@
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch } from "wouter";
 import loadable from "@loadable/component";
 const Contact = loadable(() => import("./Pages/Contact"));
 const About = loadable(() => import("./Pages/About"));

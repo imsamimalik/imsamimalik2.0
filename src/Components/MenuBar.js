@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, useLocation } from "wouter";
 import {
   MenubarContainer,
   Menubar,
@@ -14,10 +14,19 @@ import {
 } from "../Styles/Components/MenuBarStyles";
 
 const MenuBar = () => {
-  let location = useLocation();
+  const [location] = useLocation();
 
   const [active, setActive] = useState(false);
   const [current, setCurrent] = useState("Home");
+  useEffect(() => {
+    let links = document.querySelectorAll(".main-menu a");
+
+    links.forEach((link) =>
+      link.getAttribute("href") == location
+        ? link.classList.add("selected")
+        : link.classList.remove("selected")
+    );
+  }, [location]);
 
   useEffect(() => {
     if (active) {
@@ -33,8 +42,8 @@ const MenuBar = () => {
     setActive((prev) => !prev);
   };
   useEffect(() => {
-    if (location.pathname.split("/")[1]) {
-      setCurrent(location.pathname.split("/")[1]);
+    if (location.pathname?.split("/")[1]) {
+      setCurrent(location.pathname?.split("/")[1]);
     } else {
       setCurrent("Home");
     }
@@ -66,33 +75,26 @@ const MenuBar = () => {
           <Scrollframe className="scrollframe">
             <Nav className="nav">
               <NavUl className="main-menu">
-                <NavLi delay={0.05} active={active}>
-                  <NavLink
-                    exact
-                    activeClassName="selected"
-                    to="/"
-                    onClick={() => setActive((prev) => !prev)}
-                  >
-                    Home
-                  </NavLink>
+                <NavLi
+                  delay={0.05}
+                  active={active}
+                  onClick={() => setActive((prev) => !prev)}
+                >
+                  <Link to="/">Home</Link>
                 </NavLi>
                 <NavLi
                   delay={0.15}
                   active={active}
                   onClick={() => setActive((prev) => !prev)}
                 >
-                  <NavLink exact activeClassName="selected" to="/about">
-                    About
-                  </NavLink>
+                  <Link to="/about">About</Link>
                 </NavLi>
                 <NavLi
                   delay={0.1}
                   active={active}
                   onClick={() => setActive((prev) => !prev)}
                 >
-                  <NavLink exact activeClassName="selected" to="/portfolio">
-                    Portfolio
-                  </NavLink>
+                  <Link to="/portfolio">Portfolio</Link>
                 </NavLi>
 
                 <NavLi
@@ -100,18 +102,14 @@ const MenuBar = () => {
                   active={active}
                   onClick={() => setActive((prev) => !prev)}
                 >
-                  <NavLink exact activeClassName="selected" to="/contact">
-                    Contact
-                  </NavLink>
+                  <Link to="/contact">Contact</Link>
                 </NavLi>
                 <NavLi
                   delay={0.25}
                   active={active}
                   onClick={() => setActive((prev) => !prev)}
                 >
-                  <NavLink exact activeClassName="selected" to="/login">
-                    Login
-                  </NavLink>
+                  <Link to="/login">Login</Link>
                 </NavLi>
               </NavUl>
             </Nav>

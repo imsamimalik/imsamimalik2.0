@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link } from "wouter";
 import bg1 from "../../Assets/images/bg1.jpg";
 
 export const Banner = styled.div`

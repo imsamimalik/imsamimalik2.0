@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "wouter";
 import { Helmet } from "react-helmet";
 import CountUp from "react-countup";
 import { Icon } from "react-icons-kit";
@@ -89,15 +89,15 @@ const Home = () => {
                     </span>
                   </div>
                   <div className="buttons-frame">
-                    <Link to="/portfolio" className="btn btn-md">
-                      <span
-                        style={{
-                          alignSelf: "center",
-                          transition: ".2s ease-in-out",
-                        }}
-                      >
-                        Explore now
-                      </span>
+                    <Link
+                      style={{
+                        alignSelf: "center",
+                        transition: ".2s ease-in-out",
+                        display: "flex",
+                      }}
+                      href="/portfolio"
+                    >
+                      <span className="btn btn-md">Explore now</span>
                     </Link>
                   </div>
                 </BannerTitle>
