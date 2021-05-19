@@ -1,11 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 import bgImg from "../Assets/images/bg.jpg";
 export const GlobalStyle = createGlobalStyle`
+
 *, :after, :before {
     box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
+
 
 html{
     --gray: #cacace;
