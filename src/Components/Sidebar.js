@@ -50,9 +50,12 @@ const Sidebar = ({ loaded }) => {
   const getAge = (dob) => {
     const birthDate = new Date(dob);
     const difference = Date.now() - birthDate.getTime();
-    const age = new Date(difference);
-
-    return Math.abs(age.getUTCFullYear() - 1970);
+    const age = new Date(
+      new Date(
+        new Date(new Date(difference).setHours(0)).setMinutes(0)
+      ).setSeconds(0)
+    );
+    return Math.abs(age.getFullYear() - 1970);
   };
   loaded &&
     setTimeout(() => {
@@ -66,8 +69,8 @@ const Sidebar = ({ loaded }) => {
     }, 1200);
 
   useEffect(() => {
-    setAge(getAge(new Date(`2002, 06, 03`)));
-  }, []);
+    setInterval(() => setAge(getAge(new Date(2002, 5, 3, 0, 0, 0))), 1);
+  });
 
   const handleClick = () => {
     setActive((prev) => !prev);
@@ -117,7 +120,7 @@ const Sidebar = ({ loaded }) => {
                 </TableLi>
                 <TableLi>
                   <h6>Age:</h6>
-                  <span>{age}++</span>
+                  <span className="age">{age}++</span>
                 </TableLi>
               </TableUl>
             </div>
