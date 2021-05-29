@@ -616,10 +616,13 @@ position: absolute;
         background-color:black !important;
     }
     .swal-title::after {
-    content: "🥳";
-    font-size: 80px;
-    letter-spacing: 108px;
-    margin-left: 103px;
+        content: "🥳";
+        font-size: 80px;
+        letter-spacing: 108px;
+        margin-left: 103px;
+    }
+    .swal-text {
+        font-size: 20px;
     }
 }
 `;
