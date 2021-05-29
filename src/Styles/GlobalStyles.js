@@ -603,4 +603,8 @@ position: absolute;
 ::-webkit-scrollbar-track {
     background: var( --black);
 }
+:root {
+    scrollbar-color: var(--main) var(--black) !important;
+    scrollbar-width: thin !important;
+}
 `;

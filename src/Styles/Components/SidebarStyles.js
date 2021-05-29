@@ -217,6 +217,7 @@ export const Scrollbar2 = styled.div`
   ::-webkit-scrollbar {
     display: none;
   }
+  scrollbar-width: none;
 
   @media (max-width: 1032px) {
     height: 100vh;
