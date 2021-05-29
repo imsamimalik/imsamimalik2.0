@@ -18,9 +18,14 @@ export const Form = styled.form`
   flex-direction: column;
   height: auto;
   transform: scale(0.95);
-  background-color: var(--dark-lamp-green);
   padding: 40px 20px;
-  border-radius: 5px;
+  background: var(--bbg1);
+  box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
   @media (max-width: 990px) {
     transform: scale(0.75);
   }
@@ -41,10 +46,17 @@ export const Form = styled.form`
   input[type="number"],
   input[type="text"],
   textarea {
-    border-bottom: 2px solid black;
+    border: none;
+    border-bottom: 2px solid var(--text-dark-primary);
+    background: transparent;
+    color: var(--text-dark-primary);
+  }
+  input::placeholder {
+    color: var(--grey) !important;
+    filter: brightness(0.5);
   }
   button {
-    background-color: #03a9f4;
+    background-color: var(--main);
     height: 50px !important;
     color: #fff;
     font-size: 18px;
@@ -53,13 +65,16 @@ export const Form = styled.form`
     margin-top: 5rem !important;
     cursor: pointer;
     &:hover {
-      background-color: #007cb6;
+      background-color: var(--main);
+      filter: brightness(1.2);
     }
     &:disabled {
-      background-color: #5cc1ef;
+      background-color: var(--main);
+      filter: brightness(0.5);
+      cursor: default;
     }
     &:hover:disabled {
-      background-color: #5cc1ef;
+      background-color: var(--main);
     }
   }
   .file {
@@ -83,10 +98,9 @@ export const Form = styled.form`
     height: 2.5rem;
     padding: 0.5rem 1rem;
     line-height: 1.5;
-    color: #555;
-    background-color: #fff;
-    border: 0.1rem solid #ddd;
-    border-bottom: 0.1rem solid black;
+    color: var(--grey);
+    background-color: transparent;
+    border: 0.1rem solid var(--text-dark-primary);
     border-radius: 0.25rem;
     box-shadow: inset 0 0.2rem 0.4rem rgba(0, 0, 0, 0.05);
     -webkit-user-select: none;
@@ -105,8 +119,8 @@ export const Form = styled.form`
     height: 1.5rem;
     padding: 0.5rem 1rem;
     line-height: 1.5;
-    color: #555;
-    background-color: #eee;
+    color: var(--grey);
+    background-color: transparent;
     border: none;
     border-radius: 0 0.25rem 0.25rem 0;
   }
@@ -121,15 +135,16 @@ export const Form = styled.form`
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border: 0;
-    color: #0074d9;
+    border: 1px solid var(--text-dark-primary);
+    border-radius: 5px;
+    color: var(--main);
   }
   .progress[value]::-webkit-progress-bar {
-    background-color: #eee;
+    background-color: transparent;
     border-radius: 0.2rem;
   }
   .progress[value]::-webkit-progress-value {
-    background-color: #0074d9;
+    background-color: var(--main);
     border-top-left-radius: 0.2rem;
     border-bottom-left-radius: 0.2rem;
   }
@@ -269,7 +284,7 @@ export const GoogleBtn = styled.div`
 export const Alert = styled.div`
   margin-top: 30px;
   padding: 10px;
-  background-color: #03a9f4;
+  background-color: var(--main);
   color: #fff;
   width: 300px;
   margin-bottom: -51px;
@@ -279,7 +294,7 @@ export const AdminPopup = styled.div`
   width: 100px;
   height: 100px;
   border-radius: 50px;
-  background-color: #1f1f1f;
+  background-color: var(--main);
   position: fixed;
   top: 20px;
   right: 160px;
@@ -288,7 +303,7 @@ export const AdminPopup = styled.div`
   align-items: center;
   transform: scale(0.75);
   overflow: hidden;
-  border: 3px solid #1b9206;
+  border: 3px solid #1f1f1f;
   cursor: pointer !important;
   transition: 0.3s width ease-in-out;
   i {

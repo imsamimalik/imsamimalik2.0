@@ -34,6 +34,8 @@ export default function Login() {
       .signInWithPopup(provider)
       .then((result) => {
         setUser(result.user.email);
+        // eslint-disable-next-line no-console
+        console.log(result);
         if (user !== process.env.REACT_APP_EMAIL) {
           setToggleDialogue(true);
         }
@@ -166,17 +168,17 @@ export default function Login() {
                   placeholder="Enter link"
                   required
                 />
-                <label className="file">
-                  <input onChange={handleChange} type="file" required />
-                  <span className="file-custom">{filename}</span>
-                </label>
                 <textarea
                   onChange={(e) => setDescription(e.target.value)}
                   value={description}
                   type="text"
                   placeholder="Enter description"
                   required
-                ></textarea>
+                />
+                <label className="file">
+                  <input onChange={handleChange} type="file" required />
+                  <span className="file-custom">{filename}</span>
+                </label>
                 <progress className="progress" value={progress} max="100" />
 
                 {successToggle && <Alert>Item added</Alert>}

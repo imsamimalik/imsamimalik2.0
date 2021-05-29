@@ -42,8 +42,8 @@ const MenuBar = () => {
     setActive((prev) => !prev);
   };
   useEffect(() => {
-    if (location.pathname?.split("/")[1]) {
-      setCurrent(location.pathname?.split("/")[1]);
+    if (location?.split("/")[1]) {
+      setCurrent(location?.split("/")[1]);
     } else {
       setCurrent("Home");
     }
