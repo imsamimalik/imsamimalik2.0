@@ -89,7 +89,7 @@ const Sidebar = ({ loaded }) => {
     const month = new Date(Date.now()).getMonth();
     const date = new Date(Date.now()).getDate();
 
-    if (month == 5 && date == 3 && !HBD && age == 18) {
+    if (month == 5 && date == 3 && !HBD && age > 18) {
       swal({
         title: "Happy Birthday!",
         text: `${isAdmin ? "You" : "Sami"} turned ${age}.`,
