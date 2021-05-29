@@ -75,7 +75,7 @@ const Home = () => {
               <BannerOverlay className="banner-overlay">
                 <BannerTitle className="banner-title">
                   <h1 className="mb-15">
-                    <span>Hello World, I&apos;m alive!</span>
+                    <span>Hi Universe, I&apos;m alive!</span>
                   </h1>
                   <div className="lg-text code mb-25">
                     <span className="white">

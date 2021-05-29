@@ -26,6 +26,7 @@ export default function Login() {
   const [email] = useState(process.env.REACT_APP_EMAIL);
   const [wrongUser, setWrongUser] = useState(false);
   const [toggleDialogue, setToggleDialogue] = useState(true);
+  const [title, setTitle] = useState("Login");
 
   const [numData, setnumData] = useState([]);
 
@@ -44,11 +45,11 @@ export default function Login() {
           "imsamimalikSecurityId",
           JSON.stringify(result.user.uid)
         );
-
-        localStorage.setItem(
-          "adminPhoto",
-          JSON.stringify(result.user.photoURL)
-        );
+        setTitle("Create");
+        // localStorage.setItem(
+        //   "adminPhoto",
+        //   JSON.stringify(result.user.photoURL)
+        // );
       })
       .catch((err) => alert(err.message));
   };
@@ -68,6 +69,7 @@ export default function Login() {
       .onSnapshot((snapshot) => {
         setnumData(snapshot.docs.map((doc) => doc?.data()));
       });
+    localStorage.getItem("imsamimalikSecurityId") && setTitle("Create");
     return () => unsub();
   }, []);
 
@@ -95,9 +97,9 @@ export default function Login() {
               id: +id,
               title: name,
               imgUrl: url,
-              framework: framework,
-              link: link,
-              description: description,
+              framework,
+              link,
+              description,
             });
             setTimeout(() => {
               setSuccessToggle(true);
@@ -120,14 +122,15 @@ export default function Login() {
   const signOut = () => {
     auth.signOut();
     localStorage.removeItem("imsamimalikSecurityId");
-    localStorage.removeItem("adminPhoto");
+    //localStorage.removeItem("adminPhoto");
+    setTitle("Login");
     setUser("");
     setToggleDialogue(false);
   };
   return (
     <>
       <Helmet>
-        <title>Login - imsamimalik</title>
+        <title>{`${title} - imsamimalik`}</title>
       </Helmet>
       <CreateDiv>
         {JSON.parse(localStorage.getItem("imsamimalikSecurityId")) ===
