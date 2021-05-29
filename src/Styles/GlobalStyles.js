@@ -607,4 +607,19 @@ position: absolute;
     scrollbar-color: var(--main) var(--black) !important;
     scrollbar-width: thin !important;
 }
+.swal-modal {
+    background-color: var(--dark-lamp-green);
+    div {
+        color:white;
+    }
+    button,button:hover {
+        background-color:black !important;
+    }
+    .swal-title::after {
+    content: "🥳";
+    font-size: 80px;
+    letter-spacing: 108px;
+    margin-left: 103px;
+    }
+}
 `;

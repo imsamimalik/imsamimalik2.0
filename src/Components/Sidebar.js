@@ -42,6 +42,7 @@ import {
   Socials,
 } from "../Styles/Components/SidebarStyles";
 import AvatarImgSrc from "../Assets/images/avatar.jpg";
+import swal from "sweetalert";
 
 const Sidebar = ({ loaded }) => {
   const [active, setActive] = useState(false);
@@ -71,7 +72,34 @@ const Sidebar = ({ loaded }) => {
   useEffect(() => {
     setInterval(() => setAge(getAge(new Date(2002, 5, 3, 0, 0, 0))), 1);
   });
+  useEffect(() => {
+    let HBD = false;
+    const cookie = "HBD=TRUE";
+    var cookieArr = document.cookie.split(";");
 
+    for (var i = 0; i < cookieArr.length; i++) {
+      if (cookie == cookieArr[i].trim()) {
+        HBD = true;
+      }
+    }
+    const isAdmin =
+      JSON.parse(localStorage.getItem("imsamimalikSecurityId")) ==
+      process.env.REACT_APP_UID;
+    const year = new Date(Date.now()).getFullYear() + 1;
+    const month = new Date(Date.now()).getMonth();
+    const date = new Date(Date.now()).getDate();
+
+    if (month == 5 && date == 3 && !HBD && age == 18) {
+      swal({
+        title: "Happy Birthday!",
+        text: `${isAdmin ? "You" : "Sami"} turned ${age}.`,
+        button: `${isAdmin ? "Thank You!" : "HBD"}`,
+      }).then(
+        () =>
+          (document.cookie = `HBD=TRUE; expires=3 Jun ${year} 19:58:00 UTC; Secure`)
+      );
+    }
+  }, [age]);
   const handleClick = () => {
     setActive((prev) => !prev);
   };
