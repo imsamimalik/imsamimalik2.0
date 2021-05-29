@@ -34,6 +34,8 @@ export default function Login() {
       .signInWithPopup(provider)
       .then((result) => {
         setUser(result.user.email);
+        // eslint-disable-next-line no-console
+        console.log(result);
         if (user !== process.env.REACT_APP_EMAIL) {
           setToggleDialogue(true);
         }

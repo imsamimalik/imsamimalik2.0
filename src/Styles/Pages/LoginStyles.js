@@ -18,9 +18,14 @@ export const Form = styled.form`
   flex-direction: column;
   height: auto;
   transform: scale(0.95);
-  background-color: var(--dark-lamp-green);
   padding: 40px 20px;
-  border-radius: 5px;
+  background: var(--bbg1);
+  box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
   @media (max-width: 990px) {
     transform: scale(0.75);
   }
@@ -44,7 +49,7 @@ export const Form = styled.form`
     border-bottom: 2px solid black;
   }
   button {
-    background-color: #03a9f4;
+    background-color: var(--main);
     height: 50px !important;
     color: #fff;
     font-size: 18px;
@@ -53,13 +58,15 @@ export const Form = styled.form`
     margin-top: 5rem !important;
     cursor: pointer;
     &:hover {
-      background-color: #007cb6;
+      background-color: var(--main);
+      filter: brightness(1.2);
     }
     &:disabled {
-      background-color: #5cc1ef;
+      background-color: var(--main);
+      filter: brightness(0.5);
     }
     &:hover:disabled {
-      background-color: #5cc1ef;
+      background-color: var(--main);
     }
   }
   .file {
@@ -279,7 +286,7 @@ export const AdminPopup = styled.div`
   width: 100px;
   height: 100px;
   border-radius: 50px;
-  background-color: #1f1f1f;
+  background-color: var(--main);
   position: fixed;
   top: 20px;
   right: 160px;
@@ -288,7 +295,7 @@ export const AdminPopup = styled.div`
   align-items: center;
   transform: scale(0.75);
   overflow: hidden;
-  border: 3px solid #1b9206;
+  border: 3px solid #1f1f1f;
   cursor: pointer !important;
   transition: 0.3s width ease-in-out;
   i {
