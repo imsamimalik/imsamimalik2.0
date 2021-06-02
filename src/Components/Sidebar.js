@@ -115,7 +115,7 @@ const Sidebar = ({ loaded }) => {
           className="confetti"
           width={window.innerWidth}
           height={window.innerHeight}
-          style={{ zIndex: 99999999 }}
+          style={{ zIndex: 999999999 }}
         />
       )}
       <div className="sidebar">
