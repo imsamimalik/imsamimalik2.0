@@ -50,7 +50,6 @@ const Sidebar = ({ loaded }) => {
   const [age, setAge] = useState(18);
   const [_HBD, set_HBD] = useState(false);
   const [isBday, setIsBday] = useState(false);
-  const [isRunning, setIsRunning] = useState(true);
 
   const getAge = (dob) => {
     const birthDate = new Date(dob);
@@ -99,10 +98,10 @@ const Sidebar = ({ loaded }) => {
         title: "Happy Birthday!",
         text: `${isAdmin ? "You" : "Sami"} turned ${age}.`,
         button: `${isAdmin ? "Thank You!" : "HBD"}`,
-      }).then(() => {
-        document.cookie = `HBD=TRUE; expires=3 Jun ${year} 19:58:00 UTC; Secure`;
-        setIsRunning(false);
-      });
+      }).then(
+        () =>
+          (document.cookie = `HBD=TRUE; expires=3 Jun ${year} 19:58:00 UTC; Secure`)
+      );
     }
   }, [age]);
   const handleClick = () => {
@@ -110,7 +109,7 @@ const Sidebar = ({ loaded }) => {
   };
   return (
     <>
-      {!_HBD && isBday && isRunning && (
+      {!_HBD && isBday && (
         <Confetti
           className="confetti"
           width={window.innerWidth}
