@@ -74,7 +74,7 @@ const Sidebar = ({ loaded }) => {
     }, 1200);
   useEffect(() => {
     setInterval(() => setAge(getAge(new Date(2002, 5, 3, 0, 0, 0))), 1000);
-  });
+  }, []);
   useEffect(() => {
     let HBD = false;
     const cookie = "HBD=TRUE";
