@@ -625,4 +625,8 @@ position: absolute;
         font-size: 20px;
     }
 }
+.hidden {
+    display: none;
+    pointer-events: none
+}
 `;
