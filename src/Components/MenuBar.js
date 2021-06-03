@@ -44,9 +44,20 @@ const MenuBar = () => {
   useEffect(() => {
     if (location?.split("/")[1]) {
       setCurrent(location?.split("/")[1]);
+      document.querySelector("body").classList.add(location?.split("/")[1]);
     } else {
       setCurrent("Home");
+      document.querySelector("body").classList.add("Home");
     }
+    return () => {
+      if (location?.split("/")[1]) {
+        document
+          .querySelector("body")
+          .classList.remove(location?.split("/")[1]);
+      } else {
+        document.querySelector("body").classList.remove("Home");
+      }
+    };
   }, [location]);
   useEffect(() => {
     document.addEventListener("click", (e) => {

@@ -607,7 +607,8 @@ position: absolute;
     scrollbar-color: var(--main) var(--black) !important;
     scrollbar-width: thin !important;
 }
-.swal-modal {
+
+body:not(.contact) .swal-modal {
     background-color: var(--dark-lamp-green);
     div {
         color:white;

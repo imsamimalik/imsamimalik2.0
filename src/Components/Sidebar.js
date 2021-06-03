@@ -100,7 +100,7 @@ const Sidebar = ({ loaded }) => {
         text: `${isAdmin ? "You" : "Sami"} turned ${age}.`,
         button: `${isAdmin ? "Thank You!" : "HBD"}`,
       }).then(() => {
-        document.cookie = `HBD=TRUE; expires=3 Jun ${year} 19:58:00 UTC; Secure`;
+        document.cookie = `HBD=TRUE; expires=3 Jun ${year} 19:58:00 UTC; Secure; SameSite=Lax`;
         setIsRunning(false);
       });
     }
