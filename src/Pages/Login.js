@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Icon } from "react-icons-kit";
 import { powerOff } from "react-icons-kit/fa/powerOff";
-import { storage, db, auth, provider, analytics } from "../utils/firebase";
+import { storage, db, auth, provider } from "../utils/firebase";
 import {
   CreateDiv,
   Form,
@@ -31,7 +31,6 @@ export default function Login() {
   const [numData, setnumData] = useState([]);
 
   const signIn = () => {
-    analytics.log("clicked signIn Btn");
     auth
       .signInWithPopup(provider)
       .then((result) => {
