@@ -63,7 +63,7 @@ const Contact = () => {
                   <div>
                     <ul>
                       <li>
-                        <strong>Fiverr:</strong> akhatrnadeem
+                        <strong>Fiverr:</strong> akhtarnadeem
                       </li>
                       <li>
                         <strong>Upwork:</strong> samimalik123

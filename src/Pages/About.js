@@ -34,22 +34,22 @@ const About = () => {
               <p>
                 Hey Folks, I am Sami malik ( better known with username
                 <span className="highlight"> imsamimalik </span> ) and
-                Javascript is my native language. A simple guy with a productive
+                JavaScript is my native language. A simple guy with a productive
                 mindset, its my aim to help those around me. I have been in the
                 web development industry and am surviving in this competitive
-                era since 2013. Developing Robust and pitch perfect solutions
+                era since 2013. Developing robust and pitch perfect solutions
                 for my clients is what I call an achievement. I expertise in
                 modern frameworkds like ReactJS, SvelteJS, and VueJS and MERN
                 STACK. In addition to it, I have been developing captivating
-                websites on WordPress too. I work with a single thing in my
-                mind, &quot;
+                websites in CMS like WordPress and Wix too. I work with a single
+                thing in my mind, &quot;
                 <span className="highlight">
                   The aim is to make a Customer, not a sale!
                 </span>
-                &quot;. I currently work as a Freelancer on Upwork and am doing
-                my BSCS degree from FAST NUCES, Lahore. You can contact me if
-                you wanna take your project{" "}
-                <span className="highlight">TO THE MOON</span>.
+                &quot; I am currently work as a freelancer on Upwork and doing
+                bachelors in Computer Science from FAST NUCES, Lahore. You can
+                contact me if you need any kind of help or you wanna take your
+                project <span className="highlight">TO THE MOON</span>.
               </p>
               <ul className="socials">
                 <li>
