@@ -40,9 +40,9 @@ const About = () => {
                 era since 2013. Developing robust and pitch perfect solutions
                 for my clients is what I call an achievement. I expertise in
                 modern frameworkds like ReactJS, SvelteJS, and VueJS and MERN
-                STACK. In addition to it, I have been developing captivating
-                websites in CMS like WordPress and Wix too. I work with a single
-                thing in my mind, &quot;
+                Stack. In addition to it, I have been developing captivating
+                websites with CMS like WordPress and Wix too. I work with a
+                single thing in my mind, &quot;
                 <span className="highlight">
                   The aim is to make a Customer, not a sale!
                 </span>
