@@ -105,22 +105,22 @@
 
     "screenshots": [
         {
-            "src": "images/home.webp",
+            "src": "/screenshots/home.webp",
             "sizes": "1356x678",
             "type": "img/webp"
         },
         {
-            "src": "images/portfolio.webp",
+            "src": "/screenshots/portfolio.webp",
             "sizes": "1346x673",
             "type": "img/webp"
         },
         {
-            "src": "images/contact.webp",
+            "src": "/screenshots/contact.webp",
             "sizes": "1356x678",
             "type": "img/webp"
         },
         {
-            "src": "images/login.webp",
+            "src": "/screenshots/login.webp",
             "sizes": "1356x665",
             "type": "img/webp"
         }
