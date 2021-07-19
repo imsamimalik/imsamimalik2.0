@@ -121,7 +121,7 @@ const MenuBar = () => {
                   active={active}
                   onClick={() => setActive((prev) => !prev)}
                 >
-                  <Link to="/contact">Blog</Link>
+                  <Link to="/blog">Blog</Link>
                 </NavLi>
 
                 <NavLi
