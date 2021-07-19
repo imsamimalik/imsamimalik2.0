@@ -5,6 +5,7 @@ const About = loadable(() => import("./Pages/About"));
 const Portfolio = loadable(() => import("./Pages/Portfolio"));
 const Home = loadable(() => import("./Pages/Home"));
 const Login = loadable(() => import("./Pages/Login"));
+const Blog = loadable(() => import("./Pages/Blog"));
 
 const Pages = () => {
   return (
@@ -25,6 +26,9 @@ const Pages = () => {
         </Route>
         <Route path="/login" exact>
           <Login />
+        </Route>
+        <Route path="/blog" exact>
+          <Blog />
         </Route>
         <Route path="/" exact>
           <Home />

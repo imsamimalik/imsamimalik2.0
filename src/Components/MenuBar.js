@@ -115,8 +115,17 @@ const MenuBar = () => {
                 >
                   <Link to="/contact">Contact</Link>
                 </NavLi>
+
                 <NavLi
                   delay={0.25}
+                  active={active}
+                  onClick={() => setActive((prev) => !prev)}
+                >
+                  <Link to="/contact">Blog</Link>
+                </NavLi>
+
+                <NavLi
+                  delay={0.3}
                   active={active}
                   onClick={() => setActive((prev) => !prev)}
                 >
